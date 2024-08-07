@@ -10,13 +10,18 @@ renderer.setSize(window.innerWidth,window.innerHeight);
 
 document.body.appendChild(renderer.domElement);
 
+
+//Creating Mesh
 const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({color:FFx0000}); 
+const material = new THREE.MeshBasicMaterial({color:0xFF0000}); 
 const cube = new THREE.Mesh(geometry,material);
+cube.position.x = 0;
 scene.add(cube);
 
+//Assigning Camera Values
 camera.position.z = 5;
 
+//Animation Frames
 function animate(){
     requestAnimationFrame(animate);
 
@@ -25,5 +30,5 @@ function animate(){
 
     renderer.render(scene,camera);
 }
-
 animate();
+//renderer.setAnimationLoop(animate);
