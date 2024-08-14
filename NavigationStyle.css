@@ -1,0 +1,19 @@
+
+
+div.NavBar{
+    background-color: #131618;
+    height: fit-content;
+    margin : 0px;
+    width: 100%;
+}
+
+.MenuIcon{
+    color: #D9BDC5;
+    margin: auto;
+    padding: 50px;
+    margin-right: 0px;
+}  
+
+footer.Default{
+    background-color: #131618;
+}
