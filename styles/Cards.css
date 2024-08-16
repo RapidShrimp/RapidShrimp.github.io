@@ -1,46 +1,5 @@
 
-
-Colours{
-    background-color: #1B2023;
-    background-color: #1E2433;
-    background-color: #6B818C;
-    background-color: #F2E2D2;
-    background-color: #D9BDC5;
-}
-
-body 
-{
-    background-color: #6B818C;
-    margin: 0%;
-}
-
-
-.NameH1{
-    color: #1B2023;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 100px;
-    font-family: sans-serif;
-
-}
-
-div.Centered{
-    text-align: center;
-}
-
-div.FillWide{
-    width: auto;
-    background-color: #1E2433;
-}
-div.FillWide h1{
-    text-align: center;
-}
-
-p.Paragraph{
-    font-family: sans-serif;
-    font-size: 30px;
-}
-
+/*Card Main*/
 div.Card{
     width: 20%;
     margin-left: auto;
@@ -134,68 +93,11 @@ div.Card a:link{
     text-decoration: none;
 }
 
-.FillWide .FocusButton{
-    background-color: #272727;
-    width: 30%;
-    text-align: center;
-    border-radius: 25px;
-    padding: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-shadow: 0 2px #002b4e;
-    
 
-    text-decoration: black;
-    font-size: calc(3vw);
-    font-size-adjust: initial;
-    text-decoration: none;
-    font-family: sans-serif;
+div.list-card {
+    background-color: green;
+    padding: 20px;
 }
-
-.SameRow{
-    display: inline-flex;
-    flex-direction: row;
-    text-align: center;
+div.list-card img{
+    height:200px;
 }
-
-
-.contact-slot{
-    background-color: transparent;
-}
-.contact-slot img{
-    background-color: greenyellow;
-    height: 128px;
-}
-.contact-slot h1{
-    font-size: calc(1vh+1vw);
-}
-
-
-@media all and (min-width:0px) and (max-width: 960px) {
-
-    .SameRow{
-        display: inline-flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    div.Card{
-        width: 70%;
-        height: 40%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        padding: 10px;
-        padding-left: 15px; 
-        padding-right: 15px;
-    
-        background-color: rgba(0, 0, 0, 0.479);
-        box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
-    }
-
-    div.Card h1{
-        font-size:60px;
-    }
-}
-  
