@@ -1,9 +1,4 @@
 
-body 
-{
-    background-color: #6B818C;
-    margin: 0%;
-}
 
 Colours{
     background-color: #1B2023;
@@ -11,6 +6,12 @@ Colours{
     background-color: #6B818C;
     background-color: #F2E2D2;
     background-color: #D9BDC5;
+}
+
+body 
+{
+    background-color: #6B818C;
+    margin: 0%;
 }
 
 
@@ -40,17 +41,48 @@ div.FillWide h1{
 
 div.Card{
     width: 20%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 25%;
     text-align: center;
     padding: 10px;
     padding-left: 15px; 
     padding-right: 15px;
+    border-radius: 0px;
+    text-decoration: none;
+    transform: translateY(0px);
 
     background-color: rgba(0, 0, 0, 0.479);
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
+    transition: all 0.35s, background-color 0.35s, border-radius 0.35s, box-shadow 0.35s;
 }
+div.Card:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 44px 0 rgb(0, 195, 255);
+    transition: transform 0.5s, background-color 0.35s, border-radius 0.35s, box-shadow 0.35s;
+}
+
+div.card h1{
+    font-family: sans-serif;
+    text-decoration: none;
+    color:white;
+    padding:5%; 
+    margin-top: 5%;
+    font-size: 100%;
+    transition: font-size 0.4s;
+
+}
+
+div.Card:hover h1{
+    color:black;
+    font-family: sans-serif;
+
+    transition: font-size 0.4s;
+}
+
 
 .CardButton{
     background-color: #008cff;
@@ -141,45 +173,5 @@ div.Card{
         box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
     }
 
-    .CardButton{
-        background-color: #008cff;
-        height: auto;
-        text-align: center;
-        border-radius: 25px;
-        padding: 10px;
-        padding-left: 5%;
-        padding-right: 5%;
-        box-shadow: 0 2px #002b4e;
-        
-        margin-top: 5%;
-    
-        text-decoration: black;
-        font-size: 60px;
-        font-size-adjust:inherit;
-        text-decoration: none;
-        font-family: sans-serif;
-        transition: 0.4s;
-    }
-
-    .CardButton:hover{
-        background-color: #a2d2fa;
-
-        height: auto;
-        text-align: center;
-        border-radius: 25px;
-        padding: 10px;
-        padding-left: 5%;
-        padding-right: 5%;
-        box-shadow: 0 2px #002b4e;
-        
-        margin-top: 5%;
-    
-        text-decoration: black;
-        font-size: 60px;
-        font-size-adjust:inherit;
-        text-decoration: none;
-        font-family: sans-serif;
-        transition: 0.4s;
-    }
 }
   
