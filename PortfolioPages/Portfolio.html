@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../styles/NavigationBar.css">
     <link rel="stylesheet" href="../styles/Cards.css">
     <link rel="stylesheet" href="../styles/ScrollingImages.css">
-
+    <script src="../portfolioCards.js"></script>
     <!--<script type ="module" src="/portfolio.js"></script>-->
 </head>
 
@@ -41,80 +41,194 @@
   <!--Cards with Image ontop of a button--> 
   <div class ="SameRow" style="margin-left: 5%; margin-right: 5%;">
     
-    <div class="Card" ><a href="UnrealProjects.html">
-      <h1 class="CardH1">Unreal Engine</h1>
-      <div>
-        <img src="../images/icons/UnrealLogo.png"></img>
-      </div></a>
+    <div class="Card" >
+      <button onclick="ToggleSection('.unreal')" style = "width: 100%;">
+        <h1 class="CardH1">Unreal Engine</h1>
+        <div>
+          <img src="../images/icons/UnrealLogo.png"></img>
+        </div>
+      </button>
     </div>
 
-    <div class="Card" ><a href="UnityProjects.html">
+    <div class="Card" ><button onclick="ToggleSection('.unity')" style = "width: 100%;">
       <h1>Unity</h1>
       <div>
         <img src="../images/icons/UnityLogo.png"></img>
-      </div></a>
+      </div></button>
     </div>
     
-    <div class="Card" ><a href="UnityProjects.html">
+    <div class="Card" ><button onclick="ToggleSection('.other')" style = "width: 100%;">
       <h1>Other Projects</h1>
       <div>
         <img src="../images/icons/More.png"></img>
-      </div></a>
+      </div></button>
     </div>
 
-    <!--
-    <div class="Card" ><a href="UnityProjects.html">
+    <div class="Card ThreeD" ><a href="" target="_blank" style = "width: 100%;">
       <h1>View in 3D</h1>
       <div>
         <img src="../images/icons/3DView.png"></img>
       </div></a>
     </div>
-  -->
+
     <!--End Card-->
   </div>
 </div>
 
 <!--Projects List-->
-<div class = "FillWide">
+<div class = "FillWide" id="ProjectList">
   <h1 class = "NameH1" style="text-align: center;color:white; padding: 60px 0 40px 0">Projects</h1>
   <div class = "list-card">
-    <div class ="cardwrapper unreal">
-      <img src="../images/icons/UnrealLogo.png"> <!--This Should be the project LOGO-->
-      <div>
-        <h1> Unreal Project </h1>
-        <h2>Summary Description of the text</h2>        
-      </div>
-    </div>
+   
+    <a href="https://jbirdie100.itch.io/the-other-side" target="_blank">
+      <div class ="cardwrapper unity"> 
+        <img src="../images/portfolio/OtherSide.png" style="border-radius: 20px;"> <!--This Should be the project LOGO-->
+        <div>
+          <h1>The Other Side</h1>
+          <h2 >Chaotic Ship Management Game </h2> 
+          <p>Made as Part of the Snappy Gurus 2024 Summer Jam, theme "The Grass is Greener on the Other Side"</p>
+        </div>
+      </div> 
+    </a>
 
-    <!---->
-    <div class ="cardwrapper unity">
-      <img src="../images/icons/UnityLogo.png">
-      <div>
-        <h1> Unity Project </h1>
-        <h2>Summary Description of the text</h2>
-      </div>
-    </div>
-    <!---->
-    
-    <div class ="cardwrapper blender">
-      <img src="../images/icons/UnityLogo.png">
-      <div>
-        <h1> Blender Project </h1>
-        <h2>Summary Description of the text</h2>
-        
-      </div>
-    </div>
-    <!---->
-    
-    <div class ="cardwrapper">
-      <img src="../images/icons/UnityLogo.png">
-      <div>
-        <h1>Uncategorised Project </h1>
-        <h2>Summary Description of the text</h2>
-        
-      </div>
-    </div>
+    <a href="MechHead.html">
+      <div class ="cardwrapper unreal"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> <!--This Should be the project LOGO-->
+        <div>
+          <h1>Mech Head </h1>
+          <h2>Twin Stick Arcade Shooter </h2> 
+          <p>Made as Part of the 1Up Scheme from Staffordshire University</p>
+        </div>
+      </div> 
+    </a>
 
+    <a href="SkeletalDismemberment.html">
+      <div class ="cardwrapper unreal"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>Skeletal Dismemberment Plugin </h1>
+          <h2>Free Unreal Engine Plugin</h2> 
+          <p>A short 2 Week project to learn plugins and editor tooling for unreal in C++</p>
+        </div>
+      </div> 
+    </a>
+    
+    <!--Second Year Start-->
+
+    <a href="UIModule.html" target="_blank">
+      <div class ="cardwrapper unreal"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>User Interface Design & Implementation</h1>
+          <h2>2nd Year Games Collaboration Module</h2> 
+          <p>9 Week long Module to create a game as part of a team</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="JuniorCollab.html" target="_blank">
+      <div class ="cardwrapper unreal"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>Junior Games Collaboration Module</h1>
+          <h2>2nd Year Games Collaboration Module</h2> 
+          <p>9 Week long Module to create a game as part of a team</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="GameAI.html" target="_blank">
+      <div class ="cardwrapper unity"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>Game Artificial Intelligence</h1>
+          <h2>2nd Year Game AI Module</h2> 
+          <p>9 Week long module to create steering behaviours and pathfinding algorithms</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="AdvancedMechanics.html" target="_blank">
+      <div class ="cardwrapper unity"> 
+        <img src="../images/portfolio/AMD/Tank.png"> 
+        <div>
+          <h1>AMD Module</h1>
+          <h2>2nd Year Advanced Mechanics Design Module</h2> 
+          <p>9 Week long module to create spline mesh generator, Physics based Tank and an ECS system in unity</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="IntroMechanicsDesign.html" target="_blank">
+      <div class ="cardwrapper unity"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>Intro to Mechanics Design</h1>
+          <h2>2nd Year Intro to Mechanics Design Module</h2> 
+          <p>9 Week long Module to learn the basics to mechanic programming in unity</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="CPPForEngines.html" target="_blank">
+      <div class ="cardwrapper unreal"> 
+        <img src="../images/portfolio/C4E/UnrealLogoCPP.png"> 
+        <div>
+          <h1>C++ For Engines</h1>
+          <h2>2nd Year Intro to Mechanics Design Module</h2> 
+          <p>9 Week long Module to learn the basics to mechanic programming in unity</p>
+        </div>
+      </div> 
+    </a>
+
+  <!--Second Year End-->
+
+  <!--First Year Start-->
+    <a href="AdvancedMechanics.html" target="_blank">
+      <div class ="cardwrapper other"> 
+        <img src="../images/portfolio/SDLMario/MarioLogo.png"> 
+        <div>
+          <h1>SDL Mario</h1>
+          <h2>2nd Year Advanced Mechanics Design Module</h2> 
+          <p>A short 2 Week project to learn plugins and editor tooling for unreal in C++</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="RapidGamesPrototyping.html" target="_blank">
+      <div class ="cardwrapper unity"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>Rapid Games Prototyping</h1>
+          <h2>1st Year Unity Programming Module</h2> 
+          <p>A short 2 Week project to learn plugins and editor tooling for unreal in C++</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="3DGameEngine.html">
+      <div class ="cardwrapper unreal"> 
+
+        <img src="../images/icons/UnrealLogo.png"> 
+        <div>
+          <h1>3D Game Engines</h1>
+          <h2>1st Year Intro to Unreal Blueprinting</h2> 
+          <p>A 32 Week module learning the basics on how to blueprint for Unreal</p>
+        </div>
+      </div> 
+    </a>
+
+    <a href="GameDesign.html" target="_blank">
+      <div class ="cardwrapper other games-design"> 
+        <img src="../images/portfolio/mechhead/MechHeadLogo.png"> 
+        <div>
+          <h1>Games Design</h1>
+          <h2>1st Year Games Design Module</h2> 
+          <p>A 32 Week module learning the basics on how to make games</p>
+        </div>
+      </div> 
+    </a>
+<!--First Year End-->
   </div>
 </div>
 </body>

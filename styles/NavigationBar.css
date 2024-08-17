@@ -3,10 +3,11 @@
 div.NavBar{
     background-color: #131618;
     height: fit-content;
-    width: fit-content;
     text-align: right;
     margin : 0px;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .MenuIcon{
