@@ -1,9 +1,18 @@
 window.addEventListener('load',function() {
-    //ToggleAll();
+
+
+
 });
 
-
 function ToggleSection(string) {
+
+    HideAll();
+    
+    //Show All Button
+    let x = document.getElementById("ShowAllButton");
+    x.style.visibility = "visible";
+
+    //Hide all other cards
     const Query = document.querySelectorAll(string);
     for (let i = 0; i < Query.length; i++) {
         if (Query[i].style.display === "none") {
@@ -13,39 +22,23 @@ function ToggleSection(string) {
             Query[i].style.display = "none";
         }
     }
-    CheckProjectList();
 }
 
-function ToggleAll(){
+function HideAll(){
 
     const Query = document.querySelectorAll(".cardwrapper");
     for (let i = 0; i < Query.length; i++) {
 
         Query[i].style.display = "none";
     }
-    CheckProjectList();
 }
+function ShowAll(){
 
-function CheckProjectList(){
     const Query = document.querySelectorAll(".cardwrapper");
-    const ProjectList = document.getElementById("ProjectList");
-
-    let VisibleElements = 0;
     for (let i = 0; i < Query.length; i++) {
-        if (Query[i].style.display === "inline-flex") {
-            VisibleElements++;
-        } 
 
+        Query[i].style.display = "inline-flex";
     }
-
-    if(VisibleElements == 0){
-        ProjectList.style.display="none";
-        ProjectList.style.visibility="collapsed";
-
-    }
-    else{
-        ProjectList.style.display="block";
-        ProjectList.style.visibility="visible";
-
-    }
+    let x = document.getElementById("ShowAllButton");
+    x.style.visibility = "collapse";
 }

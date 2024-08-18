@@ -101,8 +101,8 @@ div.Card a:link{
 @media all and (min-width:0px) and (max-width: 960px) {
     
     div.Card{
-        width: 90%;
-        height: 40%;
+        width: 60%;
+        height: 20%;
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -117,6 +117,7 @@ div.Card a:link{
     
     div.Card h1{
         font-size:60px;
+        margin-bottom: 0px;
     }
 
     .ThreeD{
@@ -156,7 +157,8 @@ div.list-card {
 }
 
 div.cardwrapper{
-    background-color: rgb(109, 136, 255);
+    background-color: #101014;
+
     gap:20px;
     width: 100%;
     margin:10px 0;
@@ -165,13 +167,13 @@ div.cardwrapper{
     display: inline-flex;
     flex-direction: row;
     text-align: left;
-    transition: 0.5s;
+    transition: 0.4s;
     
 }
 
 div.cardwrapper:hover{
     background-color: #002b4e;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 div.cardwrapper img{
@@ -209,37 +211,57 @@ div.cardwrapper p{
 }
 
 .unreal{
-    background-color: #101014 !important;
+    background-color: rgb(14, 69, 94) !important;
+    box-shadow: -10px 0 0 0 rgb(38, 187, 255);
 }
 .unreal:hover{
     background-color: rgb(38, 187, 255) !important;
 }
 
 .unity{
-    background-color: #101014 !important;
+    background-color: rgb(1, 78, 78) !important;
+    box-shadow: -10px 0 0 0 rgb(0, 204, 204);
+
 }
 .unity:hover{
     background-color: rgb(0, 204, 204) !important;
 }
 
 .blender{
-    background-color: rgb(244, 121, 43) !important;
+    background-color: rgb(185, 89, 29) !important;
+
+    box-shadow: -10px 0 0 0 rgb(244, 121, 43);
+    
 }
 .blender:hover{
-    background-color: rgb(255, 161, 103) !important;
+    background-color: rgb(244, 121, 43) !important;
 
 }
 
 .games-design{
     background-color: rgb(55, 90, 51) !important;
+    box-shadow: -10px 0 0 0 rgb(59, 128, 20) ;
+
 
 }
 .games-design:hover{
-    background-color: rgb(255, 161, 103) !important;
+    background-color: rgb(59, 128, 20) !important;
 
 }
 
+.mario{
+    
+    background-color: rgb(72, 79, 110) !important;
+    box-shadow: -10px 0 0 0 rgb(109, 136, 255);
+    
+}
+.mario:hover{
+    background-color: rgb(109, 136, 255) !important;
+
+
+}
 
 .other{
     background-image: none;
+    
 }

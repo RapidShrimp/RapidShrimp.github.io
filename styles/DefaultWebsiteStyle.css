@@ -8,6 +8,10 @@ Colours{
     background-color: #D9BDC5;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body 
 {
     background-color: #6B818C;
@@ -21,12 +25,8 @@ body
     margin-bottom: 0px;
     font-size: 100px;
     font-family: sans-serif;
-
 }
 
-div.Centered{
-    text-align: center;
-}
 
 div.FillWide{
     width: auto;
@@ -67,20 +67,62 @@ p.Paragraph{
     text-align: center;
 }
 
+.rounded-button{
+    border-radius: 12px;
+    background-color:rgba(0, 0, 0, 0.479);
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.rounded-button:hover{
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 4px  0 rgb(0, 195, 255);
+    transition:0.3s;
+}
+.rounded-button h1{
+    color: white;
+    transition: 0.2s;
+}
+.rounded-button:hover h1{
+    color:black;
+    transition: 0.2s;
+} 
 
-.contact-slot{
+/*Contact Container*/
+.contact-container{
+    display: inline-flex;
+    text-decoration: none;
+    flex-direction: column;
+    text-align: left;
+    height:fit-content;
+    gap:10px;
+}
+
+.contact-row{
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    vertical-align: bottom;
+    height: 60px;
+}
+
+.contact-info{
     display: inline-flex;
     flex-direction: row;
-    background-color: transparent;
+    vertical-align: bottom;
+    text-align-last: left;
 }
-.contact-slot img{
-    background-color: greenyellow;
-    height: 128px;
-}
-.contact-slot h1{
-    font-size: 64px;
-    font-family: sans-serif;
+.contact-info h1{
+    color:white;
     text-decoration: none;
+    height: fit-content;
+    margin: auto;
+    margin-left: 0;
+    font-family: sans-serif;
+    padding: 0 10px 0 10px;
+    font-size: 300%;
 }
 
 
