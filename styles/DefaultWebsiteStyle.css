@@ -23,7 +23,7 @@ body
     color: #1B2023;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 100px;
+    font-size: calc(1vh+1vw);
     font-family: sans-serif;
 }
 
@@ -149,8 +149,5 @@ p.Paragraph{
         box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
     }
 
-    div.Card h1{
-        font-size:60px;
-    }
 }
   
