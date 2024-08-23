@@ -8,40 +8,42 @@
     }
   }
   
-  .logos {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  .logos-slide img {
-    height: 540px;
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  vertical-align: top;
 }
-    .logos-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-    }
   
-  .logos:before,
-  .logos:after {
-    position: absolute;
-    top: 0;
-    width: 40px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-  }
-  
-  .logos:before {
-    left: 0;
-    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0px, rgb(0, 0, 0) 70px);
-  }
-  
-  .logos:after {
-    right: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgb(0, 0, 0) 70px);
 
-  }
+.logos-slide {
+  display: inline-block;
+  height: 100%;
+  animation: 35s slide infinite linear;
+}
   
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+} 
+  
+.logos:before {
+  left: 0;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0px, rgb(0, 0, 0) 70px);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgb(0, 0, 0) 70px);
+
+}
+.logos-slide img {
+  height: 100%;
+}
   
   
