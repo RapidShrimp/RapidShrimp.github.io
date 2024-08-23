@@ -151,3 +151,12 @@ p.Paragraph{
 
 }
   
+
+.profile-flex{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 2%;
+    width: 100%;
+}
