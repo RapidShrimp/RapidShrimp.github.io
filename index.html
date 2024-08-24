@@ -4,20 +4,31 @@
     <head>
         <link rel="stylesheet" href="styles/NavigationBar.css">
         <link rel="stylesheet" href="styles/DefaultWebsiteStyle.css">
-
     </head>
-
+    
     
     <body>
-        <div class="NavBar">
-            <a href="" class="icon-container">
-                <img src = "images/icons/burger.png">
-            </a>
-        </div>
 
-        <div class="NavDiv">
+        
+        <!--Nav Menu-->
+        <div class ="off-screen-menu">
+            <ul style="width: 100%;">
+                <a href="index.html"><li>Home</li></a>
+                <a href="PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="About.html"><li>About</li></a>
+                <a href="Contacts.html"><li>Contact</li></a>
+            </ul>
         </div>
-
+        
+        <nav>
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+        </nav>
+        
+        <script src="Navigation.js"></script> 
 
         <!--Name-->
         <div style="margin: 0px 50px 50px 50px;">
@@ -26,9 +37,9 @@
         </div>
 
         <!--About Me-->
-        <div class="FillWide" style="padding: 2%;">
+        <div class="FillWide" style="padding: 2%; margin:0 50px; border-radius: 24px;">
             <div class="profile-flex" style="flex: 1;">
-                <img src ="images/portfolio/MechHead/MechHeadLogo.png" style="height:350px;">
+                <img src ="images/portfolio/MechHead/MechHeadLogo.png" style="height:350px; width: auto;">
                 <div class="profile-flex" style="flex-direction: column; width: 100%;  justify-content: space-between;">
                     <div>
                         <h1>Hi im Adam :wave:</h1>
@@ -36,7 +47,7 @@
                     </div>
                     <div>
                         <div class="rounded-button" style="margin: auto; width: 50%;">
-                            <a href="About.html" style = "text-decoration: none;"><h1 style="text-align: center; padding: 15px 10px;">About Me</h1></a>
+                            <a href="About.html" style = "text-decoration: none;"><h1 style="text-align: center; padding: 15px 10px; font-family: sans-serif;">About Me</h1></a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +55,7 @@
             </div>
         </div>
 
-        
+        <div style="margin: 50px;"></div>
         <!--Portfolio-->
         <div class = "FillWide">
             <div style="padding-top: 250px;margin: auto; width: 50%; text-align: center;">
