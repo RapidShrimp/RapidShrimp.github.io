@@ -1,4 +1,7 @@
 
+.NavDiv{
+    margin-top: 80px;
+}
 
 div.NavBar{
     margin : 0px;
@@ -25,4 +28,18 @@ div.NavBar{
 
 footer.Default{
     background-color: #131618;
+}
+
+@media all and (min-width:0px) and (max-width: 960px) {
+    .NavDiv{
+        margin-top: 150px;
+    }
+    div.NavBar{
+        height: 150px;
+    }
+
+    .icon-container{
+        height:150px;
+        width: 150px;
+    }  
 }
