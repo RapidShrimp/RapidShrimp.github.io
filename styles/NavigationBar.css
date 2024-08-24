@@ -1,22 +1,27 @@
 
 
 div.NavBar{
-    background-color: #131618;
-    height: fit-content;
-    text-align: right;
     margin : 0px;
-    width: 100%;
     position: fixed;
     top: 0;
+    
+    background-color: #131618;
+    text-align: right;
+    height: 80px;
+    width: 100%;
 }
 
-.MenuIcon{
-    color: #D9BDC5;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: 0px;
-    width: fit-content;
+.icon-container{
+    height:80px;
+    width: 80px;
+    float: right;
+    padding-right:10px;
+    align-content: center;
 }  
+
+.icon-container img{
+    aspect-ratio: 1 / 1;
+}
 
 footer.Default{
     background-color: #131618;
