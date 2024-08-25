@@ -84,25 +84,28 @@ p.Paragraph{
     display: inline-flex;
     flex-direction: column;
     text-decoration: none;
-
+    gap:10px;
     vertical-align: bottom;
-    height: 60px;
 }
 
 .contact-info{
+    height: 60px;
     display: inline-flex;
     flex-direction: row;
     vertical-align: bottom;
     text-align-last: left;
 }
+.contact-info img{
+    height: auto;
+    width: 60px;
+}
 .contact-info h1{
     color:white;
     text-decoration: none;
-    height: fit-content;
-    margin: auto;
-    margin-left: 0;
+    margin: auto 0;
+    font-size: 100%;
+    width: auto;
     padding: 0 10px 0 10px;
-    font-size: 300%;
 }
 
 .profile-flex{
