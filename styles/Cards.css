@@ -10,7 +10,6 @@ div.Card{
     border-radius: 10px;
     text-decoration: none;
     transform: translateY(0px);
-
     background-color: rgba(0, 0, 0, 0.479);
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
     transition: all 0.35s, background-color 0.35s, box-shadow 0.35s;

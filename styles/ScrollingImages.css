@@ -13,6 +13,7 @@
   white-space: nowrap;
   position: relative;
   vertical-align: top;
+  z-index: -1;
 }
   
 

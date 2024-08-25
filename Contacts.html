@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <title>Adam Shrimpton - Contact Me</title>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <head>
         <link rel="stylesheet" href="./styles/NavigationBar.css">
@@ -8,30 +9,41 @@
     </head>
     
     <body>
+        <!--Nav Menu-->
+        <div class ="off-screen-menu">
+            <ul class="off-screen-menu-content">
+                <a href="index.html"><li>Home</li></a>
+                <a href="PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="About.html"><li>About</li></a>
+                <a href="Contacts.html"><li>Contact</li></a>
+            </ul>
+        </div>
         
-        <div class="NavBar">
-            <a class ="MenuIcon"><img src = "images/icons/burger.png"></a>
-        </div>
+        <nav>
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+        </nav>
+        <script src="Navigation.js"></script> 
 
+        <div class = "contact-container" style="width: 70%; margin: 5% auto 0px auto;">
+        
+                <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class = "contact-row">
 
-            <div class = "contact-container" style="width: 70%; margin: 5% auto 0px auto;">
+                    <div class = "contact-info">
+                        <img src="./images/icons/linkedin.png">
+                        <h1>LinkedIn - adamshrimpton</h1>
+                    </div>
+                    <div class = "contact-info">
+                        <img src="./images/icons/linkedin.png">
+                        <h1>LinkedIn - adamshrimpton</h1>
+                    </div>
+                </a>
             
-                    <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class = "contact-row">
+        </div> 
 
-                        <div class = "contact-info">
-                            <img src="./images/icons/linkedin.png">
-                            <h1>LinkedIn - adamshrimpton</h1>
-                        </div>
-                        <div class = "contact-info">
-                            <img src="./images/icons/linkedin.png">
-                            <h1>LinkedIn - adamshrimpton</h1>
-                        </div>
-                    </a>
-                
-            </div>
-            
-        </div>
- 
     </body>
     
 </html>
