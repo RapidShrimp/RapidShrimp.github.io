@@ -143,4 +143,9 @@ p.Paragraph{
     }
 }
   
-
+.to-replace-text{
+    align-content: center;
+    width: 100%;
+    font-size: 5vw;
+    color: white;
+}
