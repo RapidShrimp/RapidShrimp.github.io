@@ -19,7 +19,7 @@
 
 .logos-slide {
   display: inline-block;
-  height: 100%;
+  height: 540px;
   animation: 35s slide infinite linear;
 }
   

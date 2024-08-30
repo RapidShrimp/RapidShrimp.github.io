@@ -175,8 +175,5 @@ p.Paragraph{
 }
 
 .to-replace-image.active{
-    color: black;
-    filter:url("");
     transition: 0.4s;
-
 }
