@@ -48,7 +48,7 @@ p.Paragraph{
 
 .rounded-button{
     border-radius: 12px;
-    background-color:rgba(0, 0, 0, 0.479);
+    background-color:rgba(26, 26, 26, 0.95);
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
 
     transition: 0.3s;
@@ -141,11 +141,41 @@ p.Paragraph{
     .profile-flex{
         flex-direction: column;
     }
+
+    .to-replace-image{
+        background-image: none !important;
+    }
+
 }
   
 .to-replace-text{
     align-content: center;
+    margin: 0px;
+    height: 120px;
     width: 100%;
-    font-size: 5vw;
+    font-size: calc(1vw+1vh);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.556);
     color: white;
+    transition: 0.4s;
+}
+
+.to-replace-text.active{
+    color: transparent;
+    transition: 0.4s;
+}
+
+.to-replace-image{
+    color: white;
+    transition: 0.4s;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+.to-replace-image.active{
+    color: black;
+    filter:url("");
+    transition: 0.4s;
+
 }
