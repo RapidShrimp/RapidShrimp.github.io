@@ -155,7 +155,7 @@ p.Paragraph{
     width: 100%;
     font-size: calc(1vw+1vh);
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.556);
+    background-color: rgba(0, 0, 0, 0.789);
     color: white;
     transition: 0.4s;
 }
@@ -168,9 +168,10 @@ p.Paragraph{
 .to-replace-image{
     color: white;
     transition: 0.4s;
+    height: 40%;
     background-position: center;
     background-repeat:no-repeat;
-    background-size: contain;
+    background-size:cover;
 }
 
 .to-replace-image.active{
