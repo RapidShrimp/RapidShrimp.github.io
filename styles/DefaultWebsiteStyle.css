@@ -72,6 +72,9 @@ p.Paragraph{
 
 /*Contact Container*/
 .contact-container{
+    margin-top: 50px;
+    background-color: black;
+    color:white;
     display: inline-flex;
     text-decoration: none;
     flex-direction: column;
@@ -81,6 +84,7 @@ p.Paragraph{
 }
 
 .contact-row{
+    padding: 10px;
     display: inline-flex;
     flex-direction: column;
     text-decoration: none;
@@ -103,8 +107,8 @@ p.Paragraph{
     color:white;
     text-decoration: none;
     margin: auto 0;
-    font-size: 100%;
-    width: auto;
+    font-size: calc(1vh + 2vw);
+    width: fit-content;
     padding: 0 10px 0 10px;
 }
 
@@ -144,15 +148,32 @@ p.Paragraph{
 
     .to-replace-image{
         background-image: none !important;
-    }
+        visibility: collapse;
+        padding: 0px;
+        opacity: 0;
 
+        margin: 0px;
+        height: 0px !important;
+    }
+    .to-replace-text{
+        opacity: 0;
+        visibility: collapse !important;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contact-info span{
+        visibility: collapse !important;
+        width: 0px;
+        font-size: 0px;
+    }
 }
-  
+
 .to-replace-text{
     align-content: center;
     margin: 0px;
-    height: 120px;
+    height: 100px;
     width: 100%;
+    text-align: center;
     font-size: calc(1vw+1vh);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.789);
@@ -168,7 +189,7 @@ p.Paragraph{
 .to-replace-image{
     color: white;
     transition: 0.4s;
-    height: 40%;
+    height: 540px;
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -176,4 +197,22 @@ p.Paragraph{
 
 .to-replace-image.active{
     transition: 0.4s;
+}
+
+.fillwide-content{
+    padding: 2%; margin:20px 50px; border-radius: 24px;
+}
+.content-box{
+    display: inline-flex;
+    text-align: center;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+.content-right{
+    text-align: right;
+}
+.content-left{
+    text-align: left;
+    flex-direction: row-reverse;
 }

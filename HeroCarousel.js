@@ -38,7 +38,6 @@ function NextItem(){
     var value = HeroList[key];
     SetText(key);
     SetImage(value);    
-    console.log(CurrentIndex);
     setTimeout(RevealHero,5000);
 
 }
