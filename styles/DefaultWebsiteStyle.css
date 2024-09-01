@@ -96,11 +96,16 @@ p.Paragraph{
     height: 60px;
     display: inline-flex;
     flex-direction: row;
-    vertical-align: bottom;
     text-align-last: left;
+    vertical-align: middle;
+    align-items: center;
+
 }
 .contact-info img{
     height: auto;
+    vertical-align: middle;
+    align-items: center;
+
     width: 60px;
 }
 .contact-info h1{
