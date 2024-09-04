@@ -13,11 +13,15 @@ p{
 
 /*Repsonsive Containers*/
 .responsive-container{
-    padding: 80px 64px;
+    padding: 96px 128px;
     max-width: 1792px;
 }
 
-
+@media all and (min-width:0px) and (max-width: 960px) {
+    .responsive-container{
+        padding:40px 32px;
+    }
+}
 /*Flexboxes*/
 .d-flex{
     display: flex;
@@ -41,16 +45,20 @@ p{
     display: flex;
     flex-direction: row;
 }
-@media all and (min-width:0px) and (max-width: 960px) {
+
+@media all and (min-width:0px) and (max-width: 1150px) {
     .flex-will-change{
         flex-direction: column;
         position: static;
     }
+    .overlay-behind{
+        position: static;
+        width: auto;
+        left: auto;
+    }
+
 }
-.position-right{
-    position: relative;
-    float:right;
-}
+
 
 /*Gaps*/
 .gap-1{
@@ -100,6 +108,10 @@ p{
 .content-video{
     max-width: 100%;
     border-radius: 12px;
+}
+
+.drop-shaddow{
+    text-shadow: 2px 2px 5px #101014;
 }
 
 /*Cards*/

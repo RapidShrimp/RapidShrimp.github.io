@@ -3,7 +3,7 @@
 <html>
   <meta name="viewport" content="width=device-width">
   <head>
-    <link rel="stylesheet" href="../styles/DefaultWebsiteStyle.css">
+    <link rel="stylesheet" href="../styles/WebsiteStyle.css">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
     <link rel="stylesheet" href="../styles/Cards.css">
     <link rel="stylesheet" href="../styles/ScrollingImages.css">
@@ -50,12 +50,12 @@
       </div>
     
     <!--Cards Container-->
-    <div class = "FillWide" style="padding-bottom: 50px; height: 70%; margin-top: 40px; margin-bottom: 40px; text-align: center;">
+    <div class = "responsive-container items-center">
       
-      <h1 style="margin:30px; font-family: sans-serif; font-size: 50px; color: white; padding:70px 0 40px 0">Category Selection</h1>
+      <h1 class="content-text" style="text-align: center;">Category Selection</h1>
 
       <!--Cards with Image ontop of a button--> 
-      <div class ="SameRow" style="margin-left: 5%; margin-right: 5%;">
+      <div class ="d-flex justify-center flex-will-change" >
         
         <div class="Card" >
           <a href = "#ProjectList">
@@ -103,7 +103,7 @@
       <!--Show All X Projects-->
       <a href = "#ProjectList" style=" visibility: collapse;">
       <div style="text-align: center; margin-top: 5%;">
-          <div class = "rounded-button" id="ShowAllButton" style=" height: auto; width: 40%; margin: auto;">    
+          <div class = "highlight-button" id="ShowAllButton">    
             <button onclick="ShowAll()" style="width: 100%; height: 100%; background-color: transparent; border: transparent;"> <h1>Show All (14) Projects</h1></button>
           </div>
         </div>
@@ -111,8 +111,8 @@
       </div>
     
     <!--Projects List-->
-    <div class = "FillWide" id="ProjectList">
-      <h1 class = "Title" style="margin-bottom: 0; text-align: center;color:white; padding: 60px 0 0 0">Projects</h1>
+    <div class = "responsive-container" id="ProjectList" style=" padding-top: 0px;">
+      <h1 class = "content-text text-size-title" style="text-align: center;">Projects</h1>
       <div class = "list-card">
         
         <a href="https://jbirdie100.itch.io/the-other-side" target="_blank">
