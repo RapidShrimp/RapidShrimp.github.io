@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <title>Adam Shrimpton - Homepage</title>
 <html>
-    <meta name="viewport" content="width=device-width">
-
+    
     <head>
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/NavigationBar.css">
         <link rel="stylesheet" href="styles/WebsiteStyle.css">
     </head>
     
     
-<body class="items-center">
+<body >
 
-
-        <div class="responsive-container content-text">
-            <div class="d-flex flex-column gap-2 justify-center">
-                <div class="d-flex flex-column text-size-1 gap-1">
-                    <p>Adam Shrimpton</p>
-                    <p>Game Programmer</p>
-                </div>
-                <div class="text-size-2">
-                    <p>
-                        Im a Level 6 Games Design and Programming student at Staffordshire University, 
-                        i am currently working on my website in an attempt to make it similar to the Epic Games Unreal website as
-                        i am proficient in Unreal Engine 
-                    </p>
-                </div>
-                <div class="d-flex flex-row gap-3 items-center">
-                    <a class="highlight-button link-hide" href="Contacts.html">Contact</a>
-                    <a class="accessory-button link-hide" href="About.html">More about me</a>
-                </div>
-                <div class="video item-flex-end">
-                    <video class="content-video aspect-16_9" autoplay muted loop>
-                        <source src="videos/TankExample.mkv">
-                    </video>
-                </div>
-            </div>
-        </div>
-            
-        <div class="responsive-container d-flex flex-column gap-3">
-            
-            <div class="d-grid flex-row items-center justify-space-between gap-2">
-                <p class="content-text text-size-1">Featured Projects</p>
-                <a href="PortfolioPages/Portfolio.html" class="accessory-button link-hide">View All</a>
-            </div> 
-
-            <div class="d-grid flex-row gap-3">
-                <span class="content-card">
-                    TheOtherSide
-                </span>
-                <span class="content-card">
-                    Mech Head
-                </span>
-                <div class="content-card">
-                    Advanced Mechanics Design
-                </div>
-            </div>
+    <div class ="off-screen-menu">
+        <ul class="off-screen-menu-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+            <a href="../About.html"><li>About</li></a>
+            <a href="../Contacts.html"><li>Contact</li></a>
+        </ul>
+      </div>
+      <nav class="d-flex flex-row justify-space-between items-center no-pad">
+        <div class="d-flex flex-row dropdown">
+            <a class="dropdown-button active-dropdown"><li>Home</li></a>
+            <a class="dropdown-button"><li>Portfolio</li></a>
+            <a class="dropdown-button"><li>About</li></a>
+            <a class="dropdown-button"><li>Contact</li></a>
         </div>
 
+        <div class = "ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+      </nav>
+      <script src="Navigation.js"></script> 
 
-        <div class="responsive-container">
-            <div class="d-flex flex-row">
-                <p class="content-text text-size-1">Contact Me</p>
+<div style="display: grid;place-content: center;">
+
+    <div class="responsive-container content-text d-flex items-center flex-will-change gap-2">
+        
+        <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-column text-size-title gap-1">
+                <p>Adam Shrimpton</p>
+                <p>Game Programmer</p>
             </div>
-            <div class="d-grid">
-
+            <div class="text-size-2">
+                <p>
+                    Im a Level 6 Games Design and Programming student at Staffordshire University, 
+                    i am currently working on my website in an attempt to make it similar to the Epic Games Unreal website as
+                    i am proficient in Unreal Engine 
+                </p>
+            </div>
+            <div class="d-flex flex-row gap-3 items-center">
+                <a class="highlight-button link-hide" href="Contacts.html">Contact</a>
+                <a class="accessory-button link-hide" href="About.html">More about me</a>
             </div>
         </div>
+
+        <div class="video item-flex-end position-right">
+            <video class="content-video aspect-16_9" autoplay muted loop>
+                <source src="videos/TankExample.mkv">
+            </video>
+        </div>
+    </div>
+    
+    <div class="responsive-container d-flex flex-column gap-3">
+        
+        <div class="d-grid flex-row items-center justify-space-between gap-2">
+            <p class="content-text text-size-1">Featured Projects</p>
+            <a href="PortfolioPages/Portfolio.html" class="accessory-button link-hide">View All</a>
+        </div> 
+        
+        <div class="d-grid flex-row gap-3">
+            <span class="content-card">
+                TheOtherSide
+            </span>
+            <span class="content-card">
+                Mech Head
+            </span>
+            <div class="content-card">
+                Advanced Mechanics Design
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="responsive-container">
+        <div class="d-flex flex-row">
+            <p class="content-text text-size-1">Contact Me</p>
+        </div>
+        <div class="d-grid">
+
+        </div>
+    </div>
+      
+</div>
 </body>
 
 </html>
