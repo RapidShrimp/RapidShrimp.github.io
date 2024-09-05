@@ -1,0 +1,25 @@
+.fade-in{
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.swipe-in-left{
+    animation: swipeInLeft 2.2s;
+}
+.swipe-in-right{
+    animation: swipeInRight 2.2s;
+}
+@keyframes swipeInLeft{
+    0% {transform:translateX(-200%);}
+    100% {transform: translateX(0%);}
+}
+
+@keyframes swipeInRight{
+    0% {transform:translateX(200%);}
+    100% {transform: translateX(0%);}
+}

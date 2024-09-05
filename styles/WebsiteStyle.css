@@ -13,13 +13,17 @@ p{
 
 
 /*Background Effects*/
+
+
 .background-blur{
     position: absolute;
-    width: 90%;
-    filter: blur(100px);
+    overflow: visible;
     z-index: -100;
+    width: 100vw;
+    height: 400px;
+    filter: blur(100px);
+    background-size:cover;
 }
-
 /*Repsonsive Containers*/
 .responsive-container{
     padding: 96px 128px;
@@ -166,6 +170,11 @@ p{
     font-weight: bold;
 }
 
+.text-size-1_5{
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .text-size-2{
     font-size: 20px;
 }
@@ -201,6 +210,15 @@ p{
     transition: 0.4s;
 }
 
+.accessory{
+    padding:10px 15px;
+    color: white;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
 .accessory-button{
     padding:10px 15px;
     color: white;
@@ -217,4 +235,14 @@ p{
 
 .link-hide{
     text-decoration: none;
+}
+
+.no-pointer-events{
+    pointer-events: none;
+}
+
+.contact-icon{
+    height: 60px;
+    width: 60px;
+    background-size: cover;
 }

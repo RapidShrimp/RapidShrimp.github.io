@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/NavigationBar.css">
         <link rel="stylesheet" href="styles/WebsiteStyle.css">
+        <link rel="stylesheet" href="styles/Animations.css">
+
     </head>
     
     
@@ -38,9 +40,9 @@
 <div style="display: grid;place-content: center;">
 
     <!--Introduction + Video-->
-
+    <div class="responsive-container background-blur fade-in " style="background-image: url(images/homepage/backgroundblur.png);"></div>
     <div class="responsive-container content-text d-flex items-center flex-will-change gap-2">
-        <div class="d-flex flex-column gap-4 width-resizer-60">
+        <div class="d-flex flex-column gap-4 swipe-in-left">
             <div class="d-flex flex-column text-size-title gap-1  drop-shaddow">
                 <p>Adam Shrimpton</p>
                 <p>Game Programmer</p>
@@ -58,7 +60,7 @@
             </div>
         </div>
 
-        <div class="video item-flex-end">
+        <div class="video item-flex-end swipe-in-right">
             <video class="content-video aspect-16_9" autoplay muted loop>
                 <source src="videos/TankExample.mkv">
             </video>
@@ -66,7 +68,7 @@
     </div>
     
     <!--Featured Projects-->
-    <div class="responsive-container d-flex flex-column gap-5">
+    <div class="responsive-container d-flex flex-column gap-5 fade-in">
         <div class="d-grid flex-row items-center justify-space-between gap-2">
             <p class="content-text text-size-1">Featured Projects</p>
             <a href="PortfolioPages/Portfolio.html" class="accessory-button link-hide">View All Projects</a>
@@ -79,11 +81,21 @@
         </div>
     </div>
     
-    
+    <!--Contacts Container-->
     <div class="responsive-container">
-        <div class="d-flex flex-column">
-            <p class="content-text text-size-1">Contact Me</p>
-            <div class ="d-flex">
+        <p class="content-text text-size-1" style="padding-bottom: 24px;">Contact Me</p>
+        <div class="d-flex flex-column gap-4 justify-center accessory">
+            <div class="d-flex flex-row gap-5">
+                <a href="https://www.linkedin.com/in/adam-shrimpton/" class="contact-icon" style="background-image: url(images/icons/mail.png);"></a>
+                <a href="https://www.linkedin.com/in/adam-shrimpton/" class="contact-icon" style="background-image: url(images/icons/linkedin.png);"></a>
+                <a href="https://www.linkedin.com/in/adam-shrimpton/" class="contact-icon" style="background-image: url(images/icons/youtube.png);"></a>
+            </div>
+            <div class="d-flex flex-column gap-1">
+                <p class="text-size-1_5">Looking to hire me?</p>
+                <div class="d-flex flex-row flex-will-change justify-space-between content-text gap-2">
+                    <p>Feel free to message me on any of my social platforms, LinkedIn and Email is preffered.<br>Or click the download button and view my CV</p>
+                    <a class="highlight-button link-hide" href="cv" target="_blank">Download</a>
+                </div>
             </div>
         </div>
     </div>
