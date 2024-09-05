@@ -11,6 +11,15 @@ p{
     margin: 0px;
 }
 
+
+/*Background Effects*/
+.background-blur{
+    position: absolute;
+    width: 90%;
+    filter: blur(100px);
+    z-index: -100;
+}
+
 /*Repsonsive Containers*/
 .responsive-container{
     padding: 96px 128px;
@@ -22,6 +31,7 @@ p{
         padding:40px 32px;
     }
 }
+
 /*Flexboxes*/
 .d-flex{
     display: flex;
@@ -51,6 +61,7 @@ p{
         flex-direction: column;
         position: static;
     }
+
     .overlay-behind{
         position: static;
         width: auto;
@@ -119,8 +130,24 @@ p{
     background-color: #404044;
     border-radius: 12px;
     padding: 12px;
-    min-width: 128px;
+    background-position: center;
+    background-size: cover;
 }
+.card-16x9{
+    aspect-ratio: 16/9;
+}
+.width-30{
+    width:30% ;
+}
+
+@media all and (min-width:0px) and (max-width: 1150px) {
+    .content-card{
+        width: auto;
+        max-height: 400px;
+    }
+}
+
+
 /**/
 .no-pad{
     padding: 0px;
