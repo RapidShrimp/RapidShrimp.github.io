@@ -5,6 +5,7 @@
   <head>
     <link rel="stylesheet" href="../styles/WebsiteStyle.css">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/Animations.css">
     <link rel="stylesheet" href="../styles/Cards.css">
     <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <script src="../portfolioCards.js"></script>
@@ -13,105 +14,96 @@
   
   <body>
     
-    <!--Nav Menu-->
 
-    <div class ="off-screen-menu">
-      <ul class="off-screen-menu-content">
-          <a href="../index.html"><li>Home</li></a>
-          <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
-          <a href="../About.html"><li>About</li></a>
-          <a href="../Contacts.html"><li>Contact</li></a>
-      </ul>
-    </div>
-    <nav>
-      <div class = "ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>  
-    </nav>
-    <script src="../Navigation.js"></script> 
 
-    <h1 class = "Title" style="margin: 5px 0 5px 30px">Portfolio</h1>
-    
-    <!--Sliding Image Slideshow-->
-      <div class="logos">
-        <div class="logos-slide">
-          <img src="../images/portfolio/Skeletal Dismemberment/SkeletalDismemberment.png">
-          <img src="../images/portfolio/OtherSideTitle.png"/>
-          <img src="../images/portfolio/mechhead/Fire Sprinkler.png"/>
-        </div>
-        
-        <div class="logos-slide">
-          <img src="../images/portfolio/Skeletal Dismemberment/SkeletalDismemberment.png"/>
-          <img src="../images/portfolio/OtherSideTitle.png"/>
-          <img src="../images/portfolio/mechhead/Fire Sprinkler.png"/>
-        </div>
-      </div>
+<div style="display: grid;place-content: center;">
+
+  
+
     
     <!--Cards Container-->
-    <div class = "responsive-container items-center">
-      
-      <h1 class="content-text" style="text-align: center;">Category Selection</h1>
+    <div class = "responsive-container items-center text-center">
+      <p class = "content-text text-size-title">Portfolio</p>
+    </div>
 
-      <!--Cards with Image ontop of a button--> 
-      <div class ="d-flex justify-center flex-will-change" >
-        
-        <div class="Card" >
-          <a href = "#ProjectList">
-            <button onclick="ToggleSection('.unreal')" style = "width: 100%;">
-              <h1 class="CardH1">Unreal Engine</h1>
-              <div>
-                <img src="../images/icons/UnrealLogo.png"></img>
-              </div>
-            </button>
-          </a>
-        </div>
-        
-        <div class="Card" >
-          <a href = "#ProjectList">
-            <button onclick="ToggleSection('.unity')" style = "width: 100%;">
-              <h1>Unity</h1>
-              <div>
-                <img src="../images/icons/UnityLogo.png"></img>
-              </div>
-            </button>
-          </a>
-        </div>
-        
-        <div class="Card" >
-          <a href = "#ProjectList">
-            <button onclick="ToggleSection('.other')" style = "width: 100%;">
-              <h1>Other Projects</h1>
-              <div>
-                <img src="../images/icons/More.png"></img>
-              </div>
-            </button>
-          </a>
-        </div>
-            
-        <div class="Card ThreeD" ><a href="" target="_blank" style = "width: 100%;">
-          <h1>View in 3D</h1>
-          <div>
-            <img src="../images/icons/3DView.png"></img>
-          </div></a>
-        </div>
-        
+      <!--Sliding Image Slideshow-->
+      <!--
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
+        <img src="../images/portfolio/OtherSideTitle.png"/>
+        <img src="../images/portfolio/mechhead/Fire Sprinkler.png"/>
       </div>
-      <!--End Card-->
+      
+      <div class="logos-slide">
+        <img src="../images/portfolio/Dismemberment/SkeletalDismemberment.png"/>
+        <img src="../images/portfolio/OtherSideTitle.png"/>
+        <img src="../images/portfolio/mechhead/Fire Sprinkler.png"/>
+      </div>
+    </div>
+  -->
+
+
+    <!--Cards with Image ontop of a button-->
+    <div class="responsive-container justify-center items-center text-center d-flex flex-column gap-6">
+      <p class = "content-text text-size-title">Categories</p>
+      
+      <div class ="d-flex justify-center items-center flex-will-change gap-3 width-100">
+
+        <a href = "#ProjectList">
+          <button class="invisible" onclick="ToggleSection('.unreal')">
+            <div class="flex-will-change-invert logo-card content-text gap-5  items-center text-size-1_5">
+              <img src="../images/icons/UnrealLogo.png"> 
+              <p>Unreal Engine</p>
+            </div>
+          </button>
+        </a>
+
+        <a href = "#ProjectList">
+          <button class="invisible" onclick="ToggleSection('.unity')">
+            <div class="flex-will-change-invert logo-card content-text gap-5  items-center text-size-1_5">
+              <img src="../images/icons/UnityLogo.png"> 
+              <p>Unity</p>
+            </div>
+          </button>
+        </a>
+
+        <a href = "#ProjectList">
+          <button class="invisible" onclick="ToggleSection('.other')">
+            <div class="flex-will-change-invert logo-card content-text gap-5  items-center text-size-1_5">
+              <img src="../images/icons/More.png"> 
+              <p>Other Projects</p>
+            </div>
+          </button>
+        </a>
+        <a href = "../About.html">
+          <button class="invisible" onclick="ToggleSection('.other')">
+            <div class="flex-will-change-invert logo-card content-text gap-5  items-center text-size-1_5">
+              <img src="../images/icons/3DView.png"> 
+              <p>3D View</p>
+            </div>
+          </button>
+        </a>
+
+      </div>
 
       <!--Show All X Projects-->
-      <a href = "#ProjectList" style=" visibility: collapse;">
-      <div style="text-align: center; margin-top: 5%;">
-          <div class = "highlight-button" id="ShowAllButton">    
-            <button onclick="ShowAll()" style="width: 100%; height: 100%; background-color: transparent; border: transparent;"> <h1>Show All (14) Projects</h1></button>
-          </div>
-        </div>
-      </a>
+      <div class = "highlight-button highlight-disabled" id="ShowAllButton">    
+        <a href = "#ProjectList">
+          <button class="invisible text-size-1_5" onclick="ShowAll()"> 
+            <p>Show All (14) Projects</p>
+          </button>
+        </a>
       </div>
-    
+
+    </div>
+    <div class="responsive-container background-blur fade-in" style="background-image: url(../images/homepage/backgroundblur-blue.png);"></div>
+
+    <!--End Card-->
+      
+
     <!--Projects List-->
-    <div class = "responsive-container" id="ProjectList" style=" padding-top: 0px;">
+    <div class = "responsive-container" id="ProjectList" style="padding-top: 0px;">
       <h1 class = "content-text text-size-title" style="text-align: center;">Projects</h1>
       <div class = "list-card">
         
@@ -139,7 +131,7 @@
         
         <a href="SkeletalDismemberment.html">
           <div class ="cardwrapper unreal"> 
-            <img src="../images/portfolio/Skeletal Dismemberment/SkeletalDismemberment.png"  style="border-radius: 20px;"> 
+            <img src="../images/portfolio/Dismemberment/SkeletalDismemberment.png"  style="border-radius: 20px;"> 
             <div>
               <h1>Skeletal Dismemberment Plugin (2024)</h1>
               <h2>Free Unreal Engine Plugin</h2> 
@@ -278,6 +270,7 @@
         </a>
 
       </div>
+    </div>
     </div>
   </body>
 </html>

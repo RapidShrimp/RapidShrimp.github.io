@@ -13,13 +13,11 @@ p{
 
 
 /*Background Effects*/
-
-
 .background-blur{
     position: absolute;
     overflow: visible;
     z-index: -100;
-    width: 100vw;
+    width: 80vw;
     height: 400px;
     filter: blur(100px);
     background-size:cover;
@@ -30,7 +28,7 @@ p{
     max-width: 1792px;
 }
 
-@media all and (min-width:0px) and (max-width: 960px) {
+@media all and (min-width:0px) and (max-width: 1150px) {
     .responsive-container{
         padding:40px 32px;
     }
@@ -54,10 +52,20 @@ p{
 .flex-row{
     flex-direction: row;
 }
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.flex-column-reverse{
+    flex-direction: column-reverse;
+}
 
 .flex-will-change{
     display: flex;
     flex-direction: row;
+}
+.flex-will-change-invert{
+    display: flex;
+    flex-direction: column;
 }
 
 @media all and (min-width:0px) and (max-width: 1150px) {
@@ -65,7 +73,9 @@ p{
         flex-direction: column;
         position: static;
     }
-
+    .flex-will-change-invert{
+        flex-direction: row;
+    }
     .overlay-behind{
         position: static;
         width: auto;
@@ -91,6 +101,9 @@ p{
 .gap-5{
     gap:24px;
 }
+.gap-6{
+    gap:30px;
+}
 
 /*Justify*/
 .justify-center{
@@ -115,6 +128,10 @@ p{
     align-items: center;
 }
 
+
+.items-will-change{
+    align-items: start;
+}
 .item-flex-end{
     -ms-flex-align: end;
 }
@@ -137,18 +154,53 @@ p{
     background-position: center;
     background-size: cover;
 }
+
+.logo-card{
+    background-color: rgba(0, 0, 0, 0.479);
+
+    padding: 50px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.logo-card:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 6px 0px  0 rgb(255, 255, 255);
+
+    transition: 0.5s;
+
+}
+
+.logo-card img{
+    height: 256px;
+    width: 256px;
+}
 .card-16x9{
     aspect-ratio: 16/9;
 }
 .width-30{
     width:30% ;
 }
+.width-100{
+    width: 100%;
+}
 
 @media all and (min-width:0px) and (max-width: 1150px) {
     .content-card{
-        width: auto;
+        width: 100%;
         max-height: 400px;
     }
+
+    .logo-card{
+        width: 70vw;
+        padding:20px;
+    }
+    .logo-card img{
+        height: 100px;
+        width: 100px;
+    }
+
 }
 
 
@@ -179,8 +231,11 @@ p{
     font-size: 20px;
 }
 
+.text-center{
+    text-align: center;
+}
 
-@media all and (min-width:0px) and (max-width: 960px) {
+@media all and (min-width:0px) and (max-width: 1150px) {
     .text-size-title{
         font-size: 40px;
     }
@@ -209,7 +264,14 @@ p{
     border-color: #61cdff;
     transition: 0.4s;
 }
-
+.highlight-disabled{
+    background-color: #404044;
+    border-color: #404044;
+    pointer-events: none;
+}
+.highlight-disabled p{
+    color: #29292c;;
+}
 .accessory{
     padding:10px 15px;
     color: white;
@@ -232,6 +294,8 @@ p{
     background-color:rgba(255, 255, 255, 0.25);
     transition: 0.4s;
 }
+
+
 
 .link-hide{
     text-decoration: none;

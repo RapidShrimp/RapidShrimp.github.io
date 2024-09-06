@@ -1,9 +1,8 @@
 
 /*Card Main*/
-div.Card{
+.Card{
     width: 20%;
-    margin-left: auto;
-    margin-right: auto;
+
     padding-bottom: 25%;
     text-align: center;
     padding: 0 0px;
@@ -14,7 +13,7 @@ div.Card{
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.5);
     transition: all 0.35s, background-color 0.35s, box-shadow 0.35s;
 }
-div.Card:hover{
+.Card:hover{
     background-color: rgb(255, 255, 255);
     transform: translateY(-10px);
     box-shadow: 0px 6px 4px  0 rgb(0, 195, 255);
@@ -29,9 +28,6 @@ div.Card img{
 }
 
 div.Card h1{
-    font-family: sans-serif;
-    text-decoration: none;
-    color:white;
     padding:5%; 
     margin-top: 5%;
     height: 50px;
@@ -41,14 +37,14 @@ div.Card h1{
 
 div.Card:hover h1{
     color:black;
-    font-family: sans-serif;
     transition: 0.4s;
 }
 
-div.Card button{
+button.invisible{
     background-color: transparent;
     border: transparent;
 }
+
 .CardButton{
     background-color: #008cff;
     width: fit-content;
@@ -96,7 +92,7 @@ div.Card a:link{
     visibility: visible;
 }
 
-@media all and (min-width:0px) and (max-width: 960px) {
+@media all and (min-width:0px) and (max-width: 1150px) {
     
     div.Card{
         width: 60%;

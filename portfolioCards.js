@@ -10,7 +10,7 @@ function ToggleSection(string) {
     
     //Show All Button
     let x = document.getElementById("ShowAllButton");
-    x.style.visibility = "visible";
+    x.classList.toggle("highlight-disabled");
 
     //Hide all other cards
     const Query = document.querySelectorAll(string);
@@ -40,5 +40,5 @@ function ShowAll(){
         Query[i].style.display = "inline-flex";
     }
     let x = document.getElementById("ShowAllButton");
-    x.style.visibility = "collapse";
+    x.classList.toggle("highlight-disabled");
 }
