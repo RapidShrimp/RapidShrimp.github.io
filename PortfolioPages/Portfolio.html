@@ -13,19 +13,34 @@
   </head>
   
   <body>
-    
+    <div class ="off-screen-menu">
+      <ul class="off-screen-menu-content">
+          <a class="active-dropdown"href="index.html"><li>Home</li></a>
+          <a href="PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+          <a href="../About.html"><li>About</li></a>
+          <a href="../Contacts.html"><li>Contact</li></a>
+      </ul>
+    </div>
+    <nav class="d-flex flex-row justify-space-between items-center no-pad">
+      <div class="d-flex flex-row dropdown">
+          <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+          <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
+          <a href="../About.html" class="dropdown-button"><li>About</li></a>
+          <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
+      </div>
+
+      <div class = "ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>  
+    </nav>
+    <script src="../Navigation.js"></script> 
 
 
 <div style="display: grid;place-content: center;">
 
-  
-
-    
     <!--Cards Container-->
-    <div class = "responsive-container items-center text-center">
-      <p class = "content-text text-size-title">Portfolio</p>
-    </div>
-
       <!--Sliding Image Slideshow-->
       <!--
     <div class="logos">
@@ -45,8 +60,8 @@
 
 
     <!--Cards with Image ontop of a button-->
-    <div class="responsive-container justify-center items-center text-center d-flex flex-column gap-6">
-      <p class = "content-text text-size-title">Categories</p>
+    <div class="responsive-container justify-center items-center text-center d-flex flex-column gap-6 bottom-fade-in">
+      <p class = "content-text text-size-title">Filter Projects</p>
       
       <div class ="d-flex justify-center items-center flex-will-change gap-3 width-100">
 

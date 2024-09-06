@@ -11,15 +11,34 @@
 .swipe-in-left{
     animation: swipeInLeft 2.2s;
 }
-.swipe-in-right{
-    animation: swipeInRight 2.2s;
-}
 @keyframes swipeInLeft{
     0% {transform:translateX(-200%);}
     100% {transform: translateX(0%);}
 }
 
+
+.swipe-in-right{
+    animation: swipeInRight 2.2s;
+}
 @keyframes swipeInRight{
     0% {transform:translateX(200%);}
     100% {transform: translateX(0%);}
+}
+
+.bottom-fade-in{
+    animation: bottomFadeIn 1.2s;
+}
+
+@keyframes bottomFadeIn {
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
