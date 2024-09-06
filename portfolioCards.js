@@ -1,6 +1,6 @@
 window.addEventListener('load',function() {
 
-
+    
 
 });
 
@@ -10,7 +10,10 @@ function ToggleSection(string) {
     
     //Show All Button
     let x = document.getElementById("ShowAllButton");
-    x.classList.toggle("highlight-disabled");
+    if(x.classList.contains("highlight-disabled")){
+
+        x.classList.remove("highlight-disabled");
+    }
 
     //Hide all other cards
     const Query = document.querySelectorAll(string);
@@ -40,5 +43,7 @@ function ShowAll(){
         Query[i].style.display = "inline-flex";
     }
     let x = document.getElementById("ShowAllButton");
-    x.classList.toggle("highlight-disabled");
+    if(!x.classList.contains("highlight-disabled")){
+        x.classList.add("highlight-disabled");
+    }
 }

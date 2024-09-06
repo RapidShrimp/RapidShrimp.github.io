@@ -9,7 +9,7 @@
 
 
 .swipe-in-left{
-    animation: swipeInLeft 2.2s;
+    animation: swipeInLeft 1.6s;
 }
 @keyframes swipeInLeft{
     0% {transform:translateX(-200%);}
@@ -18,7 +18,7 @@
 
 
 .swipe-in-right{
-    animation: swipeInRight 2.2s;
+    animation: swipeInRight 1.6s;
 }
 @keyframes swipeInRight{
     0% {transform:translateX(200%);}
