@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<title>Portfolio - Quiet Quota</title>
+<head>
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
+    <link rel="stylesheet" href="../styles/WebsiteStyle.css">
+</head>
+
+<body>
+        <!--Nav Menu-->
+
+        <div class ="off-screen-menu">
+            <ul class="off-screen-menu-content">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="../About.html"><li>About</li></a>
+                <a href="../Contacts.html"><li>Contact</li></a>
+            </ul>
+          </div>
+          <nav class="d-flex flex-row justify-space-between items-center no-pad">
+            <div class="d-flex flex-row dropdown">
+                <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
+                <a href="../About.html" class="dropdown-button"><li>About</li></a>
+                <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
+            </div>
+    
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+          </nav>
+          <script src="../Navigation.js"></script> 
+
+        <div style="display: grid;place-content: center;">
+            <div class="responsive-container background-blur fade-in " style="background-image: url(../images/homepage/backgroundblur-red-blue.png);"></div>
+
+            <!--Project Description-->
+          <div class="responsive-container d-flex flex-column gap-2 content-text ">
+            <p class="text-size-title">Quiet Quota</p>
+            <p class="text-size-1">Stealth Game</p>
+            <p class="text-size-2">
+                Quiet Quota is an Isometric stealth game created as part of the 9 week Junior Collaborative project at Staffordshire University.
+                In this module we were matched into teams based on skillset and disciple with both students from the Stoke and London campuses.
+                Our team was 23 strong with our skillset being heavily Design based so we catered our projects to be more technically oriented than artistic.
+            </p>
+          </div>
+            <!--Content GIF-->
+            <div class="responsive-container d-flex flex-column content-text gap-6">
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Room prefab Generation</p>
+                        <p class="text-size-2">
+                            This tool was made so that we could randomise levels to make the game different on each playthrough, 
+                            whilst still allowing designers to plan rooms based on their environments. 
+                            Each designer that creates a room would have to fill a RoomID corresponding to the space in the level that they want to fill, these ID persist in the level and have rooms that can spawn in via data assets.<br>
+                            At runtime the level will randomly stream a room section from the rooms linked to an ID.<br>
+                            Sadly due to time constraints this wasn't used and was left out from the project.
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/RoNpXztLM1I" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Kill Minigame</p>
+                        <p class="text-size-2">
+                            This mechanic was made in the last 48 hours of the project deadline which meant it wouldn't make it into the final game. 
+                            I was requested to make this component for the game and i made it fully modular with other UI elements and it needed to be implemented
+                            on the UI HUD which was currently checked out on the source control so i was unable to implement it. 
+                            This worked on inputs as to not use tick, (Tick was used for debugging purposes in this instance)
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/3B7BMUywTBQ" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Equipment System</p>
+                        <p class="text-size-2">
+                            I made a rudamentary modular equipment system which allowed for more abilities to be created post development if needed.
+                            This system allows for weapons and consumables by spawning an object at runtime which can be accessed by the Equipment System manager,
+                            the manager will handle usage of abilities and checks against the equipment type class to update values on the UI. 
+                            This will be for if equipment has a counter or if the item is on cooldown.
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/1rpB4Z5ol0c" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">AI Behaviour</p>
+                        <p class="text-size-2">
+                            I was in charge of a large part of the project by being entrusted to create the AI, i was tasked with creating AI Detection. 
+                            For this i used the AI Perception component, the depth of this mechanic was detection speed based on distance and the AI would stop to watch you.
+                            I programmed in a chase behaviour and a search behaviour but the Leads for the game would not want this mechanic so i had removed it by final release.
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/AmM7cTPVfd4" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/i-ZWKtDfq_w" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!--Gameplay Video-->
+            <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
+                <p class="text-size-title">Quiet Quota Trailer</p>
+                <iframe class="card-16x9"  src="https://www.youtube.com/embed/we-jpaGCCK8" title="QuietQuotaTrailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a class="highlight-button link-hide" href="https://pixellotto.itch.io/quiet-quota" target="_blank">
+                    <p class="text-size-2">Itch.io Link</p>
+                </a>
+            </div>
+
+
+        </div>
+
+</body>
