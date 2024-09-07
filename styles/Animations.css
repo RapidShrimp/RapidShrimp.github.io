@@ -7,19 +7,20 @@
     100% {opacity: 1;}
 }
 
-
-.swipe-in-left{
-    animation: swipeInLeft 1.6s;
+@media all and (min-width:1150px) {
+    .swipe-in-left{
+        animation: swipeInLeft 1.6s;
+    }
+    .swipe-in-right{
+        animation: swipeInRight 1.6s;
+    }
 }
+
 @keyframes swipeInLeft{
     0% {transform:translateX(-200%);}
     100% {transform: translateX(0%);}
 }
 
-
-.swipe-in-right{
-    animation: swipeInRight 1.6s;
-}
 @keyframes swipeInRight{
     0% {transform:translateX(200%);}
     100% {transform: translateX(0%);}

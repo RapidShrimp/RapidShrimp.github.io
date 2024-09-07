@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<title>Portfolio - User Design and Implementation</title>
+<head>
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
+    <link rel="stylesheet" href="../styles/WebsiteStyle.css">
+</head>
+
+<body>
+        <!--Nav Menu-->
+
+        <div class ="off-screen-menu">
+            <ul class="off-screen-menu-content">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="../About.html"><li>About</li></a>
+                <a href="../Contacts.html"><li>Contact</li></a>
+            </ul>
+          </div>
+          <nav class="d-flex flex-row justify-space-between items-center no-pad">
+            <div class="d-flex flex-row dropdown">
+                <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
+                <a href="../About.html" class="dropdown-button"><li>About</li></a>
+                <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
+            </div>
+    
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+          </nav>
+          <script src="../Navigation.js"></script> 
+
+        <div style="display: grid;place-content: center;">
+            <!--Project Description-->
+            <div class="responsive-container background-blur fade-in" style="background-image: url(../images/homepage/backgroundblur-blue.png);"></div>
+
+          <div class="responsive-container d-flex flex-column gap-3 content-text ">
+            <p class="text-size-title">UI Design & Implementation</p>
+            <p class="text-size-1">Unreal Engine UI Module</p>
+            <p class="text-size-2">
+                This page is dedicated to my work for the UI Design and Implementation module at Staffordshire University, 
+                in this module students were tasked with researching, designing and programming RPG Genre UI Elements. 
+                The criteria set for students were to create an established style of their own and create the following:    
+            </p>
+            <li>Pause Menus</li>
+            <li>HUD Elements</li>
+            <li>Shops</li>
+            <li>An Inventory</li>
+            <li>Other UI Elements the student wants to include</li>
+
+            <p class ="text-size-2">
+                I decided that my theming would be more of a simplistic design due to my lack of 2D art skills, this led me to use more of a 
+                rounded design to provide a sleeker look to my UI.
+                In addition to the elements we were suggested to create, i made a journal page to keep track of quests, crafting page for craftables and pause toggles.
+                This module was difficult running alongside the Junior Collaborative project due to time being split between both modules.<br> In this module i achieved a First at 76% marks
+
+            </p>
+          </div>
+
+
+
+            <!--Content GIF-->
+            <div class="responsive-container d-flex flex-column content-text gap-6">
+                <p class="text-size-title">UI Designs</p>
+                <div class="d-flex flex-column text-center gap-6">
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">HUD</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/HUDDesign.png">
+                    </div>
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Crafting</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/CraftingDesign.png">
+                    </div>
+
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Inventory</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/InventoryDesigns.png">
+                    </div>
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Journal</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/JournalDesign.png">
+                    </div>
+
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Settings</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/SettingsDesign.png">
+                    </div>
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Shop</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/ShopDesign.png">
+                    </div>
+
+                    <div class="flex-column gap-5">
+                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">World Map</p>
+                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/MapDesign.png">
+                    </div>
+                
+                </div>
+            </div>
+
+            <!--Gameplay Video-->
+
+            <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
+                <p class="text-size-title">User Interface Showcase</p>
+                <iframe class="card-16x9 curve-border" src="https://www.youtube.com/embed/sdAKBOqvFJo" title="UI Design &amp; Implementation Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="responsive-container d-flex flex-column content-text gap-3 text-center " style="padding-top: 0px;">
+                <p class="text-size-1">Project Download</p>
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/UI_UX_Implementation" target="_blank">
+                    <p class="text-size-1_5">GitHub Repo</p>
+                </a>
+            </div>
+        </div>
+</body>
