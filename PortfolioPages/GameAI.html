@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<title>Portfolio - Game AI</title>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/WebsiteStyle.css">
+</head>
+
+<body>
+        <!--Nav Menu-->
+
+        <div class ="off-screen-menu">
+            <ul class="off-screen-menu-content">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="../About.html"><li>About</li></a>
+                <a href="../Contacts.html"><li>Contact</li></a>
+            </ul>
+          </div>
+          <nav class="d-flex flex-row justify-space-between items-center no-pad">
+            <div class="d-flex flex-row dropdown">
+                <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
+                <a href="../About.html" class="dropdown-button"><li>About</li></a>
+                <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
+            </div>
+    
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+          </nav>
+          <script src="../Navigation.js"></script> 
+
+        <div style="display: grid;place-content: center;">
+            <div class="responsive-container background-blur fade-in " style="background-image: url(../images/homepage/backgroundblur-red-blue.png);"></div>
+
+            <!--Project Description-->
+          <div class="responsive-container d-flex flex-column gap-2 content-text ">
+            <p class="text-size-title">Game Artificial Intelligence</p>
+            <p class="text-size-1">Behaviours and Pathfinding</p>
+            <p class="text-size-2">
+                This is work from Staffordshire University in which i was tasked to create AI Steering behaviours & Pathfinding algorithms using a
+                framework made in Unity provided by the University. This framework would allow for a focus on the core elements by providing me a base to get
+                the character moving using a Vector.<br>
+                For this module we were marked on three areas, Steering Behaviours, Pathfiniding and Decision making. For the second section of the assessment we were tasked to report on 3 AI based topics in under 500 Wor,
+                I was tasked with researching: Steering Behaviours, Chess AI, and my personal topic was the HALO Covenant AI <br>
+                For this Module i achieved a First (85%) 
+            </p>
+          </div>
+            <!--Content GIF-->
+            <div class="responsive-container d-flex flex-column content-text gap-6" style="padding-top: 0px;">
+ 
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2 text-size-2" style="width: 100%;">
+                        <button onclick="ToggleDropdown('Toggle1','Toggle1Dropdown')" class=" d-flex flex-row justify-space-between items-center invisible">
+                            <p class="text-size-1 content-text">Steering Behaviours - Subject Knowledge</p>
+                            <div id="Toggle1Dropdown" class=" dropdown-icon">
+                                <img width="30px"src="../images/icons/dropdown.png">
+                            </div>
+                        </button>
+                        <div id="Toggle1" class="collapse">
+                            <p class="text-size-1_5">What Are Steering Behaviours?</p>
+                            Steering behaviors are force-based influences used to navigate an agent within an environment based on stimuli. 
+                            Each steering behaviours consists of a vector and weight to rotate an agent in a desired direction, 
+                            if multiple forces are used, all are combined to generate the total steering force which will turn the agent towards the resulting vector.<br>
+                            <br>
+                            <p class="text-size-1_5">Types of Steering Behaviours</p> 
+                            <p style="font-weight: bold;">Flee & Seek</p>
+                            Flee and seek are very similar behaviours, 
+                            this usually calculated by subtracting one location from another and steering towards the resulting vector.<br> 
+                            <br>
+                            <p style="font-weight: bold;">Evade and Pursuit</p> 
+                            Evade and pursuit use seek and flee as a template for their calculations except an additional calculation of 
+                            velocity is used of a given target to calculate where to intercept or evade from.<br> 
+                            <br>
+                            <p style="font-weight: bold;">Group Movement</p> 
+                            Group movement is a combination of multiple steering behaviours to generate a steering force for an agent within a group, 
+                            this is generated by reacting to other agents and their current velocity/distance from the current agent as stimuli which allows for the current agent to calculate a desired force.
+                            Some common steering behaviours for group movement include, cohesion, separation and alignment, a group should separate an equal distance from each other but also travel in a group like manner,
+                            this would then be travelling in a similar direction as every other agent around (usually towards a target). <br>
+                            <br>
+                            <p class="text-size-1_5">Steering Behaviour Discussion</p>
+                            A Steering behaviour model is more reactive than pathfinding algorithms, like A* or JPS, in terms of navigating other agents. 
+                            With steering behaviours each agent will have to calculate their desired steering forces each frame and can react to changes around them quicker to alter the steering force which allows for a faster response to stimuli, 
+                            whereas with an algorithmic approach using pathfinding is potentially slower due to recalculating an alternative path, for example, 
+                            if something blocks the path that the agent is following it might get moved off its course and have must recalculate the correct route which can be expensive dependent on the algorithm used.  
+                            The method used for locomotion entirely depends on the requirements of the system, but steering behaviours and pathfinding can both be implemented to provide a balance between path optimisation and reactivity.<br> 
+                            <br>
+                            Steering behaviours are simple and versatile because they use a force-based system, this enables a programmer to create multiple steering behaviours that can be developed independently of each other. 
+                            When these steering forces are combined it provides a value which can be calculated to get the overall desired steering force. 
+                            This allows for modularity of the agents.<br> 
+                            <br>
+                            Cost of steering behaviours is relatively less computationally expensive in comparison to pathfinding but can be computationally expensive when the system is scaled. 
+                            For Example, if the scene contains lots of agents, and all the agents are running multiple complex steering behaviours it would be expensive. 
+                            This is because the steering force is calculated each frame and having multiple complex steering behaviours calculated requires lots of operations, the more complex & unoptimised the scripts, 
+                            the more computational power required.  Although Steering behaviours can be cheaper, they are ineffective in finding an optimised path to a location, this is because there is no precomputed path data to follow which can lead to problems navigating into dead ends and less desirable paths. <br>
+                            <br>                            
+                            <p class="text-size-1_5">Conclusion</p>
+                            Steering behaviours are excellent for agents to react in an autonomous manner using multiple stimuli to steer in a direction, although it may not be as complex as a pathfinding algorithm in calculating a path, it allows for reactive and predictable movement from agents with a lower computational cost.<br>
+                            <br>
+                            <p style="font-weight: bold;">Bibliography</p> 
+                            Steering Behaviours: Seeking & Arriving – ‘Jb-Dev’ - Accessed :28th January 2024 -  
+                            Available At: https://www.gamedev.net/blogs/entry/2264855-steering-behaviors-seeking-and-arriving/ <br>
+                        
+                            Steering Behaviours for Autonomous Characters – Craig W. Reynolds – Accessed: 28th January 2024 – Available At: https://www.red3d.com/cwr/steer/gdc99/ <br>
+                            
+                            Simon Coenen - (2016) Steering Behaviors in C# & C++ – Howest University <br> 
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2 text-size-2" style="width: 100%;">
+                        <button onclick="ToggleDropdown('Toggle2','Toggle2Dropdown')" class=" d-flex flex-row justify-space-between items-center invisible">
+                            <p class="text-size-1 content-text">Chess AI - Subject Knowledge</p>
+                            <div id="Toggle2Dropdown" class=" dropdown-icon">
+                                <img width="30px"src="../images/icons/dropdown.png">
+                            </div>
+                        </button>
+                        <div id="Toggle2" class="collapse">
+                        <p>
+                            Chess is a complex strategy game which requires the player to think multiple moves ahead and plan to win, factoring the opponent’s moves into their decision making. Chess programming currently is a solved problem, and computers play chess better than humans can. Chess AI has come a long way since its earliest implementations with new algorithms being developed to make the computer think similarly to a human making it harder to beat by utilising heuristics. 
+                            <br>
+                            <p class="text-size-1_5">Minmax</p>
+                            Chess is a non-perfect information game meaning that nothing is hidden from the other player meaning there is opportunity for strategic plays to be calculated ahead of time, this will allow for the computers to use a Minmax Algorithm. 
+                            A Minmax algorithm is the method of choosing the best possible sequence of moves to achieve victory, in chess the nodes that minmax use are boards depicted as a best move number, this algorithm is impossible to calculate a perfect win every time, this is because there are more chess board combinations than the number of atoms in the observed universe. 
+                            Alan Turing's evaluation heuristic for the minmax algorithm was a good starting point with the next potential boards score being the total of the “Score = White Pieces/Black Pieces” this put each piece at a point value, pawns the lowest, queen the highest. 
+                            This was then later replaced by a slightly different evaluation of “Score = White Pieces - Black Pieces” as it can provide more accurate values to a piece worth when calculating a move. 
+                            <br>
+                            <p class="text-size-1_5">Alpha-beta pruning </p>
+                            The popular Chess AI “Stockfish14” uses alpha beta pruning, a heuristic to reduce the number of nodes that a minmax algorithm will have to process, which increases efficiency. Alpha beta pruning involves using the minmax to calculate the nodes and discards the current node search if it yields an outcome that results in a score less than the previous node, this saves a fraction of computing on the nodes missed but as more nodes are calculated the fractional differences add up to a worthwhile time save whilst navigating through the complex decision tree.  
+                            <br>
+                            <p class="text-size-1_5">Null Move </p>
+                            To further optimise decision making Null Move Pruning (NMP) is employed to calculate the opponents potential moves. By “passing” the current and evaluating the board the AI can anticipate the threat of a checkmate by pretending to be the enemy and see what moves they could make. 
+                            <br>
+                            <p class="text-size-1_5">Machine Learning Integration </p>
+                            Machine learning has been utilised to improve chess AI throughout time by combining heuristics like the Monte Carlo Tree Search (MCTS) and neural networks. This is showcased in the AlphaZero project developed by DeepMind. This project focused on a self-play unsupervised Artificial intelligence. This approach removed the need for human data or playbook strategies forcing the AI to learn independently. The AI would undergo many trial and error games in this format and lead to a formidable playstyle that challenges opponents with the strategies acquired demonstrating the next big step in AI Evolution. 
+                            <br>
+                            <p class="text-size-1_5">Conclusion </p>
+                            Chess AI has made significant milestones pushing the boundaries artificial intelligence capabilities. The Continuous refinements of algorithms and machine learning techniques outline a promising future for Chess AI potentially expanding beyond the gaming landscape, contributing valuable advancements in other technological fields. 
+                            <br>
+                            <p style="font-weight: bold;">Bibliography</p>  
+                            Alpha Beta Pruning – Wikipedia – Accessed 23rd February 2024 - Available At:
+                            https://en.wikipedia.org/wiki/Alpha-beta_pruning<br>
+
+                            BetaCuttoff– Chess Programming Wiki – Accessed 23rd February 2024 - Available At: 
+                            https://www.chessprogramming.org/Beta-Cutoff <br>
+
+                            GoogleDeepMind– AlphaZero – Accessed 23rd February 2024 - Available At: 
+                            https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/<br> 
+
+                            Monte Carlo Tree Search – Chess Programming Wiki – Accessed 23rd February 2024 - Available At:  
+                            https://www.chessprogramming.org/Monte-Carlo_Tree_Search <br>
+                            
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2 text-size-2" style="width: 100%;">
+                        <button onclick="ToggleDropdown('Toggle3','Toggle3Dropdown')" class=" d-flex flex-row justify-space-between items-center invisible">
+                            <p class="text-size-1 content-text">Chess AI - Subject Knowledge</p>
+                            <div id="Toggle3Dropdown" class=" dropdown-icon">
+                                <img width="30px"src="../images/icons/dropdown.png">
+                            </div>
+                        </button>
+                        <div id="Toggle3" class="collapse">
+                        <p>
+                            Halo is a First-Person shooter game released in 2001 which enriches the world immersion through the intelligence of the enemies and allies' behaviour from implementing simple tactics like taking cover to searching for the player. The 2001 masterpiece achieved this through a new approach of behaviour trees. 
+                            <br>
+                            Behaviour Trees 
+                            <br>
+                            The use of Behaviour trees in other games at the time of Halo Combat Evolved’s release was unheard of. 
+                            343i and Bungee decided to implement this to create a modular system that could be placed on any AI which would save time in development.  
+                            Each AI Class is assigned a tree that contains behaviours, the Covenant AI for Grunts and Elites are some of the more interesting trees. 
+                            All Enemies have a Few Base Leafs, and they all lead into their own unique behaviour once the leaf has been followed.
+                            <br>
+                            <li>Vehicle – If the chief is in a vehicle, get in one if possible </li>
+                            <li> Retreat – The Chief has done something, Run away </li>
+                            <li>Self-Preservation – Throw Grenade, Cover or Guard the position </li>
+                            <li>Engage – This leaf will be enemy type dependant for behaviour </li>
+                            <li>Post Combat – The chief has died, Shoot or Check the corpse </li>
+                            <li>Idle – Guard the location </li>
+                            <br>
+                            For the grunts they have an added behaviour that is Unique, once their group leader (An Elite) is killed the grunts will all flee from the chief, once they have got a good distance away or they have spent some time running they will return back to their Engage state, this allows for the player to be immersed as master chief being known as this toughened enemy to fight translate into the players actions instilling a wave of fear in the enemies to get them to run. 
+                            The Allied marines change their behaviour once the player is in the vicinity, this swaps their decision making to appear more fearless when fighting, this is yet again to provide immersion and allow the player to feel like this unstoppable machine.  
+                            Both of the opposing AI decisions can be primarily seen in the mission Silent Cartographer as the player drops onto the Southern beach with marines to fight a covenant force, the AI have no problem charging at the Covenant and the AI will run scared once their leaders are eliminated.<br>
+                            <br>
+                            Memory issues were considered when working with behaviour trees as each AI would need to store data to have a tree work and with the Original Xbox containing 64MB of ram, 
+                            each piece of temporary data stored had to be a necessity. 
+                            This was solved by using a “Prop” which “can act as a convenient storage location for per-object per-behavior memory”. 
+                            The prop method forms the majority of Halo CE’s AI knowledge despite being rudimentary due to its flat list of object references, 
+                            it has some shortfalls in the case of only allowing potential targets on the list which could obfuscate other relevant objects such as weapons and pathfinding obstacles.<br>
+                            <br>
+                            Conclusion<br> 
+                            To Conclude Halo Combat evolved revolutionised gaming AI with behaviour trees shaping the future of decision making by implementing a simple method to create AI that reacts in accordance with the stimuli provided by the environment. Many engines now implement their own version of the behaviour trees.  
+                            
+                            <p style="font-weight: bold;">Bibliography</p>
+                            https://c20.reclaimers.net/h1/engine/ai/ 
+                            
+                            https://www.gdcvault.com/play/1022590/Creating-the-Illusion-of-Intelligence 
+                            
+                            https://www.gamedeveloper.com/programming/gdc-2005-proceeding-handling-complexity-in-the-i-halo-2-i-ai#close-modal 
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Steering Behaviours</p>
+                        <p class="text-size-2">
+                            In the steering behaviour section of the programming we were tasked with creating a variety of behaviours.<br> 
+                            In the video there are 8 Scenes demonstrating the following behaviours<br>
+                            <li class="text-size-2">Seek & Pursuit</li> 
+                            <li class="text-size-2">Flee & Evade</li> 
+                            <li class="text-size-2">Arrive</li> 
+                            <li class="text-size-2">Wander</li> 
+                            <li class="text-size-2">Collision Avoidance</li> 
+                            <li class="text-size-2">Seperation, Alignment & Cohesion</li> 
+
+
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+ 
+
+                <div class="accessory d-flex gap-6 flex-column">
+
+                    <div class="d-flex flex-will-change gap-4 justify-space-between">
+                        <div class="d-flex flex-column content-text gap-2">
+                            <p class="text-size-1">Pathfinding</p>
+                            <p class="text-size-2">
+                                These are the 3 Pathfiniding algorithms that i programmed during the time on the module,
+                                <li class="text-size-2">Dijkstra</li>
+                                <li class="text-size-2">A Star (A*)</li>
+                                <li class="text-size-2">Jump Point Search (JPS)</li>
+                            </p>
+                        </div>
+                        
+                        <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/DwS893g4uDo" title="Dijkstra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="d-flex flex-will-change gap-4 justify-space-between">
+                        
+                        <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/DlooY3kiUuk" title="JPS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/3DSXIgDmPik" title="A Star" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+                <!---->
+
+
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Decision Making</p>
+                        <p class="text-size-2">
+                            This was the final section of the project, the goal is to create a Player AI that would make decisions based on factors in the world.<br>
+                            I decided to make my AI factor decisions for;
+                            <li>Movement</li>
+                            <p>The movement was to move away from the nearest visible enemy as they will be the enemy that poses the most threat</p>
+                            <li>Pickup Choice</li>
+                            <p>This decision was based on current overall ammo percentage remaining and the health remaining, this was assessed using animation curves</p>
+                            <li>Weapon to Use</li>
+                            <p>This decision was based on distance and enemy speed, whichever enemy would be closest to the player after 3 seconds would be the main target</p>
+
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/rh1se_QWbns" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+</body>

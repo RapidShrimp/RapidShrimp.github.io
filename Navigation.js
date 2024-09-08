@@ -7,3 +7,12 @@ HamMenu.addEventListener('click',()=>{
     OffScreenMenu.classList.toggle('active');
 
 })
+
+
+function ToggleDropdown(ID,Icon){
+    let x = document.getElementById(ID);
+    let y = document.getElementById(Icon);
+    console.log(x);
+    x.classList.toggle("collapse");
+    y.classList.toggle("active");
+}

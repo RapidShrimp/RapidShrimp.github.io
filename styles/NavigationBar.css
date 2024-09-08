@@ -143,3 +143,13 @@ nav{
         font-size: 0px;
     }
 }
+
+
+.dropdown-icon{
+    transform: scale(1,1);
+    transition: 0.2s;
+}
+.dropdown-icon.active{
+    transform: scale(1,-1);
+}
+

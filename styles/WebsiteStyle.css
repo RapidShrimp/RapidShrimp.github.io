@@ -139,6 +139,10 @@ p{
     -ms-flex-align: start;
 }
 
+.item-VA-middle{
+    vertical-align: middle;
+}
+
 /*Video*/
 .content-video{
     max-width: 100%;
@@ -333,4 +337,10 @@ p{
     height: 60px;
     width: 60px;
     background-size: cover;
+}
+
+.collapse{
+    visibility: collapse;
+    height: 0px;
+    font-size: 0px;
 }
