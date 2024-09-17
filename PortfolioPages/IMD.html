@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<title>Portfolio - IMD</title>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/WebsiteStyle.css">
+</head>
+
+<body>
+        <!--Nav Menu-->
+
+        <div class ="off-screen-menu">
+            <ul class="off-screen-menu-content">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="../About.html"><li>About</li></a>
+                <a href="../Contacts.html"><li>Contact</li></a>
+            </ul>
+          </div>
+          <nav class="d-flex flex-row justify-space-between items-center no-pad">
+            <div class="d-flex flex-row dropdown">
+                <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
+                <a href="../About.html" class="dropdown-button"><li>About</li></a>
+                <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
+            </div>
+    
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+          </nav>
+          <script src="../Navigation.js"></script> 
+
+        <div style="display: grid;place-content: center;">
+            <!--Project Description-->
+          <div class="responsive-container d-flex flex-column gap-2 content-text ">
+            <p class="text-size-title">Intro to Mechanics Design</p>
+            <p class="text-size-1">Unity Programming Module</p>
+            <p class="text-size-2">
+                Intro to Mechanics design is a 2nd Year module i was enrolled on at Staffordshire University.<br>
+                For this module i had to create a 2D character controller which had forgiveness mechanics to help the player navigate the map.<br>
+                For the second part of the assessment i would have to make other mechanics "feel good" by audio and visuals;<br>
+                In this module i achieved a First at 77%
+            </p>
+          </div>
+
+            <!--Content GIF-->
+            <div class="responsive-container d-flex flex-column content-text gap-6">
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Mechanic Name</p>
+                        <p class="text-size-2">Mechanic Description</p>
+                    </div>
+                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
+                </div>
+
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2">
+                        <p class="text-size-1">Mechanic Name</p>
+                        <p class="text-size-2">Mechanic Description</p>
+                    </div>
+                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
+                </div>
+            </div>
+            
+            <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/AdvancedMechanicDesign" target="_blank">
+                    <p class="text-size-2">GitHub Repo</p>
+                </a>
+            </div>
+
+
+
+
+
+            
+        </div>
+
+</body>
