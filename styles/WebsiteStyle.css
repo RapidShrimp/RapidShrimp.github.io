@@ -253,10 +253,13 @@ p{
     font-weight: bold;
 }
 
+.text-size-1_8{
+    font-size: 25px;
+}
+
 .text-size-2{
     font-size: 20px;
 }
-
 .text-center{
     text-align: center;
 }
