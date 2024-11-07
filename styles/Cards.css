@@ -160,7 +160,6 @@ div.cardwrapper{
     flex-direction: row;
     text-align: left;
     transition: 0.4s;
-    
 }
 
 div.cardwrapper:hover{
