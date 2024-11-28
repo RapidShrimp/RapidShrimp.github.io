@@ -68,6 +68,10 @@ p{
     flex-direction: column;
 }
 
+.flex-grid{
+    flex-direction: row;
+}
+
 @media all and (min-width:0px) and (max-width: 1150px) {
     .flex-will-change{
         flex-direction: column;
