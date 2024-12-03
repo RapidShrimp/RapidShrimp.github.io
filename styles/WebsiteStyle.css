@@ -16,9 +16,10 @@ p{
 .background-blur{
     position: absolute;
     overflow: visible;
+    justify-content: center;
     z-index: -100;
-    width: 80vw;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
     filter: blur(100px);
     background-size:cover;
 }
