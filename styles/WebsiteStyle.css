@@ -31,7 +31,7 @@ p{
 
 @media all and (min-width:0px) and (max-width: 1150px) {
     .responsive-container{
-        padding:40px 32px;
+        padding:40px 10px;
     }
 }
 
@@ -162,7 +162,6 @@ p{
 .content-card{
     background-color: #404044;
     border-radius: 12px;
-    padding: 12px;
     background-position: center;
     background-size: cover;
 }

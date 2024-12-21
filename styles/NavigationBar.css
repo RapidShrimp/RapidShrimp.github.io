@@ -23,7 +23,7 @@ nav{
     list-style: none;
     color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 28px;
 }
 .dropdown-button:hover{
     color: #a5a5a7; /*darkened text*/
