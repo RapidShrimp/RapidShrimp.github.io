@@ -207,7 +207,6 @@ div.cardwrapper p{
 
 .unreal{
     background-color: rgb(14, 69, 94) !important;
-    box-shadow: -10px 0 0 0 rgb(38, 187, 255);
 }
 .unreal:hover{
     background-color: rgb(38, 187, 255) !important;
@@ -215,7 +214,6 @@ div.cardwrapper p{
 
 .unity{
     background-color: rgb(1, 78, 78) !important;
-    box-shadow: -10px 0 0 0 rgb(0, 204, 204);
 
 }
 .unity:hover{

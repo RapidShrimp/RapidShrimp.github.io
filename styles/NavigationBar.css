@@ -9,7 +9,11 @@ nav{
 
 }
 
-
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
 /*Dropdown*/
 .dropdown{
     visibility: visible;
@@ -28,8 +32,18 @@ nav{
 .dropdown-button:hover{
     color: #a5a5a7; /*darkened text*/
 }
+
+.nameplate{
+    color: white;
+    padding: 5px 10px;
+    font-size: 40px !important;
+    vertical-align: bottom;
+    margin: 0;
+}
+
 .active-dropdown{
     visibility: visible;
+    box-shadow: 0px 4px 0 0 rgb(255, 255, 255);
     background-color: #3c3c48; /*Website Background*/
 }
 .active-dropdown:hover{
@@ -38,6 +52,7 @@ nav{
 
 /*Menu Styling*/
 .off-screen-menu{
+    position: sticky;
     visibility: collapse;
     background-color: #1e1e25;
     height: 100vh;
@@ -87,6 +102,7 @@ nav{
 
 /*Hamburger Styling*/
 .ham-menu{
+    position: sticky;
     visibility: collapse;
     z-index: 1;
     width: 50px;

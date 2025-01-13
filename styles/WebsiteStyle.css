@@ -14,11 +14,11 @@ p{
 
 /*Background Effects*/
 .background-blur{
-    position: absolute;
+    position: fixed;
     overflow: visible;
     justify-content: center;
     z-index: -100;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     filter: blur(100px);
     background-size:cover;
@@ -26,6 +26,7 @@ p{
 /*Repsonsive Containers*/
 .responsive-container{
     padding: 96px 128px;
+    padding-top: calc(48px + 1vh) !important;
     max-width: 1792px;
 }
 
