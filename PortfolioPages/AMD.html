@@ -41,8 +41,8 @@
             <p class="text-size-title">Advanced Mechanics Design</p>
             <p class="text-size-1">Unity Programming Module</p>
             <p class="text-size-2">
-                Advanced Mechanics design is a 2nd Year module i was enrolled on at Staffordshire University.<br>
-                For this module there were 3 focusses that i would have to complete;<br>
+                Advanced Mechanics design is a 2nd Year module I was enrolled on at Staffordshire University.<br>
+                For this module there were 3 focusses that I would have to complete;<br>
                 <li>Splines</li>
                 <li>Tank Controller</li> 
                 <li>Wave Spawner (Unity ECS)</li> 
@@ -69,7 +69,7 @@
                                         A mesh has face normals which can only be viewed from one side unless backface culling is enabled on the mesh.<br>
                                         A UV Map is the faces of a 3D object flattened into a 2d view, in which coordinates on the uv, map a texture onto a face.<br>
                                         <br>
-                                        To create our objects we crete vertexes. For this cube i have 24 Vertecies as it allows for hard edges and simple maths when creating the object.<br>
+                                        To create our objects we crete vertexes. For this cube I have 24 Vertecies as it allows for hard edges and simple maths when creating the object.<br>
                                         With 3 of the vertecies a Tri Face is created, this is then calculated and placed in the world. <br>
                                 </div>
                                 <img class="content-card-image card-16x9 curve-border" style="min-height: 300px;" src="../images/portfolio/AMD/MeshLofting.png">
@@ -80,10 +80,10 @@
                                 <div class="d-flex flex-column content-text gap-2">
                                     <p class="text-size-1_5">Editor Handles</p>
                                     <p class="text-size-2">
-                                        To create multiple mesh lofted objects i tweaked the code slightly to loop through a vector 3 for the number of cubes adding an offset after each one. 
-                                        Within the code i also tweaked it so the shapes can alter scale instead of a fixed value which will allow me to make an editor handle.<br>
-                                        The result is being able to create my rail sleepers which i use later for spline mesh generator project, additionally i could have used this for my rails as i could have stretched cubes to create the length of the rail and set the number of Z chunks to 2 with an offset of about 4 to create the second set of tracks.<br>
-                                        All i needed to do afterwards was curve the mesh along a spline. 
+                                        To create multiple mesh lofted objects I tweaked the code slightly to loop through a vector 3 for the number of cubes adding an offset after each one. 
+                                        Within the code I also tweaked it so the shapes can alter scale instead of a fixed value which will allow me to make an editor handle.<br>
+                                        The result is being able to create my rail sleepers which I use later for spline mesh generator project, additionally I could have used this for my rails as I could have stretched cubes to create the length of the rail and set the number of Z chunks to 2 with an offset of about 4 to create the second set of tracks.<br>
+                                        All I needed to do afterwards was curve the mesh along a spline. 
                                     </p>
                                 </div>
                                 <iframe class="content-card-image card-16x9 curve-border" style="min-height: 400px;"src="https://www.youtube.com/embed/gabji_0BWy0" title="Editor Handles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -93,15 +93,15 @@
                             <div class="d-flex flex-column gap-4">
                                 <p class="text-size-1_5">Spline Mesh Lofting & Animation</p>
                                 <p>
-                                    Using a spline i achieved creating a procedural railway which adapts to terrain around it, there are multiple values that can be adjusted as well as an animated train that follows the spline.
-                                    In creating the rails i wanted the vertices to be as one long mesh which subsequently has a continuous UV Mesh becuase it would only use one flat colour. 
+                                    Using a spline I achieved creating a procedural railway which adapts to terrain around it, there are multiple values that can be adjusted as well as an animated train that follows the spline.
+                                    In creating the rails I wanted the vertices to be as one long mesh which subsequently has a continuous UV Mesh becuase it would only use one flat colour. 
                                     I generate 4 vertices and create faces from the most recent set of vertex data to the previous which allowed for me to work backwards from the newest.<br>
-                                    Once it reached the end i used a condition to generate the final piece of mesh, 
+                                    Once it reached the end I used a condition to generate the final piece of mesh, 
                                     if the Spline did not loop it would close off the rails with a final face, if it did, it woud generate one more set of faces connecting to the first vertecies.<br>
                                     <br>
-                                    I then would refactor some code from the Cube Generator to create the sleepers which connect the middle of the track, this was from the cube code and it worked well, i would just have to multiply the Width and height by the right and forward vectors to get the vertex point.
+                                    I then would refactor some code from the Cube Generator to create the sleepers which connect the middle of the track, this was from the cube code and it worked well, I would just have to multiply the Width and height by the right and forward vectors to get the vertex point.
                                     <br>
-                                    I would then move onto creating a pillar support system which uses data from the world to generate the mesh and linking all the scripts together so i can control the rail generation from one centre point rather than each script, this helps keep values unified across the generation. For the pillar supports i would raycast down and check the distance, if it was greater than a minimum value it would generate a pilar
+                                    I would then move onto creating a pillar support system which uses data from the world to generate the mesh and linking all the scripts together so I can control the rail generation from one centre point rather than each script, this helps keep values unified across the generation. For the pillar supports I would raycast down and check the distance, if it was greater than a minimum value it would generate a pilar
                                 </p>
                                 <img class="content-card-image curve-border" style="width: 100%; height: auto;" src="../images/portfolio/AMD/RailOrientation.jpeg">
                                 <div class="d-flex flex-will-change gap-4 items-center justify-space-between">
@@ -158,8 +158,8 @@
                                 <div class="d-flex flex-column content-text gap-2">
                                     <p class="text-size-1_5">Parsing the TomBen Format</p>
                                     <p class="text-size-2">The TomBen format is a format that given to us as the final part of the AMD module, in this we would have to create a wave spawner that uses these values in an ECS system.<br>
-                                        The main problem with this file format is that it required a custom parser to read the values, i decided to make a parser for it using Regular Expressions, 
-                                        this way i could loop through the waves and clusters to get the number of desired units to spawn and when to spawn them </p>
+                                        The main problem with this file format is that it required a custom parser to read the values, I decided to make a parser for it using Regular Expressions, 
+                                        this way I could loop through the waves and clusters to get the number of desired units to spawn and when to spawn them </p>
                                 </div>
                             </div>
                             <p class="text-size-2" style="font-weight: bold;">Tom Ben Format</p>
@@ -173,7 +173,7 @@
                                 <div class="d-flex flex-column content-text gap-2">
                                     <p class="text-size-1_5">Wave Spawning</p>
                                     <p class="text-size-2">Here are the final results of the wave spawner, this was an estimated 2 weeks for this section of the module. One video of the parsing, and another using the Entity Component System<br>
-                                        at a later point, possibly after graduation i would like to investigate the unity ECS system further as it has lots of capability when creating a game which needs multiple of the same entity.
+                                        at a later point, possibly after graduation I would like to investigate the unity ECS system further as it has lots of capability when creating a game which needs multiple of the same entity.
                                     </p>
                                 </div>
                                 <iframe class="content-card-image card-16x9 curve-border" src="https://www.youtube.com/embed/g9gIzBwAa80" title="Spline Mesh Generator Editor Tooling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

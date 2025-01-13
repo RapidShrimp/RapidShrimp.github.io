@@ -26,13 +26,12 @@ p{
 /*Repsonsive Containers*/
 .responsive-container{
     padding: 96px 128px;
-    padding-top: calc(48px + 1vh) !important;
     max-width: 1792px;
 }
 
 @media all and (min-width:0px) and (max-width: 1150px) {
     .responsive-container{
-        padding:40px 10px;
+        padding:60px 10px;
     }
 }
 
