@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<title>Portfolio - Multiplayer Programming</title>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/WebsiteStyle.css">
+</head>
+
+<body>
+        <!--Nav Menu-->
+
+        <div class ="off-screen-menu">
+            <ul class="off-screen-menu-content">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+                <a href="../About.html"><li>About</li></a>
+                <a href="../Contacts.html"><li>Contact</li></a>
+            </ul>
+          </div>
+          <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
+            <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
+            <div class="d-flex flex-row dropdown">
+                <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+                <a href="../PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
+                <a href="../About.html" class="dropdown-button"><li>About</li></a>
+                <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
+            </div>
+    
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+          </nav>
+          <script src="../Navigation.js"></script> 
+
+        <div style="display: grid;place-content: center;">
+            <!--Project Description-->
+          <div class="responsive-container d-flex flex-column gap-2 content-text ">
+            <p class="text-size-title">Multiplayer Mechanics Programming</p>
+            <p class="text-size-1">Unity Programming Module</p>
+            <p class="text-size-2">
+                <!--Desc Here-->
+                <br>
+                <li>Network RPC's</li>
+                <li>Authority & Ownership</li> 
+                <li>Serialization</li> 
+            </p>
+          </div>
+             <!--Gameplay Video-->
+             <div class="responsive-container background-blur fade-in " style="background-image: url(../images/homepage/backgroundblur.png);"></div>
+             <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
+                 <p class="text-size-title">Gameplay Video</p>
+                 <iframe class="card-16x9" src="https://www.youtube.com/embed/5u30s97QN4Q" title="Mechhead Teaser Trailer - 1UP 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             </div>
+ 
+             <!--Content-->
+             <div class="responsive-container d-flex flex-column content-text gap-6" style="padding-top: 0px;">
+                    
+                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <div class="d-flex flex-column content-text gap-2"  style="width: 50%;">
+                        <p class="text-size-1">Joining Game</p>
+                        <p class="text-size-2">
+                           Joining Game Description
+                        </p>
+                    </div>
+                    <iframe class="content-card-image card-16x9 curve-border" width="auto" height="auto" src="https://www.youtube.com/embed/kQ48mCOOsu4" title="Mech Head Mech Customisation (Removed Feature)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                 <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                     <div class="d-flex flex-column content-text gap-2">
+                         <p class="text-size-1">Configurations</p>
+                         <p class="text-size-2">
+                             Configuration Descriptions
+                             <li>Slider</li>
+                             <li>Dial</li>
+                             <li>Pull Handle</li>
+                             <li>Switches</li>
+                         </p>
+                     </div>
+                     <iframe class="content-card-image card-16x9 curve-border" src="https://www.youtube.com/embed/MVYRd29qU_I" title="Mech Head Abilities (Beta)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+
+        </div>
+
+        <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
+            <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/AdvancedMechanicDesign" target="_blank">
+                <p class="text-size-2">GitHub Repo</p>
+            </a>
+        </div>
+</body>
