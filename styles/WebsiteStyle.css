@@ -238,6 +238,16 @@ p{
     padding: 0px;
 }
 
+.no-vert-pad{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.small-vert-pad{
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
 .content-text{
     color:#ffffff
 }
