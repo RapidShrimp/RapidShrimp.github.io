@@ -14,19 +14,19 @@
 
     <div class ="off-screen-menu">
         <ul class="off-screen-menu-content">
-            <a><li>Home</li></a>
+            <a href="#HomeID"><li>Home</li></a>
             <a href="PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
-            <a href="About.html"><li>About</li></a>
-            <a href="Contacts.html"><li>Contact</li></a>
+            <a href="#AboutID"><li>About</li></a>
+            <a href="#ContactID" ><li>Contact</li></a>
         </ul>
       </div>
       <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
         <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
           <div class="d-flex flex-row dropdown">
-            <a class="dropdown-button active-dropdown"><li>Home</li></a>
+            <a href="#HomeID" class="dropdown-button"><li>Home</li></a>
             <a href="PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
-            <a href="About.html" class="dropdown-button"><li>About</li></a>
-            <a href="Contacts.html" class="dropdown-button"><li>Contact</li></a>
+            <a href="#AboutID" class="dropdown-button"><li>About</li></a>
+            <a href="#ContactID" class="dropdown-button"><li>Contact</li></a>
         </div>
 
         <div class = "ham-menu">
@@ -40,18 +40,16 @@
 <div style="display: grid;place-content: center;">
 
     <!--Introduction + Video-->
-    <div class="responsive-container background-blur fade-in " style="background-image: url(images/homepage/backgroundblur.png);"></div>
-    <div class="responsive-container content-text d-flex items-center flex-will-change gap-2 fade-in">
+    <div id="HomeID" class="responsive-container content-text d-flex items-center flex-will-change gap-2 fade-in">
         <div class="d-flex flex-column gap-4 swipe-in-left">
             <div class="d-flex flex-column text-size-title gap-1  drop-shaddow">
-                <p>Adam Shrimpton</p>
-                <p>Game Programmer</p>
+                <p class="text-size-title">Adam Shrimpton</p>
+                <p class="text-size-1_5">Game Programmer</p>
             </div>
             <div class="text-size-2  drop-shaddow">
                 <p>
-                    Im a Level 6 Games Design and Programming student at The University Staffordshire, 
-                    I am currently working on my website to display my work I have created whilst forming an idea for a new project with
-                    other students from a previous team wherin I managed the tech team.
+                    Im a Level 6 Games Design and Programming student at The University Staffordshire.<br>
+                    My main Discipline is programming game systems with an interest on Artificial Intelligence, in which I wrote my dissertation on.
                 </p>
             </div>
             <div class="d-flex flex-row gap-3 items-center">
@@ -81,19 +79,75 @@
         </div>
     </div>
     
-    <!--Contacts Container-->
+    <!--About Me-->
+    <div class="responsive-container content-text d-flex flex-column gap-3"">
+        <p id="AboutID" class="text-size-title">About Me</p>
+        <p class="text-size-2">
+            I am Adam, a UK Based Game Programmer that is passionate about bringing a fun and engaging experience to players.
+            Im undergoing my final year of studies at the University of Staffordshire and currently searching for a programming / technical designer role.<br>
+            In my spare time, I love to cook, go to the gym and make small animations/renders in Blender.
+            My favourite genre of games are FPS Shooters or Social Survival Games,when playing solo I lean towards single-player games like the Halo Series or Red Dead Redemption 2.
+        </p>
+    </div>
+
+    <div class="responsive-container d-flex flex-column content-text no-list text-size-2 gap-2" style="list-style:disc"> 
+        <p class="text-size-title">Skills</p>
+        <div class="d-flex flex-row justify-space-between" style="flex-wrap: wrap;">
+
+            <div class="d-flex flex-column">
+                <p class="text-size-1_5">Languages</p><br>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python, Java</li>
+                <li>HTML & CSS</li>
+                <br>
+            </div>
+            
+            <div class="d-flex flex-column">
+                <p class="text-size-1_5">Engine Experience</p><br>
+                <li>Unreal Engine</li>
+                <li>Unity</li>
+                <li>Game Maker Studio</li>
+                <br>
+            </div>
+            <div class="d-flex flex-column">
+                <p class="text-size-1_5">Software Experience</p><br>
+                <li>GitHub, Jira, MS Teams</li>
+                <li>Blender, Cinema 4D</li>
+                <li>Photoshop</li>
+                <li>Excel, Word, Powerpoint</li>
+                <li>Hammer Editor</li>
+                <br>
+            </div>
+        <div class="d-flex flex-column">
+            <p class="text-size-1_5">Other Skills</p><br>
+            <li>Leadership</li>
+            <li>Time & Team Management</li>
+            <li>Communication</li>
+            <li>Flexibility</li>
+        </div>
+        </div>
+    </div>
+
+    <!--Contacts-->
     <div class="responsive-container fade-in">
-        <p class="content-text text-size-1" style="padding-bottom: 24px;">Contact Me</p>
+        <p id="ContactID" class="content-text text-size-1">Contact Me</p>
         <div class="d-flex flex-column gap-4 justify-center accessory">
             <div class="d-flex flex-row gap-5">
                 <a href="mailto:adamshrimpton04@outlook.com" target="_blank" class="contact-icon" style="background-image: url(images/icons/mail.png);"></a>
                 <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class="contact-icon" style="background-image: url(images/icons/linkedin.png);"></a>
                 <a href="https://www.youtube.com/@RapidAdam" target="_blank" class="contact-icon" style="background-image: url(images/icons/youtube.png);"></a>
+                <a href="https://github.com/RapidShrimp" target="_blank" class="contact-icon" style="background-image: url(images/icons/github.png);"></a>
+                <a href="https://discordapp.com/users/329320112257761281/" target="_blank" class="contact-icon" style="background-image: url(images/icons/DiscordLogo.png);"></a>
             </div>
+
+            
             <div class="d-flex flex-column gap-1">
                 <p class="text-size-1_5">Looking to hire me?</p>
+                <p>I have only one month of my studies remaining and will be excited to get to know you!</p>
+
                 <div class="d-flex flex-row flex-will-change justify-space-between content-text gap-2">
-                    <p>Feel free to message me on any of my social platforms, LinkedIn and Email is preffered.<br>Or click the download button and view my CV</p>
+                    <p>Feel free to message me on any of my social platforms, LinkedIn and Email is preffered.<br>Or click the download button and view my CV and see if I am who you need on your team?</p>
                     <a class="highlight-button link-hide" href="AdamShrimptonCV.pdf" target="_blank">Download</a>
                 </div>
             </div>
