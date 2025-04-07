@@ -1,0 +1,21 @@
+AddNumbers("CodeSnippet");
+
+//var keywords = ["class","float","int","bool","void","virtual","override","true","false"];
+
+function AddNumbers(ElementID){
+    
+    var ElementToHighlight = document.getElementById(ElementID);
+    if(ElementToHighlight == null){return;}
+    var Children = ElementToHighlight.getElementsByTagName("line");
+    
+    for (var i = 0; i < Children.length; i++) {
+        const NumberElement = document.createElement("number");
+        const Num = document.createTextNode(i);
+        NumberElement.appendChild(Num);
+        if(Children[i].classList.contains("highlight")){
+            NumberElement.classList.add("highlight")
+        }
+        const child = Children[i].firstChild;
+        Children[i].insertBefore(NumberElement, child);
+    }
+}

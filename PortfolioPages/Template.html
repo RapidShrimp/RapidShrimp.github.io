@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebsiteStyle.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
-    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 
 
 </head>
@@ -106,31 +105,42 @@
             
             <!--Code Examples-->
             <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="CodeSnippet">
+                <div class="CodeSnippet d-flex flex-column">
                     <div class="WindowBar">
                         <ham class="WindowBarDot" style="background-color: rgb(255, 59, 59);"></ham>
                         <ham class="WindowBarDot" style="background-color: rgb(255, 177, 33);"></ham>
                         <ham class="WindowBarDot" style="background-color: rgb(149, 241, 11);"></ham>
-                    </div>
-
-                    <div class = "WindowBackground d-flex">
-                        <div class ="d-flex flex-column Line-Numbers">
-                            <p class = "highlight">1</p>
-                            <p>2</p>
-                            <p>3</p>
+                        <div style="width: 100%; text-align: right;">
+                            <h2>Filename.h</h2>
                         </div>
-                        <div>
-                            <pre>
-                                <code>
-
-                                    
-                                </code>
+                    </div>
+                    <div class = "WindowBackground" style="width: 100%; justify-content: left;">
+                        <code>
+                            <pre id="CodeSnippet" class="codeBox d-flex flex-column">
+                                <line><Comment>//Comment - This is for all of the Code snippets to be shown on the website</Comment></line>
+                                <line><key>class</key> <type>ChildClass</type> : <key>new</key><type> ParentClass</type></line>
+                                <line>{</line>     
+                                <line>  <key>float</key> <Function>DoSomething</Function>(<key>float</key><parameter> Parameter</parameter>);</line>
+                                <line>  {</line>     
+                                <line>    <type>OtherClass</type>* <LocVar>LocalVaraible</LocVar> = LocalVariablename;</line>
+                                <line class="highlight">    <return>return</return> <LocVar>LocalVaraible</LocVar>-><Function>AnotherFunction</Function>(0.5f);</line>
+                                <line>  }</line>     
+                                <line>};</line>
+                                <line></line>
                             </pre>
-                        </div>
+                        </code>
                     </div>
-
+                    <div class ="WindowFooter">
+                    <!--Paste Github File Link Here-->
+                        <a class="d-flex flex-row gap-2" style="align-items: center; justify-content: right;" href="https://github.com/RapidShrimp/">
+                            <p style="height: auto;">View Full Code</p>
+                            <src target="_blank" class="contact-icon" style="width: 36px; height: 36px; background-image: url(../images/icons/github.png);"></src>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            <script src="../JS/CodeSnippets"></script> 
+            <link rel="stylesheet" href="../styles/CodeSnippet.css"></link>
+        </div>
 
 
 
