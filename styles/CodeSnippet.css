@@ -17,10 +17,23 @@
 }
 
 @media all and (min-width:0px) and (max-width: 720px) {
-    .CodeSnippet{
+    .codeBox{
         visibility: collapse !important;
     }
+    pre{
+        height: 0px !important;
+        min-height: 0px !important;
+    }
+    line{
+        height: 0px !important;
+    }
+    .mobilePrompt{
+        visibility: visible !important;
+        height: 120px !important;
+    }
 }
+
+
 .WindowBar{
     display: flex;
     padding: 14px
@@ -62,7 +75,17 @@
     vertical-align: middle;
 }
 
+.mobilePrompt{
+    visibility: collapse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+
+    height: 0px;
+}
 .codeBox{
+    visibility: visible;
     min-height: 150px;
     max-height: 500px;
     overflow-y: scroll;
