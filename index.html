@@ -3,17 +3,21 @@
 <html>
     
     <head>
+        <!--Essentials-->
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/NavigationBar.css">
-        <link rel="stylesheet" href="styles/WebsiteStyle.css">
-        <link rel="stylesheet" href="styles/Animations.css">
+        <link rel="stylesheet" href="styles/WebFormatting.css">
+        
+        <!--Non Essentials-->
+        <link rel="stylesheet" href="styles/Cards.css">
         <link rel="stylesheet" href="styles/Gallery.css">
 
+        <!-- <link rel="stylesheet" href="styles/Animations.css"> -->
     </head>
     
-    
-<body >
+<body>
 
+    <!--Mobile Navigation Menu-->
     <div class ="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="#HomeID"><li>Home</li></a>
@@ -21,10 +25,11 @@
             <a href="#AboutID"><li>About</li></a>
             <a href="#ContactID" ><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
+    </div>
+
+    <nav class=" flex-row justify-space-between items-center no-pad sticky">
         <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-          <div class="d-flex flex-row dropdown">
+            <div class=" flex-row dropdown">
             <a href="#HomeID" class="dropdown-button"><li>Home</li></a>
             <a href="PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
             <a href="#AboutID" class="dropdown-button"><li>About</li></a>
@@ -36,15 +41,15 @@
             <span></span>
             <span></span>
         </div>  
-      </nav>
-      <script src="Navigation.js"></script> 
+    </nav>
+    <script src="Navigation.js"></script> 
 
 <div style="display: grid; justify-content: center;">
 
     <!--Introduction + Video-->
-    <div id="HomeID" class="responsive-container content-text d-flex items-center flex-will-change gap-2 fade-in">
-        <div class="d-flex flex-column gap-4 swipe-in-left">
-            <div class="d-flex flex-column text-size-title gap-1  drop-shaddow">
+    <div id="HomeID" class="responsive-container content-text  items-center flex-will-change gap-2 fade-in">
+        <div class=" flex-column gap-4 swipe-in-left">
+            <div class=" flex-column text-size-title gap-1  drop-shaddow">
                 <p class="text-size-title">Adam Shrimpton</p>
                 <p class="text-size-1_5">Game Programmer</p>
             </div>
@@ -58,7 +63,7 @@
                     Let’s build something amazing together!
                 </p>
             </div>
-            <div class="d-flex flex-row gap-3 items-center">
+            <div class=" flex-row gap-3 items-center">
                 <a class="highlight-button link-hide" href="#ContactID">Contact</a>
                 <a class="accessory-button link-hide" href="#AboutID">More about me</a>
             </div>
@@ -72,13 +77,13 @@
     </div>
     
     <!--Featured Projects-->
-    <div class="responsive-container d-flex flex-column gap-5 fade-in">
+    <div class="responsive-container  flex-column gap-5 fade-in">
         <div class="d-grid flex-row items-center justify-space-between gap-2">
             <p class="content-text text-size-1">Featured Projects</p>
             <a href="PortfolioPages/Portfolio.html" class="accessory-button link-hide">View All Projects</a>
         </div> 
         
-        <div class="d-flex flex-will-change gap-3 justify-space-between">
+        <div class=" flex-will-change gap-3 justify-space-between">
                 <a class="content-card card-16x9 width-30" href="PortfolioPages/Dismemberment.html" style="background-image: url('images/portfolio/Dismemberment/SkeletalDismemberment.png');"></a>
                 <a class="content-card card-16x9 width-30" href="PortfolioPages/MechHead.html" style="background-image: url('images/portfolio/mechhead/MH_Logo.png');"></a>
                 <a class="content-card card-16x9 width-30" href="PortfolioPages/QuietQuota.html"  style="background-image: url('images/portfolio/QuietQuota/QQ_Thumbnail.PNG');"></a>
@@ -86,7 +91,7 @@
     </div>
     
     <!--About Me-->
-    <div class="responsive-container content-text d-flex flex-column gap-3 small-vert-pad">
+    <div class="responsive-container content-text  flex-column gap-3 small-vert-pad">
         <p id="AboutID" class="text-size-title">About Me</p>
         <p class="text-size-2">
             Outside of development, I enjoy cooking, hitting the gym, and creating small animations and renders in Blender.<br>
@@ -95,46 +100,92 @@
     </div>
 
     <!--Skills-->
-    <div class="responsive-container d-flex flex-column content-text no-list text-size-2 gap-2" style="list-style:disc"> 
+    <div class="responsive-container  flex-column content-text no-list text-size-2 gap-2" style="list-style:disc"> 
         <p class="text-size-title">Skills</p>
-        <div class="d-flex flex-column"style="align-items: center; text-align: center;;">
-        <p class="text-size-1_5">Languages</p>
-        <div class="d-flex flex-column">
 
-            <li>C++</li>
-            <li>C#</li>
-            <li>Javascript</li>
-            <li>Python</li>
+        <div class="flex-will-change-small justify-space-between" style="flex-wrap: wrap;">
+            <div style="padding-top: 10px;">
+                <p class="text-size-1_5">Engines</p>
+                <li>Unreal Engine</li>
+                <li>Unity</li>
+                <li>Gamemaker</li>
+                <li>Godot</li>
+            </div>
+            
+            <div style="padding-top: 10px;">
+                <p class="text-size-1_5">Languages</p>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python, Javascript</li>
+                <li>Html & CSS</li>
+            </div>
+
+            <div style="padding-top: 10px;">
+                <p class="text-size-1_5">Softwares</p>
+                <li>Github</li>
+                <li>Jira, MS Teams</li>
+                <li>Excel, Powerpoint, Word</li>
+                <li>Photoshop</li>
+                <li>Blender, Cinema4D</li>
+            </div>
+
+            <div style="padding-top: 10px;">
+                <p class="text-size-1_5">Skills</p>
+                <li>Leadership</li>
+                <li>Time & Team Management</li>
+                <li>communication</li>
+                <li>Flexibility</li>
+            </div>
         </div>
-        <p class="text-size-1_5">Engines</p>
-            <li>Unreal Engine 4/5</li>
-            <li>Unity</li>
-            <li>Hammer</li>
-            <li>GameMaker Studio</li>
-        <p class="text-size-1_5">Softwares</p>
 
-        <p class="text-size-1_5">Bonus Skills</p>
+        <!-- <div class="flex-column gap-4" style="align-items: center; text-align: center;">
+        
+            <div class="width-75 width-100-mobile-only"style="height: auto;">
+                <p class="text-size-1_5">Languages & Engines</p>
+                <div class="flex-row justify-center"  style="flex-wrap: wrap;">
+                        <img  class="width-15 max-150" src="images/icons/CPP.png">
+                        <img  class="width-15 max-150" src="images/icons/CSharp.png">
+                        <img  class="width-15 max-150" src="images/icons/Python.png">
+                        <img  class="width-15 max-150" src="images/icons/UnrealLogo.png">
+                        <img  class="width-15 max-150" src="images/icons/UnityLogo.png">
+                        <img  class="width-15 max-150" src="images/icons/Gamemaker.png">
+                </div>
+            </div>   
+            
+            <div class="width-75 width-100-mobile-only"style="height: auto;">
+                <p class="text-size-1_5 width-100">Softwares</p>
+                <div class="flex-row justify-center" style="flex-wrap: wrap;">
+                        <img class="width-10 min-50 max-150"src="images/icons/Rider.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/VSCode.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/github.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/Teams.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/Excel.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/Photoshop.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/Word.png">
+                        <img class="width-10 min-50 max-150"src="images/icons/Blender.png">
+                </div>
+            </div>
     
-        </div>
+        </div> -->
     </div>
 
     <!--Contacts-->
     <div class="responsive-container fade-in small-vert-pad ">
         <p id="ContactID" class="content-text text-size-1">Contact Me</p>
-        <div class="d-flex flex-column gap-4 justify-center accessory">
+        <div class=" flex-column gap-4 justify-center accessory">
             <p class="text-size-1_5">Other Links</p>
-            <div class="d-flex gap-2" style="flex-wrap: wrap;">
-                <a href="mailto:adamshrimpton04@outlook.com" target="_blank" class="contact-icon" style="background-image: url(images/icons/mail.png);"></a>
-                <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class="contact-icon" style="background-image: url(images/icons/linkedin.png);"></a>
-                <a href="https://www.youtube.com/@RapidAdam" target="_blank" class="contact-icon" style="background-image: url(images/icons/youtube.png);"></a>
-                <a href="https://github.com/RapidShrimp" target="_blank" class="contact-icon" style="background-image: url(images/icons/github.png);"></a>
-                <a href="https://discordapp.com/users/329320112257761281/" target="_blank" class="contact-icon" style="background-image: url(images/icons/DiscordLogo.png);"></a>
+            <div class="flex-row gap-2" style="flex-wrap: wrap;">
+                <a href="mailto:adamshrimpton04@outlook.com" target="_blank" class=" width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/mail.png);"></a>
+                <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/linkedin.png);"></a>
+                <a href="https://www.youtube.com/@RapidAdam" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/youtube.png);"></a>
+                <a href="https://github.com/RapidShrimp" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/github.png);"></a>
+                <a href="https://discordapp.com/users/329320112257761281/" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/DiscordLogo.png);"></a>
             </div>
-            <div class="d-flex flex-column gap-1">
+            <div class=" flex-column gap-1">
                 <p class="text-size-1_5">Looking to hire me?</p>
                 <p>I have only one month of my studies remaining and will be excited to get to know you!</p>
 
-                <div class="d-flex flex-row flex-will-change justify-space-between content-text gap-2">
+                <div class=" flex-row flex-will-change justify-space-between content-text gap-2">
                     <p>Feel free to message me on any of my social platforms, LinkedIn and Email are preffered.<br>Or click the download button and view my CV and see if I am a fit for your team?</p>
                     <a class="highlight-button link-hide" href="AdamShrimptonCV.pdf" target="_blank">Download</a>
                 </div>
