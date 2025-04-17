@@ -35,6 +35,50 @@ div.Card h1{
 
 }
 
+/*Logo*/
+.content-card{
+    background-color: #404044;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+}
+.content-card-image{
+    width: 40%;
+    justify-content: flex-end;
+}
+@media all and (min-width:0px) and (max-width: 1150px) {
+.content-card-image{
+    width: 95%;
+    margin: auto;
+}
+
+}
+.logo-card{
+    background-color: rgba(0, 0, 0, 0.479);
+
+    padding: 50px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.logo-card:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 6px 0px  0 rgb(255, 255, 255);
+
+    transition: 0.5s;
+
+}
+.curve-border{
+    border-radius: 12px;
+}
+.logo-card img{
+    height: 256px;
+    width: 256px;
+}
+.card-16x9{
+    aspect-ratio: 16/9;
+}
 div.Card:hover h1{
     color:black;
     transition: 0.4s;
@@ -203,6 +247,23 @@ div.cardwrapper p{
     font-family: sans-serif;
     margin-bottom: 0%;
     text-align: left;
+}
+
+@media all and (min-width:0px) and (max-width: 1150px) {
+    .content-card{
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .logo-card{
+        width: 70vw;
+        padding:20px;
+    }
+    .logo-card img{
+        height: 100px;
+        width: 100px;
+    }
+
 }
 
 .unreal{
