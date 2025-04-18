@@ -26,11 +26,14 @@
     }
     line{
         height: 0px !important;
+        width: 0px !important;
     }
     .mobilePrompt{
         visibility: visible !important;
         height: 120px !important;
+
     }
+
 }
 
 
@@ -67,6 +70,7 @@
     cursor: pointer;
     height: 24px;
     width: 24px;
+    aspect-ratio: 1;
     margin: 0 4px;
     background-color: #bbb;
     border-radius: 50%;
@@ -171,3 +175,14 @@ string{
 parameter{
     color:rgb(79, 79, 92);
 }
+
+enum{
+    color:rgb(184, 215, 159);
+
+}
+
+define{
+    color:rgb(220, 149, 230);
+}
+
+/* https://emgithub.com/ */
