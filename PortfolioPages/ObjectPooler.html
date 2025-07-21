@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<title>Object Pooler</title>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
+    <link rel="stylesheet" href="../styles/WebFormatting.css">
+    <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ImageCarousel.css">
+    <link rel="stylesheet" href="../styles/Gallery.css">
+
+
+
+</head>
+
+<body>
+    <!--Nav Menu-->
+    <div class ="off-screen-menu">
+        <ul class="off-screen-menu-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a><li>Portfolio</li></a>
+            <a href="../index.html#ContactsID"><li>Contact</li></a>
+        </ul>
+      </div>
+      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
+        <div class="d-flex flex-row dropdown">
+            <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+            <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
+            <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
+        </div>
+  
+        <div class = "ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+      </nav>
+      <script src="../Navigation.js"></script> 
+
+        <div style="display: grid;place-content: center;">
+            <!--Project Description-->
+            <div class="responsive-container d-flex flex-column gap-2 content-text ">
+                <p class="text-size-title">Shrimple Object Pooler</p>
+                <p class="text-size-1_5">Unreal Engine Actor Pooler Plugin</p>
+                <li class="text-size-2">Team Size: Solo Project</li>
+                <li class="text-size-2">Roles: Programmer</li>
+                <li class="text-size-2">Duration: 1 Week</li>
+                <br>
+                <p class="text-size-1_8">
+                    This is my first object pooler created in unreal, I wanted something that could be used across any class, and the Shrimple Object Pooler is my solution to that problem.
+                    What makes this object pooler good?
+                </p>
+
+                <br>
+
+                <div class="d-flex flex-column gap-2 text-size-1_8">
+                    <div>
+                        <b>Pre-Allocation with Array Reservation:</b><br>
+                        Arrays reserve space upfront, based on configured pool sizes, to prevent costly reallocations during initialization.
+                    </div>
+                    <div>
+                        <b>Efficient Pool Management:</b><br>
+                        Objects are stored in two arrays per pooled class — an active array and an inactive array. Instead of costly RemoveAt() calls causing array reshuffling, returned objects are set to nullptr in the active array and placed into available slots in the inactive array. This approach minimizes memory reallocations and fragmentation, maintaining stable performance even with large pools.
+                    </div>
+                    <div>
+                        <b>Interface Enforcement:</b><br>
+                        Only actors implementing the IPooledObject interface can be pooled, ensuring pooled objects support activation and deactivation hooks. This guarantees that actors correctly reset their state when reused.
+                    </div>
+
+                    <div>
+                        <b>Expandable Pools and Fallbacks:</b><br>
+                        The pool supports dynamic expansion if configured, allowing new objects to spawn when the pool runs out. Additionally, it can be set to reuse the oldest active object, providing flexible object reuse strategies that fit different gameplay needs.
+                    </div>
+                    <div>
+                        <b>Configurable Per-Class Cleanup:</b><br>
+                        A cleanup timer periodically compacts pooled arrays by removing invalid or destroyed actor references. This cleanup respects user-configured thresholds and frequencies on a per-class basis, optimizing runtime memory use without causing frame spikes.
+                    </div>
+                    <div>
+                        <b>Blueprint and Editor Friendly:</b><br>
+                        Spawned pooled actors are organized under a dedicated editor folder (/Pool) to keep the world outliner tidy. Spawn parameters avoid deferred construction to ensure predictable initialization.
+                    </div>
+                </div>
+                    
+          </div>
+
+            <!--Gameplay Video-->
+            <div class="responsive-container d-flex flex-column content-text gap-3 text-center">
+                <p class="text-size-title">Test Video</p>
+                <iframe class="card-16x9" src="https://www.youtube.com/embed/S7L7gK3wy_Y" title="Mechhead Teaser Trailer - 1UP 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!--Code Examples-->
+            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
+                <div class="CodeSnippet d-flex flex-column">
+                    <div class="WindowBar">
+                        <ham class="WindowBarDot" style="background-color: rgb(255, 59, 59);"></ham>
+                        <ham class="WindowBarDot" style="background-color: rgb(255, 177, 33);"></ham>
+                        <ham class="WindowBarDot" style="background-color: rgb(149, 241, 11);"></ham>
+                        <div style="width: 100%; text-align: right;">
+                            <h2>ObjectPooler.cpp</h2>
+                        </div>
+                    </div>
+                    <!--Use this, its easier-->
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:534px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FRapidShrimp%2FShrimple-Object-Pooler%2Fblob%2Fmain%2FSource%2FShrimple_Pooling%2FPrivate%2FObjectPooler.cpp%23L52-L84&style=github-dark-dimmed&type=code&showLineNumbers=on&showFullPath=on&maxHeight=518"></iframe>
+
+                    <div class ="WindowFooter">
+                    <!--Paste Github File Link Here-->
+                        <a class="d-flex flex-row gap-2" style="align-items: center; justify-content: right;" href="https://github.com/RapidShrimp/Shrimple-Object-Pooler/blob/main/Source/Shrimple_Pooling/Private/ObjectPooler.cpp#L52-L84">
+                            <p style="height: auto;">View Full Code</p>
+                            <src target="_blank" class="contact-icon" style="width: 36px; height: 36px; background-image: url(../images/icons/github.png);"></src>
+                        </a>
+                    </div>
+                </div>
+            <script src="../JS/CodeSnippets"></script> 
+            <link rel="stylesheet" href="../styles/CodeSnippet.css"></link>
+         </div>
+
+
+
+            <!--Repository Download Button-->
+            <div class="responsive-container d-flex flex-column content-text gap-3 text-center">
+                <p class="text-size-1">Project Download</p>
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/Shrimple-Object-Pooler" target="_blank">
+                    <p class="text-size-1_5 ">GitHub Repo</p>
+                </a>
+            </div>
+
+        </div>
+</body>
