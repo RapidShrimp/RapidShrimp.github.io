@@ -2,35 +2,40 @@
 <title>Portfolio - Game AI</title>
 <head>
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
+    <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ImageCarousel.css">
+    <link rel="stylesheet" href="../styles/Gallery.css">
 </head>
 
 <body>
         <!--Nav Menu-->
 
-        <div class ="off-screen-menu">
-            <ul class="off-screen-menu-content">
-                <a href="../index.html"><li>Home</li></a>
-                <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
-                <a href="../Contacts.html"><li>Contact</li></a>
-            </ul>
-          </div>
-          <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-            <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-            <div class="d-flex flex-row dropdown">
-                <a href="../index.html" class="dropdown-button"><li>Home</li></a>
-                <a href="../PortfolioPages/Portfolio.html" class="dropdown-button"><li>Portfolio</li></a>
-                <a href="../Contacts.html" class="dropdown-button"><li>Contact</li></a>
-            </div>
-    
-            <div class = "ham-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>  
-          </nav>
-          <script src="../Navigation.js"></script> 
+    <div class ="off-screen-menu">
+        <ul class="off-screen-menu-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a><li>Portfolio</li></a>
+            <a href="../index.html#ContactsID"><li>Contact</li></a>
+        </ul>
+      </div>
+      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
+        <div class="d-flex flex-row dropdown">
+            <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+            <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
+            <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
+        </div>
+  
+        <div class = "ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+      </nav>
+      <script src="../Navigation.js"></script> 
 
         <div style="display: grid;place-content: center;">
             <div class="responsive-container background-blur fade-in " style="background-image: url(../images/homepage/backgroundblur-red-blue.png);"></div>
@@ -39,6 +44,16 @@
           <div class="responsive-container d-flex flex-column gap-2 content-text ">
             <p class="text-size-title">Game Artificial Intelligence</p>
             <p class="text-size-1">Behaviours and Pathfinding</p>
+
+
+                <li class="text-size-2">Team Size: Solo</li>
+                <li class="text-size-2">Role(s): Programmer</li>
+                <li class="text-size-2">Duration: 9 Weeks</li>
+                <li class="text-size-2">Grade Achieved: 82%</li>
+                <li class="text-size-2">Engine: Unity</li>
+                <li class="text-size-2">Languages: C#</li>
+
+
             <p class="text-size-2">
                 This is work from Staffordshire University in which I was tasked to create AI Steering behaviours & Pathfinding algorithms using a
                 framework made in Unity provided by the University. This framework would allow for a focus on the core elements by providing me a base to get
