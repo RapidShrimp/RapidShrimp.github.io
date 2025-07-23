@@ -142,9 +142,9 @@
                         <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="img_5terre.jpg">
-                            <img src="../images/portfolio/AMD/AMD_Tank.png" alt="Cinque Terre" width="640" height="360">
+                            <img src="../images/portfolio/BeeGame/BeeGameLogo.png" alt="Cinque Terre" width="640" height="360">
                             </a>
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc"></div>
                         </div>
                         </div>
 
@@ -166,10 +166,11 @@
                             In Hive Defenders, I assigned myself the challenge of creating a buff system that could be used for any class<br>
                             This system is scalable and usable with any actor so long as they have the correct interface functions implemented.<br>
                             Some of the potential use cases for a buff system:
-                            <li>Speed Modifiers</li>
-                            <li>Damage Over Time</li>
-                            <li>Damage Type Resistance Modifiers</li>
-
+                        </p>
+                            <li class="text-size-2">Speed Modifiers</li>
+                            <li class="text-size-2">Damage Over Time</li>
+                            <li class="text-size-2">Damage Type Resistance Modifiers</li>
+                        <p class="text-size-2">
                             How is it structured?
                             The 'BuffBase' class
                             This class would handle the removal of the affected value behaviour and create/trigger any acompanying VFX
@@ -178,27 +179,27 @@
                             The Buffable Interface
                             This interface is the key to having any actor respond to a buff. 
                             The idea behind this interface is that any buffs the actor should respond to, will have an function override that returns the appropriate value.
+                            If the value doesnt return a 0 value it will not activate the buff, or optionally add it to a queue.
                         </p>
                     </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
             <!--Content Left-->
             <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
                 <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                     <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Content Title</p>
+                        <p class="text-size-1">AI Pathfinding</p>
                         <p class="text-size-2">
-                            In the steering behaviour section of the programming we were tasked with creating a variety of behaviours.<br> 
-                            In the video there are 8 Scenes demonstrating the following behaviours<br>
-                            <li class="text-size-2">Seek & Pursuit</li> 
-                            <li class="text-size-2">Flee & Evade</li> 
-                            <li class="text-size-2">Arrive</li> 
-                            <li class="text-size-2">Wander</li> 
-                            <li class="text-size-2">Collision Avoidance</li> 
-                            <li class="text-size-2">Seperation, Alignment & Cohesion</li> 
+                            AI Movement can be simple or deeply complex dependant on the needs of the systems.<br>
+                            For Hive Defenders, our bees were on a set path towards the hive which called for minimal pathfinding but it had to be adaptable becuase there was plans for different routes to be created at runtime given the possibility of an infinite mode. <br>
+                            <br>
+                            In my decision for the pathfinding, I went for a basic distance cost system which would find the nearest route combined with a heuristic based on tower type. This allows for AI to respond to different types of tiles that are around them between the enemy types . <br>
+                            For example, a walking enemy would like to often avoid walking through an area which has spikes on the floor or turrets that are melee combat.<br>
+                            <br>
+                            To get the AI to move along the points, I didnt want to use the default Unreal AI movement tools such as NavMesh pathfinding or AI Controller inputs as these would be inneficient using both tick and the physics system to check for collisions.
+                            My solution to this was to use splines that are generated on path calculation and then lerp the spline based on the distance. This allowed for nice smooth rotations and movement whilst saving the need for physics exclusively to be used by other trace checks.
                         </p>
                     </div>
                 </div>

@@ -42,7 +42,7 @@
         <div style="display: grid;place-content: center;">
             <!--Project Description-->
             <div class="responsive-container d-flex flex-column gap-2 content-text ">
-                <i class="text-size-title" style="color:rgb(255, 177, 33)">*Note* This page is still under construction!</i>
+                <!-- <i class="text-size-title" style="color:rgb(255, 177, 33)">*Note* This page is still under construction!</i> -->
                 <p class="text-size-title">Dungeon Cook</p>
                 <p class="text-size-1_5">Chaotic Fighting & Cooking game</p>
                 <li class="text-size-2">Team Size: 28 People</li>
@@ -60,13 +60,16 @@
                     In this game I was the producer, I took a facilitative approach to my leadership style by allowing my leadership team to manage their own department.
                     This allowed me to work on core systems utilising my technical skills which were needed due to the number of programmers we had.
                     Throughout the 8 week development of the project I programmed the following;
-                    <li>Food data structure</li> 
-                    <li>World Interaction</li> 
-                    <li>Crafting systems</li>
-                    <li>Character customisation</li>
-                    <li>AI Refactor</li>
-                    <br>
+                </p>
+                    <li class="text-size-2">Food data structure</li> 
+                    <li class="text-size-2">World Interaction</li> 
+                    <li class="text-size-2">Crafting systems</li>
+                    <li class="text-size-2">Character customisation</li>
+                    <li class="text-size-2">AI Refactor</li>
+                <p class="text-size-2">
                     Whilst managing as a producer I filled in the skil gap for animation by creating animations. I had to learn animation for this task, so whilst it wasn't the best quality, for a new animator I believe I did well.  
+                    <br>
+                </p>
                 </p>
           </div>
 
@@ -86,20 +89,17 @@
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="../images/portfolio/mechhead/Fire Sprinkler.png" style="width:100%">
-                    <div class="text">Caption One</div>
+                    <img src="../images/portfolio/Dungeon/BattleCard.png" style="width:100%">
                     </div>
                 
                     <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="../images/portfolio/mechhead/combat.png" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <img src="../images/portfolio/Dungeon/CookingBanner.png" style="width:100%">
                     </div>
                 
                     <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="../images/portfolio/mechhead/Downtown.png" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <img src="../images/portfolio/Dungeon/HeroDisplay.png" style="width:100%">
                     </div>
                 
                     <!-- Next and previous buttons -->
@@ -118,7 +118,7 @@
             <script src="../JS/Slideshow.js">window.AutoScroll(1)</script> 
 
 
-            <!--Gallery Images-->
+            <!-- Gallery Images
             <div class="responsive-container d-flex flex-row content-text gap-6 small-vert-pad">
                 <div>
                     <div class="responsive">
@@ -160,20 +160,22 @@
                         <div class="clearfix"></div>
                     </div>
 
-            </div>
+            </div> -->
 
 
         
             <!--Content Right-->
             <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
                 <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dungeon/Interaction.PNG">
                     <div class="d-flex flex-column content-text gap-2">
                         <p class="text-size-1">Interaction System</p>
                         <p class="text-size-2">
-
+                            I created the interaction system for Dungeon cook using a capsule collider. This architecture decision was made because the player may be overlapping with multiple interactable objects at the same. <br> 
+                            Using the built in colliders was a faster development method but could have been more performant by generating a sphere trace from the desired location and then looping through the results. This would be more efficient as the trace type would automatically filter out any objects that are not interactable.<br>
+                            After we had a list of interactable objects, I would then conduct distance checks to get the closest object which would then be the next selected object. 
                         </p>
                     </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
                         <!--Content Right-->
@@ -182,10 +184,12 @@
                     <div class="d-flex flex-column content-text gap-2">
                         <p class="text-size-1">Food Structure & Crafting System</p>
                         <p class="text-size-2">
-
+                            The food structure in this game worked using data Assets, these assets would work as the blueprint to the crafting system, each ingredient would have an ID which allowed for faster lookups by sorting the ingredients when calling the crafting check. <br>
+                            If the ingredients matched up the player would then be able to activate the station they were cooking at which spawned a ghost to cook for you.<br>
                         </p>
                     </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dungeon/Cooking.png">
+
                 </div>
             </div>
                         <!--Content Right-->
@@ -194,10 +198,29 @@
                     <div class="d-flex flex-column content-text gap-2">
                         <p class="text-size-1">Animation </p>
                         <p class="text-size-2">
-
+                            Having no level 6 animator on the project I took it upon myself to also animate the various characters and creatures that we have in the game.<br>
+                            Here is a list of the Animations I created during the project.
                         </p>
+                        <li>
+                            Dragon - Idle, Attack, Attack Start
+                        </li> 
+                        <li>
+                            Potato Pig - Idle, Walk, Run, Chargeup
+                        </li>
+                        <li>
+                            Player Character - Idle, Walk, Attack, All Trailer Animations
+                        </li>
+                        <li>
+                            Carrot mandrake - Idle, Appear, Attack
+                        </li>
+                        <li>
+                            Onion mandrake - Idle, Appear, Attack
+                        </li>
+                        <li>
+                            Dirt Golem - Idle, Walk, Attack
+                        </li>
                     </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/videoseries?si=x9e7To7lYBuWrQwm&amp;list=PLjwxqA2L6vtLssm93lqdTs_rKODXWoNL_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -207,12 +230,29 @@
                     <div class="d-flex flex-column content-text gap-2">
                         <p class="text-size-1">Producer</p>
                         <p class="text-size-2">
-
+                            As the producer of the project it was important for me to consistently communicate with my team, ensuring that;We were on track, The scope of the project wasn't too big, and to solve decisions which were split. <br>
+                            During this project I faced a few challenges. Initially we had an expanded leadership team consisting of 4 Art leads. This was changed the following week by myself because there was not enough to manage to warrant four leads of the same discipline, so the Art leadership team was limited down to a concept artist in stoke, and a 3D Artist in London.
+                            <br>
+                            During the 4th Week of the project, the scope and the skillset of the team was clear to be lesser than initially expected, members being absent was the primary cause of this. For this reason we move back from multiplayer into single-player so that we could create a more polished experience.
+                            <br>
+                            This producer role helped me understand overall project workflows better and how to best resolve grievances and communicate needs of the projects to all areas of the development. Given the chance to work with the amazing team again I would.
                         </p>
                     </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+
+
+            
+            <!-- <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
+                <p class="text-size-1">Other Team Members</p>
+                <li>Michal Sukenik - Tech Lead</li>
+                <li>Abby Arbalaster</li>
+                <li>Noemi Vaduva - 3D Art Lead</li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </div> -->
 
         </div>
 </body>
