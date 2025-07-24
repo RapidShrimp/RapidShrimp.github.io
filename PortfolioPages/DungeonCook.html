@@ -39,39 +39,37 @@
       </nav>
       <script src="../Navigation.js"></script> 
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
-            <div class="responsive-container d-flex flex-column gap-2 content-text ">
-                <!-- <i class="text-size-title" style="color:rgb(255, 177, 33)">*Note* This page is still under construction!</i> -->
-                <p class="text-size-title">Dungeon Cook</p>
-                <p class="text-size-1_5">Chaotic Fighting & Cooking game</p>
-                <li class="text-size-2">Team Size: 28 People</li>
-                <li class="text-size-2">Role(s): Producer, Programmer, Animator</li>
-                <li class="text-size-2">Duration: 8 Weeks</li>
-                <li class="text-size-2">Grade Achieved: 70%</li>
-                <li class="text-size-2">Engine: Unreal Engine</li>
-                <li class="text-size-2">Languages: Blueprint</li>
+    <div style="display: grid;place-content: center;">
+        <!--Project Description-->
+        <div class="responsive-container d-flex flex-column gap-2 content-text">
+            <p class="text-size-title">Dungeon Cook</p>
+            <p class="text-size-1_5">Chaotic Fighting & Cooking Game</p>
+            <li class="text-size-2">Team Size: 28 People</li>
+            <li class="text-size-2">Role(s): Producer, Programmer, Animator</li>
+            <li class="text-size-2">Duration: 8 Weeks</li>
+            <li class="text-size-2">Grade Achieved: 70%</li>
+            <li class="text-size-2">Engine: Unreal Engine</li>
+            <li class="text-size-2">Languages: Blueprint</li>
 
-                <p class="text-size-2">
-                    Dungeon cook is a single-player cooking game with fighting elemetns.<br>
-                    In this game the player is tasked in going into the dungeon to fight monsters of all different kinds 
-                    to scavenge ingredients to take back to the kitchen so that they can cook it up for customers to earn coin.<br>
-                    <br>
-                    In this game I was the producer, I took a facilitative approach to my leadership style by allowing my leadership team to manage their own department.
-                    This allowed me to work on core systems utilising my technical skills which were needed due to the number of programmers we had.
-                    Throughout the 8 week development of the project I programmed the following;
-                </p>
-                    <li class="text-size-2">Food data structure</li> 
-                    <li class="text-size-2">World Interaction</li> 
-                    <li class="text-size-2">Crafting systems</li>
-                    <li class="text-size-2">Character customisation</li>
-                    <li class="text-size-2">AI Refactor</li>
-                <p class="text-size-2">
-                    Whilst managing as a producer I filled in the skil gap for animation by creating animations. I had to learn animation for this task, so whilst it wasn't the best quality, for a new animator I believe I did well.  
-                    <br>
-                </p>
-                </p>
-          </div>
+            <p class="text-size-2">
+                Dungeon Cook is a single-player cooking game with fighting elements.<br>
+                In this game, the player is tasked with entering dungeons to fight various monsters 
+                and scavenge ingredients to bring back to the kitchen to cook meals for customers in exchange for coins.<br><br>
+                I was the producer on this project. I used a facilitative leadership style—allowing the leads to manage their own departments.
+                This gave me the freedom to focus on core systems using my technical skillset, which was necessary due to our limited number of programmers.
+                Over the 8-week development, I programmed the following:
+            </p>
+            <li class="text-size-2">Food Data Structure</li>
+            <li class="text-size-2">World Interaction System</li>
+            <li class="text-size-2">Crafting Systems</li>
+            <li class="text-size-2">Character Customisation</li>
+            <li class="text-size-2">AI Refactor</li>
+
+            <p class="text-size-2">
+               While managing the project, I also filled the skill gap in animation by creating several character animations.
+               I had to learn animation for this task, so while not perfect, I'm proud of the quality achieved as a beginner.
+            </p>
+        </div>
 
             <!--Gameplay Video-->
             <div class="responsive-container d-flex flex-column content-text gap-3 text-center">
@@ -165,81 +163,64 @@
 
         
             <!--Content Right-->
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dungeon/Interaction.PNG">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Interaction System</p>
-                        <p class="text-size-2">
-                            I created the interaction system for Dungeon cook using a capsule collider. This architecture decision was made because the player may be overlapping with multiple interactable objects at the same. <br> 
-                            Using the built in colliders was a faster development method but could have been more performant by generating a sphere trace from the desired location and then looping through the results. This would be more efficient as the trace type would automatically filter out any objects that are not interactable.<br>
-                            After we had a list of interactable objects, I would then conduct distance checks to get the closest object which would then be the next selected object. 
-                        </p>
-                    </div>
+          <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
+            <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dungeon/Interaction.PNG">
+                <div class="d-flex flex-column content-text gap-2">
+                    <p class="text-size-1">Interaction System</p>
+                    <p class="text-size-2">
+                    I created the interaction system for Dungeon Cook using a capsule collider. This decision was made because the player could overlap with multiple interactable objects at once.<br>
+                    Using Unreal's built-in colliders was faster for development, but performance could have been improved by using a sphere trace and filtering by object type.<br>
+                    After gathering a list of valid objects, I ran distance checks to identify the closest one, which then became the selected interactable.
+                </p>
                 </div>
             </div>
+        </div>
                         <!--Content Right-->
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Food Structure & Crafting System</p>
-                        <p class="text-size-2">
-                            The food structure in this game worked using data Assets, these assets would work as the blueprint to the crafting system, each ingredient would have an ID which allowed for faster lookups by sorting the ingredients when calling the crafting check. <br>
-                            If the ingredients matched up the player would then be able to activate the station they were cooking at which spawned a ghost to cook for you.<br>
-                        </p>
-                    </div>
-                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dungeon/Cooking.png">
-
+        <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
+            <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                <div class="d-flex flex-column content-text gap-2">
+                    <p class="text-size-1">Food Structure & Crafting System</p>
+                    <p class="text-size-2">
+                    The food structure used data assets. These acted as blueprints for the crafting system. Each ingredient had a unique ID for fast lookup when checking recipes.<br>
+                    If the recipe matched, the player could activate the cooking station, which would spawn a ghost to cook the dish for them.
+                </p>
                 </div>
+                <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dungeon/Cooking.png">
             </div>
+        </div>
                         <!--Content Right-->
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Animation </p>
-                        <p class="text-size-2">
-                            Having no level 6 animator on the project I took it upon myself to also animate the various characters and creatures that we have in the game.<br>
-                            Here is a list of the Animations I created during the project.
-                        </p>
-                        <li>
-                            Dragon - Idle, Attack, Attack Start
-                        </li> 
-                        <li>
-                            Potato Pig - Idle, Walk, Run, Chargeup
-                        </li>
-                        <li>
-                            Player Character - Idle, Walk, Attack, All Trailer Animations
-                        </li>
-                        <li>
-                            Carrot mandrake - Idle, Appear, Attack
-                        </li>
-                        <li>
-                            Onion mandrake - Idle, Appear, Attack
-                        </li>
-                        <li>
-                            Dirt Golem - Idle, Walk, Attack
-                        </li>
-                    </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/videoseries?si=x9e7To7lYBuWrQwm&amp;list=PLjwxqA2L6vtLssm93lqdTs_rKODXWoNL_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
+            <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                <div class="d-flex flex-column content-text gap-2">
+                    <p class="text-size-1">Animation</p>
+                    <p class="text-size-2">
+                        With no Level 6 animator on the team, I stepped up to animate various creatures and characters in the game.<br>Here's a list of animations I created:
+                    </p>
+                    <li>Dragon - Idle, Attack, Attack Start</li>
+                    <li>Potato Pig - Idle, Walk, Run, Charge-up</li>
+                    <li>Player Character - Idle, Walk, Attack, All Trailer Animations</li>
+                    <li>Carrot Mandrake - Idle, Appear, Attack</li>
+                    <li>Onion Mandrake - Idle, Appear, Attack</li>
+                    <li>Dirt Golem - Idle, Walk, Attack</li>
+                </div>
+                <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;" src="https://www.youtube.com/embed/videoseries?si=x9e7To7lYBuWrQwm&amp;list=PLjwxqA2L6vtLssm93lqdTs_rKODXWoNL_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
+            <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                <div class="d-flex flex-column content-text gap-2">
+                    <p class="text-size-1">Producer</p>
+                    <p class="text-size-2">
+                        As the producer, I ensured clear and consistent communication across the team. I kept development on track, mitigated scope creep, and resolved team conflicts effectively.<br><br>
+                        One challenge arose early in the project with an oversized leadership team—initially, four art leads. I scaled this down to a concept artist (based in Stoke) and a 3D artist (based in London), which made the structure more efficient.<br><br>
+                        In Week 4, it became clear the team's capacity was lower than anticipated, mainly due to member absences. As a result, we pivoted from multiplayer to a single-player experience to ensure polish and stability.<br><br>
+                        This role helped me grow significantly in understanding team dynamics, conflict resolution, and cross-discipline coordination. I would gladly work with this team again.
+                    </p>
                 </div>
             </div>
-
-
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Producer</p>
-                        <p class="text-size-2">
-                            As the producer of the project it was important for me to consistently communicate with my team, ensuring that;We were on track, The scope of the project wasn't too big, and to solve decisions which were split. <br>
-                            During this project I faced a few challenges. Initially we had an expanded leadership team consisting of 4 Art leads. This was changed the following week by myself because there was not enough to manage to warrant four leads of the same discipline, so the Art leadership team was limited down to a concept artist in stoke, and a 3D Artist in London.
-                            <br>
-                            During the 4th Week of the project, the scope and the skillset of the team was clear to be lesser than initially expected, members being absent was the primary cause of this. For this reason we move back from multiplayer into single-player so that we could create a more polished experience.
-                            <br>
-                            This producer role helped me understand overall project workflows better and how to best resolve grievances and communicate needs of the projects to all areas of the development. Given the chance to work with the amazing team again I would.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        </div>
 
 
             

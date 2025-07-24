@@ -51,9 +51,8 @@
                 <li class="text-size-2">Languages: Blueprint</li>
     
                 <p class="text-size-2">
-                    Hive Defenders is a bee tower defence game in which the player controls a bee to create towers, gather resources in order to protect the queen bee.<br>
-                    In this project I was in charge of source control via GitHub managing branch structure and resolving conflicts and ensuring daily builds for management to review<br>
-                    Additionally I was also assisting with fixing issues in all areas of the game as well as creating mechanics in engine. 
+                    Hive Defenders is a bee tower defence game in which the player controls a bee to create towers and gather resources in order to protect the queen bee.<br>
+                    In this project, I was in charge of source control via GitHub. This involved managing branch structures, resolving conflicts, and ensuring daily builds for management were created for review. Additionally, I developed core mechanics for the game as well as assisting in general issues surrounding the entire project.
                 </p>
           </div>
 
@@ -141,7 +140,7 @@
 
                         <div class="responsive">
                         <div class="gallery">
-                            <a target="_blank" href="img_5terre.jpg">
+                            <a target="_blank" href="../images/portfolio/BeeGame/BeeGameLogo.png">
                             <img src="../images/portfolio/BeeGame/BeeGameLogo.png" alt="Cinque Terre" width="640" height="360">
                             </a>
                             <div class="desc"></div>
@@ -159,7 +158,7 @@
 
             <!--Content Right-->
             <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
+                <div class="d-flex gap-4 justify-space-between accessory">
                     <div class="d-flex flex-column content-text gap-2">
                         <p class="text-size-1">Buff System</p>
                         <p class="text-size-2">
@@ -171,17 +170,17 @@
                             <li class="text-size-2">Damage Over Time</li>
                             <li class="text-size-2">Damage Type Resistance Modifiers</li>
                         <p class="text-size-2">
-                            How is it structured?
-                            The 'BuffBase' class
-                            This class would handle the removal of the affected value behaviour and create/trigger any acompanying VFX
-                            This is a poolable UObject that is self managed and stores a reference to the interfaced actor. 
-
-                            The Buffable Interface
-                            This interface is the key to having any actor respond to a buff. 
-                            The idea behind this interface is that any buffs the actor should respond to, will have an function override that returns the appropriate value.
-                            If the value doesnt return a 0 value it will not activate the buff, or optionally add it to a queue.
+                            <b>The 'BuffBase' class</b><br>
+                            This class would handle the removal of the affected value behaviour and create/trigger any acompanying VFX.<br>
+                            This is a poolable UObject that is self managed and stores a reference to the interfaced actor. <br>
+                            <br>
+                            <b>The Buffable Interface</b><br>
+                            This interface is the key to having any actor respond to a buff. The idea behind this interface is that any buffs the actor should respond to, will have a function override that returns the appropriate value. If the value returns a 0 value it will not activate/create the buff.
                         </p>
+                        <br>
                     </div>
+                    <img class="content-card-image curve-border" style="width:100%;" src="../images/portfolio/BeeGame/BuffFlow.jpg">
+                    
                 </div>
             </div>
 
@@ -192,16 +191,16 @@
                     <div class="d-flex flex-column content-text gap-2">
                         <p class="text-size-1">AI Pathfinding</p>
                         <p class="text-size-2">
-                            AI Movement can be simple or deeply complex dependant on the needs of the systems.<br>
                             For Hive Defenders, our bees were on a set path towards the hive which called for minimal pathfinding but it had to be adaptable becuase there was plans for different routes to be created at runtime given the possibility of an infinite mode. <br>
                             <br>
-                            In my decision for the pathfinding, I went for a basic distance cost system which would find the nearest route combined with a heuristic based on tower type. This allows for AI to respond to different types of tiles that are around them between the enemy types . <br>
+                            In my decision for the pathfinding, I went for a basic distance cost system which would find the quickest route combined with a heuristic addition factor for the tile type. This allows for AI to path through different types of tiles based on a weighting factor set in the enemy data assets. <br>
                             For example, a walking enemy would like to often avoid walking through an area which has spikes on the floor or turrets that are melee combat.<br>
                             <br>
                             To get the AI to move along the points, I didnt want to use the default Unreal AI movement tools such as NavMesh pathfinding or AI Controller inputs as these would be inneficient using both tick and the physics system to check for collisions.
                             My solution to this was to use splines that are generated on path calculation and then lerp the spline based on the distance. This allowed for nice smooth rotations and movement whilst saving the need for physics exclusively to be used by other trace checks.
                         </p>
                     </div>
+                    <img class="content-card-image curve-border" style="width:100%;" src="../images/portfolio/BeeGame/Splines.gif">
                 </div>
             </div>
 
