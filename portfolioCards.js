@@ -19,7 +19,7 @@ function ToggleSection(string) {
     const Query = document.querySelectorAll(string);
     for (let i = 0; i < Query.length; i++) {
         if (Query[i].style.display === "none") {
-            Query[i].style.display = "inline-flex";
+            Query[i].style.display = "flex";
         } 
         else {
             Query[i].style.display = "none";
@@ -40,7 +40,7 @@ function ShowAll(){
     const Query = document.querySelectorAll(".cardwrapper");
     for (let i = 0; i < Query.length; i++) {
 
-        Query[i].style.display = "inline-flex";
+        Query[i].style.display = "flex";
     }
     let x = document.getElementById("ShowAllButton");
     if(!x.classList.contains("highlight-disabled")){
