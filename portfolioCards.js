@@ -29,7 +29,7 @@ function ToggleSection(string) {
 
 function HideAll(){
 
-    const Query = document.querySelectorAll(".cardwrapper");
+    const Query = document.querySelectorAll(".list-card > a");
     for (let i = 0; i < Query.length; i++) {
 
         Query[i].style.display = "none";
@@ -37,7 +37,7 @@ function HideAll(){
 }
 function ShowAll(){
 
-    const Query = document.querySelectorAll(".cardwrapper");
+    const Query = document.querySelectorAll(".list-card > a");
     for (let i = 0; i < Query.length; i++) {
 
         Query[i].style.display = "flex";

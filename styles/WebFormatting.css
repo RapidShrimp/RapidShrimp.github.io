@@ -59,6 +59,7 @@ body{
     height: 100vh;
     filter: blur(100px);
     background-size:cover;
+    opacity: 0.8;
 }
 
 /*Repsonsive Containers*/
@@ -242,6 +243,7 @@ body{
 .content-video{
     max-width: 100%;
     border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
 }
 
 .video {
@@ -408,6 +410,20 @@ p{
     transition: background-color 0.2s, border-color 0.2s;
 }
 
+@keyframes subtitle-gradient {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.subtitle-glow {
+    background: linear-gradient(90deg, #5b21b6, #7c3aed, #d946ef, #7c3aed, #5b21b6);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: subtitle-gradient 4s linear infinite;
+}
+
 .purple-button {
     background-color: #7c3aed;
     border-color: #7c3aed;
@@ -510,7 +526,7 @@ p{
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: #7c3aed;
     margin: 0;
 }
 
@@ -549,7 +565,7 @@ p{
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: #7c3aed;
     margin: 0 0 16px 0;
 }
 
@@ -636,6 +652,76 @@ p{
     width: 18px;
     height: 18px;
     object-fit: contain;
+}
+
+/* Hero section layout — text left, video right, stacks at tablet */
+.hero-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 56px;
+}
+
+.hero-text {
+    flex: 0 0 45%;
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.video-card {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    margin-left: -64px;
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.video-caption-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+.video-caption-sub {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+@media all and (min-width:0px) and (max-width: 1150px) {
+    .hero-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .hero-text {
+        flex: unset;
+        width: 100%;
+        z-index: auto;
+    }
+
+    .video-card {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 /* UE-style section divider */

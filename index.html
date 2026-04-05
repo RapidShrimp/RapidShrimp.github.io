@@ -45,16 +45,18 @@
             <span></span>
         </div>  
     </nav>
-    <script src="Navigation.js"></script> 
+    <script src="Navigation.js"></script>
+
+    <div class="background-blur" style="background-image: url('images/homepage/backgroundblur-red-blue.png');"></div>
 
 <div style="display: grid; justify-content: center;">
 
     <!--Introduction + Video-->
-    <div id="HomeID" class="responsive-container content-text flex-will-change gap-2 fade-in">
-        <div class=" flex-column gap-4 swipe-in-left" style="flex: 1;">
+    <div id="HomeID" class="responsive-container content-text hero-layout fade-in">
+        <div class="hero-text flex-column gap-4 swipe-in-left">
             <div class=" flex-column text-size-title gap-1  drop-shaddow">
                 <p class="text-size-title">Adam Shrimpton</p>
-                <p class="text-size-1_5" style="color: #7c3aed;">Software Engineer</p>
+                <p class="text-size-1_5 subtitle-glow">Software Engineer</p>
             </div>
             <div class="text-size-2  drop-shaddow">
                 <p class="bio-full">
@@ -80,7 +82,7 @@
             </div>
         </div>
 
-        <div class="video item-flex-end swipe-in-right">
+        <div class="video-card swipe-in-right">
             <video class="content-video aspect-16_9" autoplay muted loop>
                 <source src="videos/Showcase_Video.mp4">
             </video>
@@ -184,7 +186,7 @@
     <!--Contacts-->
     <div id="ContactsID" class="responsive-container fade-in content-text">
         <div class="contact-layout">
-            <div class="hire-card">
+            <div class="hire-card" style="justify-content: flex-start;">
                 <p class="content-text text-size-1">Contact Me</p>
                 <p class="contact-section-label">Find me on</p>
                 <div class="contact-icons-row">
