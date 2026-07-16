@@ -1,118 +1,157 @@
 <!DOCTYPE html>
+<html>
 <title>Portfolio - IMD</title>
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
-    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
     <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
     <link rel="stylesheet" href="../styles/Gallery.css">
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 </head>
 
 <body>
-        <!--Nav Menu-->
-    <div class ="off-screen-menu">
+
+    <!--Nav Menu-->
+    <div class="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="../index.html"><li>Home</li></a>
-            <a><li>Portfolio</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID"><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-        <div class="d-flex flex-row dropdown">
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
             <a href="../index.html" class="dropdown-button"><li>Home</li></a>
             <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
         </div>
-  
-        <div class = "ham-menu">
+        <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>  
-      </nav>
-      <script src="../Navigation.js"></script> 
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
-          <div class="responsive-container d-flex flex-column gap-2 content-text ">
-            <p class="text-size-title">Intro to Mechanics Design</p>
-            <p class="text-size-1">Unity Programming Module</p>
+    <div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
+
+    <div style="display: grid; justify-content: center;">
+
+        <!-- Hero -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
+                <p class="text-size-title">Intro to Mechanics Design</p>
+                <p class="text-size-1_5">Unity Programming Module — 2nd Year</p>
+            </div>
             <p class="text-size-2">
-                Intro to Mechanics design is a 2nd Year module I was enrolled on at Staffordshire University.<br>
-                For this module I had to create a 2D character controller which had forgiveness mechanics to help the player navigate the map, and create other mechanics that "feel good" using audio and visuals;<br>
-                In this module I achieved a First at 77% <br>
-                Below is only a slice of my IMD work, the rest can be viewed on the IMD playlist which can be found on my  <a href="https://youtube.com/playlist?list=PLjwxqA2L6vtLUJ4trPWrz9wXB9BTZhLRG&si=fZmc_8OQMm6Joi8Q" target="_blank" style="text-align: center; text-decoration: none; color:#26bbff;">YouTube</a>
+                Intro to Mechanics Design is a 2nd Year module at Staffordshire University focused on creating mechanics that "feel good" through audio, visuals, and player forgiveness systems.
+                I built a 2D character controller with a range of forgiveness mechanics to help the player navigate the map.
+                The full IMD playlist is available on my <a href="https://youtube.com/playlist?list=PLjwxqA2L6vtLUJ4trPWrz9wXB9BTZhLRG&si=fZmc_8OQMm6Joi8Q" target="_blank" style="text-decoration: none; color:#26bbff;">YouTube channel</a>.
             </p>
-        </div>
-        <div  class="responsive-container" style="padding-top: 0px; padding-bottom: 0px;">
-            <div class="d-flex flex-will-change gap-4 justify-space-between">
-                
-                <div style="width: 100%;">
-                    <iframe class="content-card-image card-16x9 curve-border" style="width: 100%;" src="https://www.youtube.com/embed/videoseries?si=nHV8JZm2bw6bNkG_&amp;list=PLjwxqA2L6vtLUJ4trPWrz9wXB9BTZhLRG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>Solo Project</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Programmer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unity</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Grade</p>
+                    <ul class="skill-list">
+                        <li>77% — First Class</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Context</p>
+                    <ul class="skill-list">
+                        <li>University Module — 2nd Year</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-            <!--Content GIF-->
-            <div class="responsive-container d-flex flex-column content-text gap-6">
-                <p class="text-size-title">Character Movement Designs</p>
-                <div class="d-flex gap-6 flex-column accessory">
-                    <p class="text-size-1_5">Here are some of the designs I had to create diagrams for in the module to help explain the movement on the assessment forum</p>
+        <hr class="section-divider">
 
-                    <div class="d-flex flex-will-change gap-4 ">
-                        <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/CoyoteTime.png">
-                        <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/CornerCorrection.png">
-                    </div>
-                    <div class="d-flex flex-will-change gap-4 ">
-                        <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/HitCorrection.png">
-                        <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/JumpBuffer.png">
-                    </div>
-                    <div class="d-flex flex-column gap-1">
-                        <div>
-                            <p class="text-size-1_8"><span style="font-weight: bold;">Coyote Time -</span> Being able to jump just after walking off the ledge, this prevents the need for perfect inputs of jumping from ledges </p>
-                        </div>
-                        <div>
-                            
-                            <p class="text-size-1_8"><span style="font-weight: bold;">Corner Corrections -</span> Correcting the players position if a small percentage (a few pixels) hit as the player is trying to navigate so the intended path is still taken</p>
-                        </div>
-                        <div>
-                            
-                            <p class="text-size-1_8"><span style="font-weight: bold;">Jump Buffer -</span> Pressing jump before pressing space will store the input, if the input is stored when landing on the ground the player shall jump again, this makes more fluid controls.</p>
-
-                        </div>
-
-                    </div>
-                    
-                    <div class="d-flex flex-will-change gap-4 justify-space-between">
-                        <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/ApexZone.png">
-                        <div class="d-flex flex-column content-text gap-2">
-                            <p class="text-size-1_8">
-                                Apex Zone is the section at the apex of the jump in which the player has an increased control over the player's air movement to allow for more precision jumps, this becomes useful when playing precision platformers such as Celeste or Super Meatboy<br>
-                                Allowing the player to make precise jumps in platformers that don't require exact precision such as the Mario games helps prevent less skilled players from getting frustrated that they couldn't make jumps
-                            </p>
-                        </div>
-                    </div>
-                        <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/LookAheadCamDesign.png">
-                </div>
-            </div>
-            
-  
-
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
-                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/AdvancedMechanicDesign" target="_blank">
-                    <p class="text-size-2">GitHub Repo</p>
-                </a>
-            </div>
-
-
-
-
-
-            
+        <!-- Video Playlist -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Video Playlist</p>
+            <iframe class="card-16x9 curve-border" style="width: 100%;" src="https://www.youtube.com/embed/videoseries?si=nHV8JZm2bw6bNkG_&amp;list=PLjwxqA2L6vtLUJ4trPWrz9wXB9BTZhLRG" title="IMD Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
+        <hr class="section-divider">
+
+        <!-- Technical Breakdown -->
+        <div class="responsive-container flex-column content-text gap-4">
+            <p class="text-size-1">Character Movement Designs</p>
+            <p class="text-size-2" style="color: rgba(255,255,255,0.6);">
+                Below are the design diagrams I created for the assessment forum to explain each movement mechanic.
+            </p>
+
+            <div class="hire-card flex-column gap-4">
+                <div class="flex-will-change gap-4">
+                    <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/CoyoteTime.png">
+                    <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/CornerCorrection.png">
+                </div>
+                <div class="flex-will-change gap-4">
+                    <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/HitCorrection.png">
+                    <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/JumpBuffer.png">
+                </div>
+                <div class="flex-column gap-3 text-size-2">
+                    <p><b>Coyote Time</b> — Being able to jump just after walking off a ledge. This prevents the need for pixel-perfect inputs when jumping from ledge edges.</p>
+                    <p><b>Corner Corrections</b> — Correcting the player's position if a small percentage (a few pixels) clips a corner, so the intended path is still taken.</p>
+                    <p><b>Jump Buffer</b> — Pressing jump just before landing stores the input. If the input is stored when the player lands, they jump immediately. This makes for more fluid controls.</p>
+                </div>
+            </div>
+
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/ApexZone.png">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Apex Zone</p>
+                    <p class="text-size-2">
+                        The Apex Zone is the section at the peak of the jump where the player has increased control over air movement, allowing for more precision. This is useful in precision platformers such as Celeste or Super Meat Boy.
+                        Allowing the player to make precise jumps even in less demanding platformers (such as the Mario games) helps prevent less skilled players from getting frustrated when they miss jumps.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">Look-Ahead Camera</p>
+                <img class="content-card-image curve-border" style="width: 100%;" src="../images/portfolio/IMD/LookAheadCamDesign.png">
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Project Links -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/AdvancedMechanicDesign" target="_blank">GitHub Repo</a>
+                <a class="accessory-button link-hide" href="https://youtube.com/playlist?list=PLjwxqA2L6vtLUJ4trPWrz9wXB9BTZhLRG&si=fZmc_8OQMm6Joi8Q" target="_blank">YouTube Playlist</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+</html>

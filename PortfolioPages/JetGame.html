@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio - Jet Game</title>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/NavigationBar.css">
+    <link rel="stylesheet" href="../styles/WebFormatting.css">
+    <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
+    <link rel="stylesheet" href="../styles/ImageCarousel.css">
+    <link rel="stylesheet" href="../styles/Gallery.css">
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
+</head>
+
+<body>
+
+    <!--Nav Menu-->
+    <div class="off-screen-menu">
+        <ul class="off-screen-menu-content">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
+            <a href="../index.html#ContactsID"><li>Contact</li></a>
+        </ul>
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
+            <a href="../index.html" class="dropdown-button"><li>Home</li></a>
+            <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
+            <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
+        </div>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
+
+<div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
+
+    <div style="display: grid; justify-content: center;">
+
+        <!-- ============================================================ -->
+        <!--  HERO                                                         -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
+                <p class="text-size-title">Jet Game</p>
+                <p class="text-size-1_5">Fast-paced jet combat score attack built in Unreal Engine 5</p>
+            </div>
+            <p class="text-size-2">
+                Jet Game is a solo personal project developed over one week, combining fast-paced jet combat with score attack gameplay.<br><br>
+                As the sole programmer and designer, I was responsible for all aspects of the project — from flight mechanics and combat systems to level design and UI.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>Solo</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Programmer</li>
+                        <li>Designer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Duration</p>
+                    <ul class="skill-list">
+                        <li>1 Week</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unreal Engine 5</li>
+                        <li>C++ &amp; Blueprint</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Context</p>
+                    <ul class="skill-list">
+                        <li>Personal Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  MY CONTRIBUTIONS                                             -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <p class="text-size-1">My Contributions</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Flight System</p>
+                    <ul class="skill-list">
+                        <li>3D pawn movement via Floating Pawn Movement</li>
+                        <li>Tuned flight feel for fast, responsive control</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Combat Systems</p>
+                    <ul class="skill-list">
+                        <li>Projectile & missile firing system</li>
+                        <li>Lock-on targeting with gimbal lock solution</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">HUD & UI</p>
+                    <ul class="skill-list">
+                        <li>Inclinometer ball for pitch/roll feedback</li>
+                        <li>Health and acceleration readouts</li>
+                        <li>Time-to-clear score display</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  FEATURED VIDEO                                               -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Gameplay Video</p>
+            <iframe class="card-16x9 curve-border" src="https://www.youtube.com/embed/iZnNv9Uc1P8" title="Jet Game Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  TECHNICAL DEEP DIVE                                          -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-4">
+            <p class="text-size-1">Technical Breakdown</p>
+
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Lock-On Targeting & Gimbal Lock</p>
+                    <p class="text-size-2">
+                        Building a lock-on system for a fully 3D aircraft introduced a classic problem — gimbal lock. When using Euler angles to track and rotate toward a target, certain orientations caused the rotation axes to align, losing a degree of freedom and producing erratic snapping behaviour.<br><br>
+                        Solving this required switching the rotation representation to quaternions, which avoid the singularity entirely and interpolate smoothly across all orientations.
+                    </p>
+                    <ul class="skill-list">
+                        <li>Euler angle rotation caused gimbal lock during steep climbs and dives</li>
+                        <li>Resolved by converting to quaternion-based slerp for target tracking</li>
+                        <li>Lock-on scans within a cone angle to acquire the nearest valid target</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Failure Conditions, Pickups & Score</p>
+                    <p class="text-size-2">
+                        The game puts pressure on the player through two concurrent failure conditions — a countdown timer and a health pool. Running out of time or taking too much damage both end the run, forcing the player to balance aggression with survival.<br><br>
+                        Scattered throughout the level are pickups that grant bonus score, rewarding exploration and risk-taking on top of the core time-to-clear objective. This layered approach gives skilled players something to optimise beyond simply clearing targets as fast as possible.
+                    </p>
+                    <ul class="skill-list">
+                        <li>Countdown timer — reaching zero ends the run</li>
+                        <li>Health system — taking damage can end the run independently of the timer</li>
+                        <li>Score pickups reward exploration and risk</li>
+                        <li>Dual failure conditions create tension and encourage aggressive play</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">UI Systems & Inclinometer</p>
+                    <p class="text-size-2">
+                        The inclinometer ball — a classic aircraft instrument showing pitch and roll — was implemented by using a SceneCapture2D component pointed at a physical ball in the world. The captured image was then fed into the HUD as a texture, giving an accurate real-time read of the jet's orientation.<br><br>
+                        While functional, this approach has a cost: a SceneCapture renders the scene an additional time each frame. In future I would replace this entirely with a Material shader that takes pitch and roll as scalar parameters, driven at runtime through a Dynamic Material Instance. This eliminates the extra render pass and keeps the effect GPU-friendly.
+                    </p>
+                    <ul class="skill-list">
+                        <li>SceneCapture2D used to render a physical ball into a UMG texture</li>
+                        <li>Approach works but adds an extra render pass per frame</li>
+                        <li>Future improvement: Dynamic Material Instance with shader-driven parameters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  WHAT I LEARNED                                               -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">What I Learned</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Technical</p>
+                    <ul class="skill-list">
+                        <li>Gimbal lock is a real problem in 3D rotation — quaternions are the right tool</li>
+                        <li>Floating Pawn Movement is well-suited for aircraft without needing full physics simulation</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Process</p>
+                    <ul class="skill-list">
+                        <li>Shipping a complete, playable game in one week demands tight scoping from day one</li>
+                        <li>Cutting features early is better than cutting quality late</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">What I'd Do Differently</p>
+                    <ul class="skill-list">
+                        <li>Add enemy aircraft with AI behaviour for more dynamic combat</li>
+                        <li>Leaderboard or ghost replay to make the time attack more replayable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  PROJECT LINKS                                                -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/JetGame" target="_blank">GitHub Repo</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
