@@ -6,7 +6,10 @@
         <!--Essentials-->
         <meta name="viewport" content="width=device-width">
         <link rel="icon" type="image/x-icon" href="images/icons/AS_Logo.png">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="styles/NavigationBar.css">
         <link rel="stylesheet" href="styles/WebFormatting.css">
         
@@ -42,36 +45,44 @@
             <span></span>
         </div>  
     </nav>
-    <script src="Navigation.js"></script> 
+    <script src="Navigation.js"></script>
+
+    <div class="background-blur" style="background-image: url('images/homepage/backgroundblur-red-blue.png');"></div>
 
 <div style="display: grid; justify-content: center;">
 
     <!--Introduction + Video-->
-    <div id="HomeID" class="responsive-container content-text  items-center flex-will-change gap-2 fade-in">
-        <div class=" flex-column gap-4 swipe-in-left">
+    <div id="HomeID" class="responsive-container content-text hero-layout fade-in">
+        <div class="hero-text flex-column gap-4 swipe-in-left">
             <div class=" flex-column text-size-title gap-1  drop-shaddow">
                 <p class="text-size-title">Adam Shrimpton</p>
-                <p class="text-size-1_5">Game Programmer</p>
+                <p class="text-size-1_5 subtitle-glow">Software Engineer</p>
             </div>
             <div class="text-size-2  drop-shaddow">
-                <p>
+                <p class="bio-full">
                     Hi, I'm Adam,<br>
-                    A First-Class Games Design & Programming graduate from The University of Staffordshire.<br>
+                    A programmer in the games industry and First-Class Games Design & Programming graduate from The University of Staffordshire.<br>
                     I specialize in bringing interactive worlds to life through clean, efficient, and scalable code.<br><br>
-                    I'm currently looking for a programming role, in which I can contribute to exciting projects and grow within a creative team, open to relocation, and ready to take on new challenges wherever they may be.<br>
+                    I'm always open to connecting — whether you have an exciting opportunity or just want to chat about games and code.<br>
                     Outside of coding I really enjoy staying active by going to the gym and lifting heavy, but I also like to relax with a wide variety of games, from Puzzlers and Shooters to Flight Simulators.<br>
                     <br>
                     Whether you are interested in building something amazing together or just want to talk, pop me a message!
                 </p>
+                <p class="bio-short">
+                    Hi, I'm Adam,<br>
+                    A programmer in the games industry and First-Class Games Design & Programming graduate from The University of Staffordshire, specializing in bringing interactive worlds to life through clean, efficient, and scalable code.<br><br>
+                    I'm always open to connecting — whether you have an exciting opportunity or just want to chat about games and code.<br><br>
+                    Whether you're interested in building something amazing together or just want to talk, pop me a message!
+                </p>
             </div>
             <div class=" flex-row gap-3 items-center">
-                <a class="highlight-button link-hide" href="#ContactsID">Contact Me</a>
+                <a class="highlight-button purple-button link-hide" href="#ContactsID">Contact Me</a>
                 <a class="accessory-button link-hide"  href="AdamShrimptonCV.pdf" target="_blank">Download CV</a>
 
             </div>
         </div>
 
-        <div class="video item-flex-end swipe-in-right">
+        <div class="video-card swipe-in-right">
             <video class="content-video aspect-16_9" autoplay muted loop>
                 <source src="videos/Showcase_Video.mp4">
             </video>
@@ -94,6 +105,8 @@
         </div>
     </div> -->
 
+    <hr class="section-divider">
+
     <!--Featured Projects-->
     <div class="responsive-container  flex-column gap-5 fade-in">
         <div class="d-grid flex-row items-center justify-space-between gap-2">
@@ -102,102 +115,101 @@
         </div> 
         
         <div class=" flex-will-change gap-3 justify-space-between">
-            <a class="content-card card-16x9 width-30" href="PortfolioPages/ObjectPooler.html"  style="background-image: url('images/portfolio/Pooler/PoolerLogo.png');"></a>
-            <a class="content-card card-16x9 width-30" href="PortfolioPages/Dismemberment.html" style="background-image: url('images/portfolio/Dismemberment/SkeletalDismemberment.png');"></a>
-            <a class="content-card card-16x9 width-30" href="PortfolioPages/MechHead.html" style="background-image: url('images/portfolio/mechhead/MH_Logo.png');"></a>
+            <a class="content-card card-16x9 width-30 featured-card" href="PortfolioPages/ObjectPooler.html" style="background-image: url('images/portfolio/Pooler/PoolerLogo.png');">
+                <div class="featured-card-overlay">
+                    <span class="featured-card-title">Object Pooler</span>
+                </div>
+            </a>
+            <a class="content-card card-16x9 width-30 featured-card" href="PortfolioPages/Dismemberment.html" style="background-image: url('images/portfolio/Dismemberment/SkeletalDismemberment.png');">
+                <div class="featured-card-overlay">
+                    <span class="featured-card-title">Skeletal Dismemberment</span>
+                </div>
+            </a>
+            <a class="content-card card-16x9 width-30 featured-card" href="PortfolioPages/MechHead.html" style="background-image: url('images/portfolio/mechhead/MH_Logo.png');">
+                <div class="featured-card-overlay">
+                    <span class="featured-card-title">Mech Head</span>
+                </div>
+            </a>
         </div>
     </div>
-    
+
+    <hr class="section-divider">
 
     <!--Skills-->
-    <div class="responsive-container  flex-column content-text no-list text-size-2 gap-2" style="list-style:disc"> 
-        <p class="text-size-title">Skills</p>
-
-        <div class="flex-will-change-small justify-space-between" style="flex-wrap: wrap;">
-            <div style="padding-top: 10px;">
-                <p class="text-size-1_5">Engines</p>
-                <li>Unreal Engine</li>
-                <li>Unity</li>
-                <li>Gamemaker</li>
-                <li>Godot</li>
+    <div class="responsive-container flex-column content-text gap-5">
+        <p class="content-text text-size-1">Skills</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <p class="skill-card-title">Engines</p>
+                <ul class="skill-list">
+                    <li>Unreal Engine</li>
+                    <li>Unity</li>
+                    <li>Gamemaker</li>
+                    <li>Godot</li>
+                </ul>
             </div>
-            
-            <div style="padding-top: 10px;">
-                <p class="text-size-1_5">Languages</p>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python, Javascript</li>
-                <li>Html & CSS</li>
+            <div class="skill-card">
+                <p class="skill-card-title">Languages</p>
+                <ul class="skill-list">
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                    <li>HTML &amp; CSS</li>
+                </ul>
             </div>
-
-            <div style="padding-top: 10px;">
-                <p class="text-size-1_5">Softwares</p>
-                <li>Github</li>
-                <li>Jira, MS Teams</li>
-                <li>Excel, Powerpoint, Word</li>
-                <li>Photoshop</li>
-                <li>Blender, Cinema4D</li>
+            <div class="skill-card">
+                <p class="skill-card-title">Software</p>
+                <ul class="skill-list">
+                    <li>GitHub</li>
+                    <li>Jira, MS Teams</li>
+                    <li>Excel, PowerPoint, Word</li>
+                    <li>Photoshop</li>
+                    <li>Blender, Cinema4D</li>
+                </ul>
             </div>
-
-            <div style="padding-top: 10px;">
-                <p class="text-size-1_5">Skills</p>
-                <li>Leadership</li>
-                <li>Time & Team Management</li>
-                <li>communication</li>
-                <li>Flexibility</li>
+            <div class="skill-card">
+                <p class="skill-card-title">Platforms</p>
+                <ul class="skill-list">
+                    <li>Steam PC</li>
+                    <li>Steam Deck</li>
+                    <li>PlayStation 5</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <p class="skill-card-title">Soft Skills</p>
+                <ul class="skill-list">
+                    <li>Leadership</li>
+                    <li>Time Management</li>
+                    <li>Team Management</li>
+                    <li>Communication</li>
+                    <li>Flexibility</li>
+                </ul>
             </div>
         </div>
-
-
- 
-        <!-- <div class="flex-column gap-4" style="align-items: center; text-align: center;">
-        
-            <div class="width-75 width-100-mobile-only"style="height: auto;">
-                <p class="text-size-1_5">Languages & Engines</p>
-                <div class="flex-row justify-center"  style="flex-wrap: wrap;">
-                        <img  class="width-15 max-150" src="images/icons/CPP.png">
-                        <img  class="width-15 max-150" src="images/icons/CSharp.png">
-                        <img  class="width-15 max-150" src="images/icons/Python.png">
-                        <img  class="width-15 max-150" src="images/icons/UnrealLogo.png">
-                        <img  class="width-15 max-150" src="images/icons/UnityLogo.png">
-                        <img  class="width-15 max-150" src="images/icons/Gamemaker.png">
-                </div>
-            </div>   
-            
-            <div class="width-75 width-100-mobile-only"style="height: auto;">
-                <p class="text-size-1_5 width-100">Softwares</p>
-                <div class="flex-row justify-center" style="flex-wrap: wrap;">
-                        <img class="width-10 min-50 max-150"src="images/icons/Rider.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/VSCode.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/github.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/Teams.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/Excel.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/Photoshop.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/Word.png">
-                        <img class="width-10 min-50 max-150"src="images/icons/Blender.png">
-                </div>
-            </div>
-    
-        </div> -->
     </div>
 
-    
+    <hr class="section-divider">
+
     <!--Contacts-->
-    <div class="responsive-container fade-in content-text">
-        <p id="ContactsID" class="content-text text-size-1">Contact Me</p>
-        <div class=" flex-column gap-4 justify-center">
-            <div class="flex-row gap-2" style="flex-wrap: wrap;">
-                <a href="mailto:adamshrimpton04@outlook.com" target="_blank" class=" width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/mail.png);"></a>
-                <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/linkedin.png);"></a>
-                <a href="https://www.youtube.com/@RapidAdam" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/youtube.png);"></a>
-                <a href="https://github.com/RapidShrimp" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/github.png);"></a>
-                <a href="https://discordapp.com/users/329320112257761281/" target="_blank" class="width-10 min-50 max-150 contact-icon" style="background-image: url(images/icons/DiscordLogo.png);"></a>
+    <div id="ContactsID" class="responsive-container fade-in content-text">
+        <div class="contact-layout">
+            <div class="hire-card" style="justify-content: flex-start;">
+                <p class="content-text text-size-1">Contact Me</p>
+                <p class="contact-section-label">Find me on</p>
+                <div class="contact-icons-row">
+                    <a href="mailto:adamshrimpton04@outlook.com" target="_blank" class="contact-icon-link" title="Email" style="background-image: url(images/icons/mail.png);"></a>
+                    <a href="https://www.linkedin.com/in/adam-shrimpton/" target="_blank" class="contact-icon-link" title="LinkedIn" style="background-image: url(images/icons/linkedin.png);"></a>
+                    <a href="https://www.youtube.com/@RapidAdam" target="_blank" class="contact-icon-link" title="YouTube" style="background-image: url(images/icons/youtube.png);"></a>
+                    <a href="https://github.com/RapidShrimp" target="_blank" class="contact-icon-link" title="GitHub" style="background-image: url(images/icons/github.png);"></a>
+                    <a href="https://discordapp.com/users/329320112257761281/" target="_blank" class="contact-icon-link" title="Discord" style="background-image: url(images/icons/DiscordLogo.png);"></a>
+                </div>
             </div>
-            <div class=" flex-column gap-1">
-                <p class="text-size-1_5">Looking to hire me?</p>
-                <div class=" flex-row flex-will-change justify-space-between content-text gap-2">
-                    <p>Feel free to message me on any of my social platforms, LinkedIn and Email are preffered.<br>Or click the download button and view my CV and see if I am a fit for your team?</p>
-                    <a class="highlight-button link-hide" href="AdamShrimptonCV.pdf" target="_blank">Download CV</a>
+            <div class="hire-card">
+                <p class="text-size-1">Looking to hire me?</p>
+                <p class="hire-card-body">Feel free to message me on any of my social platforms — LinkedIn and Email are preferred. Download my CV to see if I'd be a good fit for your team.</p>
+                <div style="padding-top: 8px;">
+                    <a class="highlight-button link-hide purple-button" href="AdamShrimptonCV.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
         </div>

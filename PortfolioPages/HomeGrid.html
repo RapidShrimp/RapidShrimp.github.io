@@ -1,248 +1,207 @@
 <!DOCTYPE html>
+<html>
 <title>HomeGrid Tool</title>
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
-    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
     <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
     <link rel="stylesheet" href="../styles/Gallery.css">
-
-
-
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 </head>
 
 <body>
+
     <!--Nav Menu-->
-    <div class ="off-screen-menu">
+    <div class="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="../index.html"><li>Home</li></a>
-            <a><li>Portfolio</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID"><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-        <div class="d-flex flex-row dropdown">
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
             <a href="../index.html" class="dropdown-button"><li>Home</li></a>
             <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
         </div>
-  
-        <div class = "ham-menu">
+        <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>  
-      </nav>
-      <script src="../Navigation.js"></script> 
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
-            <div class="responsive-container d-flex flex-column gap-2 content-text ">
-                <p class="text-size-title">HomeGrid - Level Generation Tool</p>
-                <li class="text-size-2">Team Size: Solo Project</li>
-                <li class="text-size-2">Role(s): Programmer</li>
-                <li class="text-size-2">Duration: 2 Weeks</li>
-                <li class="text-size-2">Engine: Unreal Engine</li>
-                <li class="text-size-2">Languages: C++ & Blueprint</li>
+    <div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
 
-                <p class="text-size-2">
-                    This project is part of an entry for The University of Staffordshire's annual graduate Event, GradEx.<br>
-                    My submission contains a level generation editor tool which can create quick blockouts and save rooms to be streamed later.<br>
-                    This was inspired from a previous prototype from the Junior Collaborative Game Development module in my previous year of study, this prototype was testing level streaming spawning rooms into a space.<br> 
-                </p>
+    <div style="display: grid; justify-content: center;">
 
-                <div class="d-flex flex-row gap-6">
-                    <div>
-                        <p class="text-size-1_8">Feature List:</p><br>
-                        <li class="text-size-2">Spawn / Destroy Rooms</li>
-                        <li class="text-size-2">Custom Room Scaling</li>
-                        <li class="text-size-2">Toggle Doors</li>
-                        <li class="text-size-2">Chunk ID system (To Ensure correct spawning)</li>
-                        <li class="text-size-2">Level Instance Quick Actions</li>
-                        <li class="text-size-2">Room Assigning</li>
-                    </div>
-                    
-                    <div>
-                        <p class="text-size-1_8"> Planned Future Developmentas:</p><br>
-                        <li class="text-size-2">Multi Door Support per wall</li>
-                        <li class="text-size-2">Automatic Overalp Checks</li>
-                        <li class="text-size-2">Weighted Spawning</li>
-                        <li class="text-size-2">BSP Layout Generator</li>
-                    </div>
-                    
-                </div>
-          </div>
-
-            <!--Gameplay Video-->
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center small-vert-pad">
-                <p class="text-size-title">Trailer Video</p>
-                <iframe class="card-16x9" src="https://www.youtube.com/embed/Iiqyjl_oRyo" title="HomeGrid - Level Generation Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Hero -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
+                <p class="text-size-title">HomeGrid</p>
+                <p class="text-size-1_5">Level Generation Tool — Unreal Engine</p>
             </div>
-
-
-
-<!--
-            <div class="responsive-container d-flex flex-column content-text ">
-            
-                <div class="slideshow-container" style="width: 100%;">
-
-                    <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="../images/portfolio/HomeGrid/" style="width:100%">
-                    <div class="text">Caption One</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="../images/portfolio/mechhead/combat.png" style="width:100%">
-                    <div class="text">Caption Two</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="../images/portfolio/mechhead/Downtown.png" style="width:100%">
-                    <div class="text">Caption Three</div>
-                    </div>
-                
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <p class="text-size-2">
+                HomeGrid is an Unreal Engine editor tool created for GradEx, The University of Staffordshire's annual graduate event.
+                It allows designers to quickly create level blockouts, assign rooms, and save them for later level streaming.
+                Inspired by a prototype from my Junior Collaborative Development module, this project extends that concept into a fully featured editor tool.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>Solo Project</li>
+                    </ul>
                 </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Programmer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Duration</p>
+                    <ul class="skill-list">
+                        <li>2 Weeks</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unreal Engine</li>
+                        <li>C++ &amp; Blueprint</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Features</p>
+                    <ul class="skill-list">
+                        <li>Spawn / Destroy Rooms</li>
+                        <li>Custom Room Scaling</li>
+                        <li>Toggle Doors</li>
+                        <li>Chunk ID System</li>
+                        <li>Level Instance Quick Actions</li>
+                        <li>Room Assigning</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Planned</p>
+                    <ul class="skill-list">
+                        <li>Multi-Door Support</li>
+                        <li>Automatic Overlap Checks</li>
+                        <li>Weighted Spawning</li>
+                        <li>BSP Layout Generator</li>
+                    </ul>
                 </div>
             </div>
-            <script src="../JS/Slideshow.js">window.AutoScroll(1)</script> 
-            -->                
+        </div>
 
-            <!--Gallery Images-->
-            <div class="responsive-container d-flex flex-row content-text gap-6 small-vert-pad">
+        <hr class="section-divider">
+
+        <!-- Video -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Trailer Video</p>
+            <iframe class="card-16x9 curve-border" src="https://www.youtube.com/embed/Iiqyjl_oRyo" title="HomeGrid - Level Generation Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Gallery -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Gallery</p>
+            <div class="flex-row content-text gap-6">
                 <div>
                     <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/HomeGrid/Banner_1.png">
-                            <img src="../images/portfolio/HomeGrid/Banner_1.png" alt="Mech Head" width="640" height="360">
+                                <img src="../images/portfolio/HomeGrid/Banner_1.png" alt="The Green Room" width="640" height="360">
                             </a>
-                            <div class="desc">ID:2 - The Green Room</div>
+                            <div class="desc">ID:2 — The Green Room</div>
                         </div>
-                        </div>
-
-                        <div class="responsive">
+                    </div>
+                    <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/HomeGrid/Banner_2.png">
-                            <img src="../images/portfolio/HomeGrid/Banner_2.png" alt="Cinque Terre" width="640" height="360">
+                                <img src="../images/portfolio/HomeGrid/Banner_2.png" alt="Bucket Room" width="640" height="360">
                             </a>
-                            <div class="desc">ID:2 - Bucket Room</div>
+                            <div class="desc">ID:2 — Bucket Room</div>
                         </div>
-                        </div>
-
-                        <div class="responsive">
+                    </div>
+                    <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/HomeGrid/Blockout_Spawned.png">
-                            <img src="../images/portfolio/HomeGrid/Blockout_Spawned.png" alt="Cinque Terre" width="640" height="360">
+                                <img src="../images/portfolio/HomeGrid/Blockout_Spawned.png" alt="Level Blockout Spawned" width="640" height="360">
                             </a>
                             <div class="desc">Level Blockout Spawned</div>
                         </div>
-                        </div>
-
-                        <div class="responsive">
+                    </div>
+                    <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/HomeGrid/Blockout_1.png">
-                            <img src="../images/portfolio/HomeGrid/Blockout_1.png" alt="Cinque Terre" width="640" height="360">
+                                <img src="../images/portfolio/HomeGrid/Blockout_1.png" alt="Level Blockout" width="640" height="360">
                             </a>
                             <div class="desc">Level Blockout</div>
                         </div>
-                        </div>
-
-                        <div class="clearfix"></div>
                     </div>
-
-            </div>
-
-
-
-            <!--Code Examples-->
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="CodeSnippet d-flex flex-column">
-                    <div class="WindowBar">
-                        <ham class="WindowBarDot" style="background-color: rgb(255, 59, 59);"></ham>
-                        <ham class="WindowBarDot" style="background-color: rgb(255, 177, 33);"></ham>
-                        <ham class="WindowBarDot" style="background-color: rgb(149, 241, 11);"></ham>
-                        <div style="width: 100%; text-align: right;">
-                            <h2>HomeGridFunctionLibrary.cpp</h2>
-                        </div>
-                    </div>
-                    <!--Use this, its easier-->
-                    <iframe frameborder="0" scrolling="no" style="width:100%; height:518px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FRapidShrimp%2FHomeGridTool%2Fblob%2Fmain%2FSource%2FLevelStreaming%2FPrivate%2FHomeGridFunctionLibraray.cpp%23L200-L313&style=github-dark-dimmed&type=code&showLineNumbers=on&maxHeight=518"></iframe>
-
-                    <div class ="WindowFooter">
-                    <!--Paste Github File Link Here-->
-                        <a class="d-flex flex-row gap-2" style="align-items: center; justify-content: right;" href="https://github.com/RapidShrimp/HomeGridTool">
-                            <p style="height: auto;">View Full Code</p>
-                            <src target="_blank" class="contact-icon" style="width: 36px; height: 36px; background-image: url(../images/icons/github.png);"></src>
-                        </a>
-                    </div>
-                </div>
-            <script src="../JS/CodeSnippets"></script> 
-            <link rel="stylesheet" href="../styles/CodeSnippet.css"></link>
-         </div>
-
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center small-vert-pad">
-                <img class="card-16x9" src="../images/portfolio/HomeGrid/RuntimeGif.gif">
-            </div>
-
-            <!--Content Right
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Content Title</p>
-                        <p class="text-size-2">
-                            In the steering behaviour section of the programming we were tasked with creating a variety of behaviours.<br> 
-                            In the video there are 8 Scenes demonstrating the following behaviours<br>
-                            <li class="text-size-2">Seek & Pursuit</li> 
-                            <li class="text-size-2">Flee & Evade</li> 
-                            <li class="text-size-2">Arrive</li> 
-                            <li class="text-size-2">Wander</li> 
-                            <li class="text-size-2">Collision Avoidance</li> 
-                            <li class="text-size-2">Seperation, Alignment & Cohesion</li> 
-                        </p>
-                    </div>
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Content Title</p>
-                        <p class="text-size-2">
-                            In the steering behaviour section of the programming we were tasked with creating a variety of behaviours.<br> 
-                            In the video there are 8 Scenes demonstrating the following behaviours<br>
-                            <li class="text-size-2">Seek & Pursuit</li> 
-                            <li class="text-size-2">Flee & Evade</li> 
-                            <li class="text-size-2">Arrive</li> 
-                            <li class="text-size-2">Wander</li> 
-                            <li class="text-size-2">Collision Avoidance</li> 
-                            <li class="text-size-2">Seperation, Alignment & Cohesion</li> 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        -->
-            <!--Repository Download Button-->
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center">
-                <p class="text-size-1">Project Download</p>
-                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/HomeGridTool" target="_blank">
-                    <p class="text-size-1_5 ">GitHub Repo</p>
-                </a>
-            </div>
-
         </div>
+
+        <hr class="section-divider">
+
+        <!-- Runtime Demo -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Runtime Demo</p>
+            <img class="card-16x9 curve-border" src="../images/portfolio/HomeGrid/RuntimeGif.gif">
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Code -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Code</p>
+            <p class="text-size-2" style="color: rgba(255,255,255,0.6);">
+                Room spawning and chunk ID validation logic from HomeGridFunctionLibrary.cpp.
+            </p>
+            <div class="CodeSnippet flex-column">
+                <div class="WindowBar">
+                    <ham class="WindowBarDot" style="background-color: rgb(255, 59, 59);"></ham>
+                    <ham class="WindowBarDot" style="background-color: rgb(255, 177, 33);"></ham>
+                    <ham class="WindowBarDot" style="background-color: rgb(149, 241, 11);"></ham>
+                    <div style="width: 100%; text-align: right;">
+                        <h2>HomeGridFunctionLibrary.cpp</h2>
+                    </div>
+                </div>
+                <iframe frameborder="0" scrolling="no" style="width:100%; height:518px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FRapidShrimp%2FHomeGridTool%2Fblob%2Fmain%2FSource%2FLevelStreaming%2FPrivate%2FHomeGridFunctionLibraray.cpp%23L200-L313&style=github-dark-dimmed&type=code&showLineNumbers=on&maxHeight=518"></iframe>
+                <div class="WindowFooter">
+                    <a class="flex-row gap-2" style="align-items: center; justify-content: right;" href="https://github.com/RapidShrimp/HomeGridTool" target="_blank">
+                        <p style="height: auto;">View Full Code</p>
+                        <src class="contact-icon" style="width: 36px; height: 36px; background-image: url(../images/icons/github.png);"></src>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Project Links -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/HomeGridTool" target="_blank">GitHub Repo</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+</html>

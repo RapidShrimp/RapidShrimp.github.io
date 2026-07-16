@@ -1,96 +1,156 @@
 <!DOCTYPE html>
+<html>
 <title>Portfolio - C++ For Engines</title>
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
-    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
     <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
     <link rel="stylesheet" href="../styles/Gallery.css">
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 </head>
 
 <body>
-        <!--Nav Menu-->
 
-    <div class ="off-screen-menu">
+    <!--Nav Menu-->
+    <div class="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="../index.html"><li>Home</li></a>
-            <a><li>Portfolio</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID"><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-        <div class="d-flex flex-row dropdown">
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
             <a href="../index.html" class="dropdown-button"><li>Home</li></a>
             <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
         </div>
-  
-        <div class = "ham-menu">
+        <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>  
-      </nav>
-      <script src="../Navigation.js"></script> 
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
-          <div class="responsive-container d-flex flex-column gap-2 content-text ">
-            <p class="text-size-title">C++ For Engines</p>
-            <p class="text-size-1">Unreal Engine C++ module</p>
+<div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
+
+    <div style="display: grid; justify-content: center;">
+
+        <!-- ============================================================ -->
+        <!--  HERO — Project title, tagline, and key stats               -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
+                <p class="text-size-title">C++ For Engines</p>
+                <p class="text-size-1_5">Unreal Engine C++ module</p>
+            </div>
             <p class="text-size-2">
-                This module was a Staffordshire University Level 5 module which had us learning the basics to unreal engine C++ from specifiers and the Enhanced input system which enabled us to create our own mechanics. <br>
-                The module focused on Anonymous Modular Design so components could be enabled and attached to other actors.<br>
-                In this module I achieved a First (81.4%)
+                This module was a Staffordshire University Level 5 module which had us learning the basics of Unreal Engine C++ from specifiers and the Enhanced Input System which enabled us to create our own mechanics.
+                The module focused on Anonymous Modular Design so components could be enabled and attached to other actors.
+                In this module I achieved a First (81.4%).
             </p>
-          </div>
+            <!-- Project stats grid -->
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>Solo</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Programmer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unreal Engine 5</li>
+                        <li>C++</li>
+                        <li>Enhanced Input System</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Grade / Outcome</p>
+                    <ul class="skill-list">
+                        <li>81.4% — First Class</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Context</p>
+                    <ul class="skill-list">
+                        <li>University Module</li>
+                        <li>Level 5</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Design Pattern</p>
+                    <ul class="skill-list">
+                        <li>Anonymous Modular Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-            <!--Gameplay Video-->
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
-                <p class="text-size-title">Mechanics Demonstration</p>
-                <iframe class="card-16x9" src="https://www.youtube.com/embed/5u30s97QN4Q" title="Mechhead Teaser Trailer - 1UP 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  FEATURED VIDEO — Mechanics demonstration                    -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Mechanics Demonstration</p>
+            <iframe class="card-16x9 curve-border" src="https://www.youtube.com/embed/5u30s97QN4Q" title="Mechanics Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  TECHNICAL DEEP DIVE — Content blocks (text + media)         -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-4">
+            <p class="text-size-1">Technical Breakdown</p>
+
+            <!-- Block A: Text left, media right -->
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Wall Running</p>
+                    <p class="text-size-2">Mechanic Description</p>
+                </div>
+                <img class="content-card-image card-16x9 curve-border" style="min-height: 240px;" src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
             </div>
 
-            <!--Content GIF-->
-            <div class="responsive-container d-flex flex-column content-text gap-6">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Wall Running</p>
-                        <p class="text-size-2">Mechanic Description</p>
-                    </div>
-                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
-                </div>
-
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Sliding</p>
-                        <p class="text-size-2">Mechanic Description</p>
-                    </div>
-                    <img class="content-card-image card-16x9 curve-border" src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
+            <!-- Block B: Media left, text right -->
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <img class="content-card-image card-16x9 curve-border" style="min-height: 240px;" src="../images/portfolio/Dismemberment/SkeletalDismemberment.png">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Sliding</p>
+                    <p class="text-size-2">Mechanic Description</p>
                 </div>
             </div>
+        </div>
 
-        </div>
-    
-    <!--Sliding Image Slideshow>
-    <div class="logos" style="margin: auto 0%">
-        <div class="logos-slide">
-            <img src="../images/portfolio/mechhead/combat.png"/>
-            <img src="../images/portfolio/mechhead/Downtown.png"/>
-            <img src="../images/portfolio/mechhead/Shop.png"/>
-            <img src="../images/portfolio/mechhead/Fire Sprinkler.png"/>
-        </div>
-        
-        <div class="logos-slide">
-            <img src="../images/portfolio/mechhead/combat.png"/>
-            <img src="../images/portfolio/mechhead/Downtown.png"/>
-            <img src="../images/portfolio/mechhead/Shop.png"/>
-            <img src="../images/portfolio/mechhead/Fire Sprinkler.png"/>
-        </div>
-    </div-->
+        <hr class="section-divider">
 
+        <!-- ============================================================ -->
+        <!--  PROJECT LINKS                                               -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/" target="_blank">GitHub Repo</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+</html>

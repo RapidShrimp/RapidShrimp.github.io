@@ -1,122 +1,167 @@
 <!DOCTYPE html>
+<html>
 <title>Portfolio - User Design and Implementation</title>
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
-    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
     <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
     <link rel="stylesheet" href="../styles/Gallery.css">
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 </head>
 
 <body>
-        <!--Nav Menu-->
 
-    <div class ="off-screen-menu">
+    <!--Nav Menu-->
+    <div class="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="../index.html"><li>Home</li></a>
-            <a><li>Portfolio</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID"><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-        <div class="d-flex flex-row dropdown">
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
             <a href="../index.html" class="dropdown-button"><li>Home</li></a>
             <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
         </div>
-  
-        <div class = "ham-menu">
+        <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>  
-      </nav>
-      <script src="../Navigation.js"></script> 
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
-            <div class="responsive-container background-blur fade-in" style="background-image: url(../images/homepage/backgroundblur-blue.png);"></div>
+    <div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
 
-          <div class="responsive-container d-flex flex-column gap-3 content-text ">
-            <p class="text-size-title">UI Design & Implementation</p>
-            <p class="text-size-1">Unreal Engine UI Module</p>
+    <div style="display: grid; justify-content: center;">
+
+        <!-- Hero -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
+                <p class="text-size-title">UI Design &amp; Implementation</p>
+                <p class="text-size-1_5">Unreal Engine UI Module — 2nd Year</p>
+            </div>
             <p class="text-size-2">
-                This page is dedicated to my work for the UI Design and Implementation module at Staffordshire University, 
-                in this module students were tasked with researching, designing and programming RPG Genre UI Elements. 
-                The criteria set for students were to create an established style of their own and create the following:    
+                This module required research, design, and programming of RPG genre UI elements in Unreal Engine.
+                Students established their own visual style and implemented a defined set of screens.
+                I opted for a clean, rounded aesthetic to compensate for limited 2D art skills — producing a sleek, consistent look across all elements.
+                Running alongside the Junior Collaborative project made time management a key challenge.
             </p>
-            <li class="text-size-2">Pause Menus</li>
-            <li class="text-size-2">HUD Elements</li>
-            <li class="text-size-2">Shops</li>
-            <li class="text-size-2">An Inventory</li>
-            <li class="text-size-2">Other UI Elements the student wants to include</li>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>Solo Project</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Designer &amp; Programmer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unreal Engine</li>
+                        <li>UMG / Blueprint</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Grade</p>
+                    <ul class="skill-list">
+                        <li>76% — First Class</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Deliverables</p>
+                    <ul class="skill-list">
+                        <li>Pause Menu</li>
+                        <li>HUD Elements</li>
+                        <li>Shop &amp; Inventory</li>
+                        <li>Journal &amp; Crafting Page</li>
+                        <li>Settings &amp; World Map</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Context</p>
+                    <ul class="skill-list">
+                        <li>University Module — 2nd Year</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-            <p class ="text-size-2">
-                I decided that my theming would be more of a simplistic design due to my lack of 2D art skills, this led me to use more of a 
-                rounded design to provide a sleeker look to my UI.
-                In addition to the elements we were suggested to create, I made a journal page to keep track of quests, crafting page for craftables and pause toggles.
-                This module was difficult running alongside the Junior Collaborative project due to time being split between both modules.<br> In this module I achieved a First at 76% marks
+        <hr class="section-divider">
 
-            </p>
-          </div>
-
-          <!--Gameplay Video-->
-
-          <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
-            <p class="text-size-title">User Interface Showcase</p>
+        <!-- Showcase Video -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">User Interface Showcase</p>
             <iframe class="card-16x9 curve-border" src="https://www.youtube.com/embed/sdAKBOqvFJo" title="UI Design &amp; Implementation Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
+        <hr class="section-divider">
 
+        <!-- UI Designs -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">UI Designs</p>
 
-            <!--Content GIF-->
-            <div class="responsive-container d-flex flex-column content-text gap-6">
-                <p class="text-size-title">UI Designs</p>
-                <div class="d-flex flex-column text-center gap-6">
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">HUD</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/HUDDesign.png">
-                    </div>
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Crafting</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/CraftingDesign.png">
-                    </div>
-
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Inventory</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/InventoryDesigns.png">
-                    </div>
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Journal</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/JournalDesign.png">
-                    </div>
-
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Settings</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/SettingsDesign.png">
-                    </div>
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">Shop</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/ShopDesign.png">
-                    </div>
-
-                    <div class="flex-column gap-5">
-                        <p class="text-size-1_5" style="text-align: start; padding-left: 5%;">World Map</p>
-                        <img class="card-16x9 width-90 height-auto" src="../images/portfolio/UI/MapDesign.png">
-                    </div>
-                
-                </div>
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">HUD</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/HUDDesign.png">
             </div>
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center " style="padding-top: 0px;">
-                <p class="text-size-1">Project Download</p>
-                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/UI_UX_Implementation" target="_blank">
-                    <p class="text-size-1_5 ">GitHub Repo</p>
-                </a>
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">Crafting</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/CraftingDesign.png">
             </div>
-  
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">Inventory</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/InventoryDesigns.png">
+            </div>
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">Journal</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/JournalDesign.png">
+            </div>
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">Settings</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/SettingsDesign.png">
+            </div>
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">Shop</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/ShopDesign.png">
+            </div>
+
+            <div class="hire-card flex-column gap-4">
+                <p class="text-size-1_5">World Map</p>
+                <img class="card-16x9 curve-border" style="width: 90%; margin: 0 auto;" src="../images/portfolio/UI/MapDesign.png">
+            </div>
         </div>
+
+        <hr class="section-divider">
+
+        <!-- Project Links -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/UI_UX_Implementation" target="_blank">GitHub Repo</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+</html>

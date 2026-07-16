@@ -2,11 +2,13 @@ footer.Default{
     background-color: #131618;
 }
 nav{
-    padding: 1rem;
+    padding: 0.6rem 1rem;
     display: flex;
     z-index: 90;
-    background-color: #1e1e25; /*Website Background*/
-
+    background-color: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(12px) saturate(50%);
+    -webkit-backdrop-filter: blur(12px) saturate(50%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .sticky{
@@ -21,13 +23,13 @@ nav{
 }
 .dropdown-button{
     visibility: visible;
-    padding: 16px 42px;
-    
-    color: #ffffff; /*text*/
-    list-style: none;
+    padding: 10px 18px;
     color: #ffffff;
+    list-style: none;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
 }
 .dropdown-button:hover{
     color: #a5a5a7; /*darkened text*/
@@ -36,8 +38,10 @@ nav{
 .nameplate{
     color: white;
     padding: 5px 10px;
-    font-size: 40px !important;
-    font-family: sans-serif;
+    font-size: 17px !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
     vertical-align: bottom;
     margin: 0;
 }
@@ -55,7 +59,7 @@ nav{
 .off-screen-menu{
     position: sticky;
     visibility: collapse;
-    background-color: #1e1e25;
+    background-color: rgba(0, 0, 0, 0.95);
     height: 100vh;
     width: 100%;
     max-width: 450px;
