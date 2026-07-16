@@ -3,7 +3,8 @@
     "allow": [
       "Bash(wc -l /c/University/RapidShrimp.github.io/styles/*.css)",
       "WebFetch(domain:www.unrealengine.com)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:www.secondstargames.co.uk)"
     ]
   }
 }
