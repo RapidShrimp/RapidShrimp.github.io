@@ -1,79 +1,176 @@
 <!DOCTYPE html>
+<html>
 <title>Portfolio - Dismemberment</title>
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
-    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
     <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
     <link rel="stylesheet" href="../styles/Gallery.css">
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 </head>
 
 <body>
-        <!--Nav Menu-->
 
-    <div class ="off-screen-menu">
+    <!--Nav Menu-->
+    <div class="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="../index.html"><li>Home</li></a>
-            <a><li>Portfolio</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID"><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-        <div class="d-flex flex-row dropdown">
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
             <a href="../index.html" class="dropdown-button"><li>Home</li></a>
             <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
         </div>
-  
-        <div class = "ham-menu">
+        <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>  
-      </nav>
-      <script src="../Navigation.js"></script> 
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
+<div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
 
-            <div class="responsive-container background-blur fade-in " style="background-image: url(../images/homepage/backgroundblur-red-blue.png);"></div>
-          <div class="responsive-container d-flex flex-column gap-2 content-text ">
-            <p class="text-size-title">Skeletal Dismemberment Plugin</p>
-            <p class="text-size-1">Free Unreal Engine Plugin</p>
-                <li class="text-size-2">Team Size: Solo Project</li>
-                <li class="text-size-2">Role(s): Programmer</li>
-                <li class="text-size-2">Duration: 2 Weeks</li>
-                <li class="text-size-2">Engine: Unreal Engine</li>
-                <li class="text-size-2">Languages: C++ & Blueprint</li>
-                <br>
+    <div style="display: grid; justify-content: center;">
+
+        <!-- ============================================================ -->
+        <!--  HERO — Project title, tagline, and key stats               -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
+                <p class="text-size-title">Skeletal Dismemberment Plugin</p>
+                <p class="text-size-1_5">Free Unreal Engine Plugin</p>
+            </div>
             <p class="text-size-2">
                 I created this C++ plugin when prototyping mechanic ideas for a game.
-                This took a few weeks of prototyping to make and has no extended support beyond the initial project.<br>
-                The plugin consists of...
-                <li class="text-size-2">Limb Severance</li>
-                <li class="text-size-2">Limb Tethering</li>
-                <li class="text-size-2">Socket Particle Effects</li>
-                <li class="text-size-2">Animation State Handling</li>
-                <li class="text-size-2">Editor Data asset Tool</li>
+                This took a few weeks of prototyping to make and has no extended support beyond the initial project.
+                The plugin is free to download and use, available on GitHub, and is currently working in Unreal Engine 5.2.1.
             </p>
-            <p class="text-size-2">
-                Project is free to download and use, avaliable on GitHub, this plugin is currently working in 5.2.1
-            </p>
-          </div>
-
-            <!--Gameplay Video-->
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center" style="padding-top: 0px;">
-                <p class="text-size-title">Release Video</p>
-                <iframe class="card-16x9"  src="https://www.youtube.com/embed/GrP-dirN9D4" title="Skeleton Dismemberment UE 5.2 Plugin - Free Project Download!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/Unreal_Dismemberment" target="_blank">
-                    <p class="text-size-2">GitHub Repo</p>
-                </a>
+            <!-- Project stats grid -->
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>Solo Project</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Programmer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Duration</p>
+                    <ul class="skill-list">
+                        <li>2 Weeks</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unreal Engine</li>
+                        <li>C++ &amp; Blueprint</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Grade / Outcome</p>
+                    <ul class="skill-list">
+                        <li>Released on GitHub</li>
+                        <li>Working in UE 5.2.1</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Context</p>
+                    <ul class="skill-list">
+                        <li>Personal Project</li>
+                        <li>Open Source Plugin</li>
+                    </ul>
+                </div>
             </div>
-
         </div>
 
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  FEATURED VIDEO — Release video                              -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Release Video</p>
+            <iframe class="card-16x9 curve-border" src="https://www.youtube.com/embed/GrP-dirN9D4" title="Skeleton Dismemberment UE 5.2 Plugin - Free Project Download!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  TECHNICAL DEEP DIVE — Plugin feature breakdown              -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-4">
+            <p class="text-size-1">Technical Breakdown</p>
+
+            <!-- Block A: Text left, video right -->
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Limb Severance &amp; Tethering</p>
+                    <p class="text-size-2">
+                        The core of the plugin is a runtime skeletal mesh system that detects hit events
+                        and severs the targeted limb from the character. Severed limbs can optionally remain
+                        tethered — connected by a simulated joint — rather than flying off immediately,
+                        giving designers fine control over the feel of each dismemberment.
+                    </p>
+                    <ul class="skill-list">
+                        <li>Limb Severance — runtime bone hiding and mesh splitting</li>
+                        <li>Limb Tethering — physics constraint keeping severed limbs attached</li>
+                        <li>Socket Particle Effects — spawns VFX at the cut socket on severance</li>
+                    </ul>
+                </div>
+                <iframe class="content-card-image card-16x9 curve-border" style="min-height: 240px;" src="https://www.youtube.com/embed/GrP-dirN9D4" title="Skeleton Dismemberment UE 5.2 Plugin - Free Project Download!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Block B: Text right -->
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Animation State Handling &amp; Editor Tooling</p>
+                    <p class="text-size-2">
+                        The plugin integrates with Unreal's animation graph so characters transition into
+                        wounded or single-limb animations automatically after a severance event.
+                        A custom Data Asset editor tool lets designers configure which bones are severable,
+                        what particle effects fire, and which animation states to enter — all without
+                        touching C++.
+                    </p>
+                    <ul class="skill-list">
+                        <li>Animation State Handling — automatic wounded-state transitions</li>
+                        <li>Editor Data Asset Tool — designer-friendly Blueprint configuration</li>
+                        <li>No extended runtime dependencies beyond the plugin itself</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ============================================================ -->
+        <!--  PROJECT LINKS                                               -->
+        <!-- ============================================================ -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="highlight-button link-hide" href="https://github.com/RapidShrimp/Unreal_Dismemberment" target="_blank">GitHub Repo</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+</html>

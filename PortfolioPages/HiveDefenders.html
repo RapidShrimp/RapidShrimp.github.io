@@ -1,208 +1,231 @@
 <!DOCTYPE html>
+<html>
 <title>Hive Defenders</title>
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="../images/icons/AS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/NavigationBar.css">
-    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/WebFormatting.css">
     <link rel="stylesheet" href="../styles/Cards.css">
+    <link rel="stylesheet" href="../styles/ScrollingImages.css">
     <link rel="stylesheet" href="../styles/ImageCarousel.css">
     <link rel="stylesheet" href="../styles/Gallery.css">
-
-
-
+    <link rel="stylesheet" href="../styles/CodeSnippet.css">
 </head>
 
 <body>
+
     <!--Nav Menu-->
-    <div class ="off-screen-menu">
+    <div class="off-screen-menu">
         <ul class="off-screen-menu-content">
             <a href="../index.html"><li>Home</li></a>
-            <a><li>Portfolio</li></a>
+            <a href="../PortfolioPages/Portfolio.html"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID"><li>Contact</li></a>
         </ul>
-      </div>
-      <nav class="d-flex flex-row justify-space-between items-center no-pad sticky">
-        <h1 class="text-size-1_8 nameplate">Adam Shrimpton</h1>
-        <div class="d-flex flex-row dropdown">
+    </div>
+    <nav class="flex-row justify-space-between items-center no-pad sticky">
+        <h1 class="text-size-1_8 nameplate mobile-hide">Adam Shrimpton</h1>
+        <div class="flex-row dropdown">
             <a href="../index.html" class="dropdown-button"><li>Home</li></a>
             <a href="../PortfolioPages/Portfolio.html" class="dropdown-button active-dropdown"><li>Portfolio</li></a>
             <a href="../index.html#ContactsID" class="dropdown-button"><li>Contact</li></a>
         </div>
-  
-        <div class = "ham-menu">
+        <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>  
-      </nav>
-      <script src="../Navigation.js"></script> 
+        </div>
+    </nav>
+    <script src="../Navigation.js"></script>
 
-        <div style="display: grid;place-content: center;">
-            <!--Project Description-->
-            <div class="responsive-container d-flex flex-column gap-2 content-text ">
+    <div class="background-blur" style="background-image: url('../images/homepage/backgroundblur-red-blue.png');"></div>
+
+    <div style="display: grid; justify-content: center;">
+
+        <!-- Hero -->
+        <div class="responsive-container flex-column gap-5 content-text">
+            <div class="flex-column gap-2">
                 <p class="text-size-title">Hive Defenders</p>
                 <p class="text-size-1_5">Bee Tower Defence Game</p>
-                <li class="text-size-2">Team Size: 15+</li>
-                <li class="text-size-2">Role(s): Lead Programmer</li>
-                <li class="text-size-2">Duration: 6 Weeks</li>
-                <li class="text-size-2">Engine: Unreal Engine</li>
-                <li class="text-size-2">Languages: Blueprint</li>
-    
-                <p class="text-size-2">
-                    Hive Defenders is a bee tower defence game in which the player controls a bee to create towers and gather resources in order to protect the queen bee.<br>
-                    In this project, I was in charge of source control via GitHub. This involved managing branch structures, resolving conflicts, and ensuring daily builds for management were created for review. Additionally, I developed core mechanics for the game as well as assisting in general issues surrounding the entire project.
-                </p>
-          </div>
-
-
-            <!--Gameplay Video-->
-            <!--No Trailer Yet
-            <div class="responsive-container d-flex flex-column content-text gap-3 text-center">
-                <p class="text-size-title">Gameplay Video</p>
-                <iframe class="card-16x9" src="https://www.youtube.com/embed/5u30s97QN4Q" title="Mechhead Teaser Trailer - 1UP 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        -->
+            <p class="text-size-2">
+                Hive Defenders is a bee tower defence game in which the player controls a bee to create towers and gather resources in order to protect the queen bee.
+                In this project, I was in charge of source control via GitHub — managing branch structures, resolving conflicts, and ensuring daily builds were available for review.
+                I also developed core mechanics for the game and assisted with general issues across the entire project.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <p class="skill-card-title">Team Size</p>
+                    <ul class="skill-list">
+                        <li>15+ People</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">My Role</p>
+                    <ul class="skill-list">
+                        <li>Lead Programmer</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Duration</p>
+                    <ul class="skill-list">
+                        <li>6 Weeks</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Tech Stack</p>
+                    <ul class="skill-list">
+                        <li>Unreal Engine</li>
+                        <li>Blueprint</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <p class="skill-card-title">Context</p>
+                    <ul class="skill-list">
+                        <li>University Collaborative Module</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <hr class="section-divider">
 
-            <!--Image Carousel Manual-->
-            <div class="responsive-container d-flex flex-column content-text ">
-            
-                <!-- Slideshow container -->
-                <div class="slideshow-container" style="width: 100%;">
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
+        <!-- Screenshots -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Screenshots</p>
+            <div class="slideshow-container" style="width: 100%;">
+                <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="../images/portfolio/BeeGame/Gameplay.png" style="width:100%">
+                    <img src="../images/portfolio/BeeGame/Gameplay.png" style="width:100%; border-radius: 6px;">
                     <div class="text">Gameplay</div>
-                    </div>
-                
-                    <div class="mySlides fade">
+                </div>
+                <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="../images/portfolio/BeeGame/CastImage.png" style="width:100%">
+                    <img src="../images/portfolio/BeeGame/CastImage.png" style="width:100%; border-radius: 6px;">
                     <div class="text">Characters</div>
-                    </div>
-                
-                    <div class="mySlides fade">
+                </div>
+                <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="../images/portfolio/BeeGame/Battle Image.png" style="width:100%">
+                    <img src="../images/portfolio/BeeGame/Battle Image.png" style="width:100%; border-radius: 6px;">
                     <div class="text">Fighting</div>
-                    </div>
-                
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <br>
-                
-                <!-- The Circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <script src="../JS/Slideshow.js">window.AutoScroll(1)</script> 
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <script src="../JS/Slideshow.js">window.AutoScroll(1)</script>
 
-           
+        <hr class="section-divider">
 
-            <!--Gallery Images-->
-            <div class="responsive-container d-flex flex-row content-text gap-6 small-vert-pad">
+        <!-- Gallery -->
+        <div class="responsive-container flex-column content-text gap-3">
+            <p class="text-size-1">Gallery</p>
+            <div class="flex-row content-text gap-6">
                 <div>
                     <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/BeeGame/SlowTower.png">
-                            <img src="../images/portfolio/BeeGame/SlowTower.png" alt="Mech Head" width="640" height="360">
+                                <img src="../images/portfolio/BeeGame/SlowTower.png" alt="Slow Tower" width="640" height="360">
                             </a>
                             <div class="desc">Slow Tower</div>
                         </div>
-                        </div>
-
-                        <div class="responsive">
+                    </div>
+                    <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/BeeGame/StingerTurret.png">
-                            <img src="../images/portfolio/BeeGame/StingerTurret.png" alt="Cinque Terre" width="640" height="360">
+                                <img src="../images/portfolio/BeeGame/StingerTurret.png" alt="Stinger Turret" width="640" height="360">
                             </a>
                             <div class="desc">Stinger Turret</div>
                         </div>
-                        </div>
-
-                        <div class="responsive">
+                    </div>
+                    <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/BeeGame/WaxeTower.png">
-                            <img src="../images/portfolio/BeeGame/WaxeTower.png" alt="Cinque Terre" width="640" height="360">
+                                <img src="../images/portfolio/BeeGame/WaxeTower.png" alt="Waxe Tower" width="640" height="360">
                             </a>
                             <div class="desc">Waxe Tower</div>
                         </div>
-                        </div>
-
-                        <div class="responsive">
+                    </div>
+                    <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="../images/portfolio/BeeGame/BeeGameLogo.png">
-                            <img src="../images/portfolio/BeeGame/BeeGameLogo.png" alt="Cinque Terre" width="640" height="360">
+                                <img src="../images/portfolio/BeeGame/BeeGameLogo.png" alt="Hive Defenders Logo" width="640" height="360">
                             </a>
                             <div class="desc"></div>
                         </div>
-                        </div>
-
-                        <div class="clearfix"></div>
                     </div>
-
-            </div>
-
-
-
-
-
-            <!--Content Right-->
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex gap-4 justify-space-between accessory">
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">Buff System</p>
-                        <p class="text-size-2">
-                            In Hive Defenders, I assigned myself the challenge of creating a buff system that could be used for any class<br>
-                            This system is scalable and usable with any actor so long as they have the correct interface functions implemented.<br>
-                            Some of the potential use cases for a buff system:
-                        </p>
-                            <li class="text-size-2">Speed Modifiers</li>
-                            <li class="text-size-2">Damage Over Time</li>
-                            <li class="text-size-2">Damage Type Resistance Modifiers</li>
-                        <p class="text-size-2">
-                            <b>The 'BuffBase' class</b><br>
-                            This class would handle the removal of the affected value behaviour and create/trigger any acompanying VFX.<br>
-                            This is a poolable UObject that is self managed and stores a reference to the interfaced actor. <br>
-                            <br>
-                            <b>The Buffable Interface</b><br>
-                            This interface is the key to having any actor respond to a buff. The idea behind this interface is that any buffs the actor should respond to, will have a function override that returns the appropriate value. If the value returns a 0 value it will not activate/create the buff.
-                        </p>
-                        <br>
-                    </div>
-                    <img class="content-card-image curve-border" style="width:100%;" src="../images/portfolio/BeeGame/BuffFlow.jpg">
-                    
+                    <div class="clearfix"></div>
                 </div>
             </div>
-
-            <!--Content Left-->
-            <div class="responsive-container d-flex flex-column content-text gap-6 small-vert-pad">
-                <div class="d-flex flex-will-change gap-4 justify-space-between accessory">
-                    <!-- <iframe class="content-card-image card-16x9 curve-border" style="min-height: 300px;"src="https://www.youtube.com/embed/0xbGytWZCg0" title="Random Room Prefab Selector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                    <div class="d-flex flex-column content-text gap-2">
-                        <p class="text-size-1">AI Pathfinding</p>
-                        <p class="text-size-2">
-                            For Hive Defenders, our bees were on a set path towards the hive which called for minimal pathfinding but it had to be adaptable becuase there was plans for different routes to be created at runtime given the possibility of an infinite mode. <br>
-                            <br>
-                            In my decision for the pathfinding, I went for a basic distance cost system which would find the quickest route combined with a heuristic addition factor for the tile type. This allows for AI to path through different types of tiles based on a weighting factor set in the enemy data assets. <br>
-                            For example, a walking enemy would like to often avoid walking through an area which has spikes on the floor or turrets that are melee combat.<br>
-                            <br>
-                            To get the AI to move along the points, I didnt want to use the default Unreal AI movement tools such as NavMesh pathfinding or AI Controller inputs as these would be inneficient using both tick and the physics system to check for collisions.
-                            My solution to this was to use splines that are generated on path calculation and then lerp the spline based on the distance. This allowed for nice smooth rotations and movement whilst saving the need for physics exclusively to be used by other trace checks.
-                        </p>
-                    </div>
-                    <img class="content-card-image curve-border" style="width:100%;" src="../images/portfolio/BeeGame/Splines.gif">
-                </div>
-            </div>
-
         </div>
+
+        <hr class="section-divider">
+
+        <!-- Technical Breakdown -->
+        <div class="responsive-container flex-column content-text gap-4">
+            <p class="text-size-1">Technical Breakdown</p>
+
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">Buff System</p>
+                    <p class="text-size-2">
+                        In Hive Defenders, I assigned myself the challenge of creating a buff system that could be used with any class.
+                        This system is scalable and usable with any actor so long as they have the correct interface functions implemented.
+                        Some potential use cases for a buff system:
+                    </p>
+                    <ul class="skill-list">
+                        <li>Speed Modifiers</li>
+                        <li>Damage Over Time</li>
+                        <li>Damage Type Resistance Modifiers</li>
+                    </ul>
+                    <p class="text-size-2">
+                        <b>The 'BuffBase' class</b><br>
+                        This class handles the removal of the affected value behaviour and creates/triggers any accompanying VFX.
+                        It is a poolable UObject that is self-managed and stores a reference to the interfaced actor.
+                    </p>
+                    <p class="text-size-2">
+                        <b>The Buffable Interface</b><br>
+                        This interface is the key to having any actor respond to a buff. Any buffs the actor should respond to will have a function override that returns the appropriate value. If the value returns 0 it will not activate or create the buff.
+                    </p>
+                </div>
+                <img class="content-card-image curve-border" style="min-height: 240px; max-width: 40%;" src="../images/portfolio/BeeGame/BuffFlow.jpg">
+            </div>
+
+            <div class="hire-card flex-will-change gap-4 justify-space-between">
+                <div class="flex-column gap-3" style="flex: 1;">
+                    <p class="text-size-1_5">AI Pathfinding</p>
+                    <p class="text-size-2">
+                        For Hive Defenders, our bees followed a set path towards the hive, requiring minimal but adaptable pathfinding — with plans for different routes generated at runtime in a potential infinite mode.
+                    </p>
+                    <p class="text-size-2">
+                        I implemented a basic distance cost system to find the quickest route, combined with a heuristic factor for tile type. This allows AI to weight different tile types based on values set in enemy data assets — for example, a walking enemy can be configured to avoid tiles with floor spikes or melee turrets.
+                    </p>
+                    <p class="text-size-2">
+                        Rather than using Unreal's NavMesh or AI Controller (which rely on tick and physics for collision), I generated splines on path calculation and lerped along them by distance. This produced smooth rotations and movement while keeping physics free for other trace checks.
+                    </p>
+                </div>
+                <img class="content-card-image curve-border" style="min-height: 240px; max-width: 40%;" src="../images/portfolio/BeeGame/Splines.gif">
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Project Links -->
+        <div class="responsive-container flex-column content-text gap-5">
+            <p class="text-size-1">Project Links</p>
+            <div class="flex-row gap-3" style="flex-wrap: wrap;">
+                <a class="accessory-button link-hide" href="https://github.com/RapidShrimp" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+</html>

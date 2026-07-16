@@ -6,8 +6,8 @@ nav{
     display: flex;
     z-index: 90;
     background-color: rgba(0, 0, 0, 0.82);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px) saturate(50%);
+    -webkit-backdrop-filter: blur(12px) saturate(50%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
