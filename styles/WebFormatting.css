@@ -546,6 +546,10 @@ p{
     line-height: 1.4;
 }
 
+.hire-card .skill-list li {
+    font-size: 20px;
+}
+
 /* Contact layout */
 .contact-layout {
     display: grid;
